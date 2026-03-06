@@ -50,7 +50,7 @@ test.describe('ACT Payment - Create with New Payee', () => {
 
     // 登录
     const loginPage = new LoginPage(page);
-    await page.goto('https://192.168.0.251:10444/iws/ssologin');
+    await page.goto(test.info().project.use.loginURL as string);
     await loginPage.login(
       testData.login.corpId,
       userId,

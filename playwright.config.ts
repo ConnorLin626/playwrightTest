@@ -13,6 +13,7 @@ export default defineConfig({
   },
   use: {
     baseURL: 'https://192.168.0.251:10444',
+    loginURL: 'https://192.168.0.251:10444/iws/ssologin',
     trace: 'on-first-retry',
     screenshot: 'only-on-failure',
     video: 'retain-on-failure',
