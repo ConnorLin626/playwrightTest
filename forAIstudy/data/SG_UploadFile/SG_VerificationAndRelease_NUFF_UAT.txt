@@ -1,0 +1,4 @@
+HEADER,31122018,SG2BFE1,
+PAYMENT,ACT,01010202,SGD,,SGD,,31122018,,,BetsyTestImport2,,,Bangalore Electr,,21345645,50,7171,001,ICIC0000393,DBSSSGS0XXX,,,,,,,3010.00,,,,,30,Particul03,COLReferen02,PaymentDetails150051164,,,,,,,CASH,,E,,,TechProcess Payment Services Ltd,000000000075,Bangalore Electr,,,,sbaraiya@euronetworldwide.com,,vbhandary@euronetworldwide.com,kdeo@euronetworldwide.com,haribabus@euronetworldwide.com,,,,,,1120304.1S39474 19 ,ENI,DCBDCB08204,00000000075,04072013
+PAYMENT,BPY,01010202,SGD,,SGD,,31122018,,,BetsyTestImport1,,,Bangalore Electr,,21345645,50,7171,001,ICIC0000393,DBSSSGS0XXX,,,,,,,3010.00,,,,,20,Particul03,COLReferen02,PaymentDetails150051164,,,,,,,CASH,,E,,,TechProcess Payment Services Ltd,000000000075,Bangalore Electr,,,,sbaraiya@euronetworldwide.com,,vbhandary@euronetworldwide.com,kdeo@euronetworldwide.com,haribabus@euronetworldwide.com,,,,,,1120304.1S39474 19 ,ENI,DCBDCB08204,00000000075,04072013
+TRAILER,2,6020.0

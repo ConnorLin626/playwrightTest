@@ -1,0 +1,102 @@
+Domestic transactions
+	693 - Foreign exchange transferred to another domestic bank
+		A - Source of fund from capital stock investment, equity investment, overseas deposits, etc. (Outward foreign remittances are remitted from other domestic banks, not purchased with TWD)
+			210 - Outward direct investment
+			250 - Deposits overseas
+			262 - Investment in overseas equity securities
+			263 - Investments in overseas long-term bonds and notes
+			264 - Investments in overseas short-term notes and bills
+			266 - Outward remittance of funds for overseas deliverable forward and swap transactions
+			267 - Outward remittance of funds for overseas non-deliverable derivative transactions
+			268 - Purchase of overseas virtual assets
+			270 - Purchase of overseas real estate
+			365 - Outward remittance of proceeds from financial derivative transactions by foreigners
+			366 - Outward remittance of cash collaterals by foreigners for securities lending
+			368 - Sale of local virtual assets by foreigners
+			370 - Sale of local real estates by foreigners
+			371 - Withdrawal of funds for purchasing local pre-sale home by foreigners
+		B - Source of fund from outward loan, overseas borrowing, corporate bonds issued overseas, etc.(Outward foreign remittances are remitted from other domestic banks, not purchased with TWD)
+			220 - Outward loan investment
+			221 - Financing to foreign direct investment enterprises or affiliated enterprises
+			280 - Outward financing
+			321 - Repayments of financing offered by foreign equity shareholders or overseas affiliated enterprises
+			340 - Repayments of overseas financing (FX for short-term borrowing less than one year only)
+		C - Source of fund from overseas investment income and other income (Outward foreign remittances are remitted from other domestic banks, not purchased with TWD)
+			440 - Interest arising from overseas financing (FX for short-term borrowing less than one year only)
+			444 - Import finance related interest
+			449 - Other investment income (Please specify)
+			450 - Natural resource leasing expenses and goods-related tax expenses
+			451 - Carbon emission trading expenses
+		D - Source of fund from receipts/payments from/for processing trade and merchanting trade (Outward foreign remittances are remitted from other domestic banks, not purchased with TWD)
+			710 - Payments for processing trade
+			711 - Payments for merchanting trade
+		E - Source of fund from overseas service receipts and expenses (Outward foreign remittances are remitted from other domestic banks, not purchased with TWD)
+			111 - Freight shipping expenses
+			112 - Maritime passenger transportation expenses
+			115 - Air freight expenses
+			116 - Air passenger service expenses
+			119 - Other transportation-related expenses (Please specify)
+			121 - Non-life insurance expenses
+			122 - Non-life insurance claims payments (Insurance Company Only)
+			123 - Life insurance expenses
+			129 - Life insurance claims payments (Insurance Company Only)
+			131 - Business expenses
+			132 - Tourism expenses
+			134 - Studying abroad expenses
+			135 - Credit card expenses
+			139 - Other travel-related expenses (Please specify)
+			191 - Cultural and leisure expenses
+			192 - Trade commissions and agency fee expenses
+			193 - Expenses related to local construction projects
+			194 - Financial service expenses
+			195 - Intellectual property rights licensing expenses
+			196 - Overseas office expenses
+			199 - Other service expenses (Please specify)
+			19A - Postal and courier delivery service expenses
+			19B - Computer and information service expenses
+			19C - Leasing expenses
+			19D - Professional /technical services and business expenses
+			19E - Video-audio expenses
+			19F - Outward remittance of service income of foreign government agencies
+			19G - Other service expenses of military or government agencies (Official agencies only)
+			19H - Processing fee expenses
+			19J - Telecommunication expenses
+			19K - Repair/maintenance expenses
+			19P - Outsourcing R&D and R&D asset purchase expenses
+		F - Source of fund from transfer receipts and payments, such as inward/outward remittance of donations and family support (Outward foreign remittances are remitted from other domestic banks, not purchased with TWD)
+			510 - Remittance payments for family support
+			520 - Donation remittance
+			540 - Natural resource and non- R&D asset purchase expenses
+			580 - Government donation and membership fee expenses (Official agencies only.)
+			581 - Non-goods-related tax expenses
+			599 - Other transfer payments (Please specify)
+		G - Source of fund from inward/outward remittance of wages and salaries (Outward foreign remittances are remitted from other domestic banks, not purchased with TWD)
+			410 - Outward remittance of non-resident's wages and salaries
+			511 - Outward remittance by foreign workers
+		I - Source of fund from import/export receipts and payments involving customs clearance and onshore delivery (Outward foreign remittances are remitted from other domestic banks, not purchased with TWD)
+			701 - Prepayments for goods not yet imported
+			702 - Fuel and supply payments
+			704 - Payments of sample fees
+			706 - Payments for imported goods with customs clearance not handled by payees (Supporting document is required; or select 801)
+			70A - Payments for imported goods with customs clearance handled by payees
+			720 - Payments for goods ordered offshore but delivered onshore (Supporting document is required; or select 802)
+		Z - Source of fund from other overseas transactions (Outward foreign remittances are remitted from other domestic banks, not purchased with TWD)
+			299 - Other outflows of domestic funds (Please specify)
+			291 - Returns of principal of installment loan for export financing
+			292 - Receipts of capital leasing
+			391 - Installment payments for import financing
+			392 - Capital leasing expenses
+			399 - Other outflows of foreign funds (Please specify)
+			611 - Return of export receipts
+			619 - Other outward remittances
+			801 - Payments for imported goods with customs clearance not handled by payees (without proof documents)
+			802 - Payments for goods ordered offshore but delivered onshore (without proof documents)
+			Others (please specify)
+		R - Domestic receipts and payments for goods
+		S - Domestic receipts and payments involving foreign currency denominated investment
+		T - Domestic transfer receipts and payments
+		L - Domestic receipts and payments involving foreign currency loans
+		P - Domestic service receipts and payments
+		Q - Domestic Carbon emission rights trading receipts and payments
+		N - Other domestic transactions
+		Foreign currency purchased only for deposit without remitting into another local or foreign account; selling foreign currency that was originally purchased only for deposit

@@ -1,0 +1,506 @@
+{
+  "login": {
+    "loginCompanyId": "",
+    "loginUserId": "",
+    "verifyUserId": ""
+  },
+  "status": {
+    "Approved": "Approved",
+    "PendingApproval": "Pending approval",
+    "PartialApproved": "Partial Approved",
+    "Completed": "Completed",
+    "Rejected": "Rejected",
+    "PendingDocCheck": "Pending document check",
+    "PendingApprovalConfirm": "Pending Approval Confirmation",
+    "Pendingbankprocessing": "Pending bank processing",
+    "BnakReject": "Bank rejected"
+  },
+  "NewMaker": {
+    "UAT": {
+      "loginCompanyId": "AUTOSG01",
+      "loginUserId": "AUTOSG01U01"
+    },
+    "SIT": {
+      "loginCompanyId": "AUTOSG01",
+      "loginUserId": "AUTOSG01SSM01",
+      "approveUserId":"AUTOSG01SSM02"
+    },
+    "EmailAddress": "SSMTESTUSER@DBS.COM",
+    "mobileCtry": "+593",
+    "mobileNumber": "879653421",
+    "nationality": "AFGHANISTAN",
+    "identityType": "M - Malaysian Identity Number",
+    "identityNumber": "Malaysian1234",
+    "dateOfBirth": "01 Mar 2019",
+    "responseCode": "123123"
+  },
+  "NewApprover": {
+    "UAT": {
+      "loginCompanyId": "AUTOSG01",
+      "loginUserId": "AUTOSG01U01"
+    },
+    "SIT": {
+      "loginCompanyId": "AUTOSG01",
+      "loginUserId": "AUTOSG01SSM01",
+      "approveUserId":"AUTOSG01SSM02",
+      "providerId": "ASADM1",
+      "ProviderApproverId": "ASADM2"
+    },
+    "groupName": "Group A",
+    "mobileCountry":"+65",
+    "contactDetails": "AUTOSSMAPPROVER@DBS.COM",
+    "nationality":"SINGAPORE",
+    "identityType":"S - Local Identity Number",
+    "mobileNumber": "779980001",
+    "identityNumber": "356900199011001",
+    "dateOfBirth": "01 Mar 2019",
+    "reactiveUserName": "AutoTestReactive",
+    "reactiveUserID": "AUTOTESTREACTIVE",
+    "errorMsg": "No User found for this criteria",
+    "successMsg":"successfully"
+  },
+  "UserLibrary": {
+    "UAT": {
+      "loginCompanyId": "AUTOSSM1",
+      "loginUserId": "AUTOSSM1S01"
+    },
+    "SIT": {
+      "loginCompanyId": "AUTOSSM1",
+      "loginUserId": "AUTOSSM1S05",
+      "approveUserId":"AUTOSSM1S02",
+      "loginCompanyIdA":"AUTOSSM6",
+      "loginUserIdA": "AUTOSSM6C01",
+      "approveUserIdA":"AUTOSSM6C02"
+    },
+    "mobileCountry":"+65",
+    "contactDetails": "AUTOSSMAPPROVER@DBS.COM",
+    "nationality":"SINGAPORE",
+    "identityType":"S - Local Identity Number",
+    "mobileNumber": "779980001",
+    "identityNumber": "356900199011001",
+    "dateOfBirth": "01 Mar 2019",
+    "SGAffiliate":"AUTOSSM1",
+    "errorMsg": "No User found for this criteria",
+    "errorMsg1": "未找到符合此条件的用户",
+    "successMsg":"successfully",
+    "unlockUserName":"AUTOSSM1S05 Name",
+    "reactiveUserName":"SSM AUTO Testswnvs",
+    "suspendUserName":"AUTOREACTIVE Name",
+    "unlockUserID":"AUTOSSM1S05",
+    "requestValue":"Unlock security device request",
+    "reactiveUserID":"AUTOTESTUSERREIRZ",
+    "suspendUserID":"AUTOREACTIVE",
+    "unlockChallenge": "123123",
+    "reviewUserTitle":"User access review request",
+    "affecteUserValue":"All users",
+    "resetLoginDetail":"Reset login details request",
+    "pageTitleValue":"Create new user request",
+    "resetLoginUserName":"AUTOSSM1S05 Name",
+    "resetUserEmail":"AUTOSSM1S05@dbs.com"
+  },
+  "GroupOverview": {
+    "UAT": {
+      "loginCompanyId": "AUTOSG01",
+      "loginUserId": "AUTOSG01U01",
+      "accountNumber": "1211111",
+      "companyName": "Customer Name of TDS_Cust_ID-117868",
+      "orgId": "SG106"
+    },
+    "SIT": {
+      "loginCompanyId": "AUTOSSM1",
+      "loginUserId": "AUTOSSM1S05",
+      "accountNumber": "34567898765",
+      "companyName": "Customer Name of TDS_Cust_ID-117868",
+      "orgId": "SG106"
+    }
+  },
+  "ModifyUser": {
+    "UAT": {
+      "loginCompanyId": "AUTOSG01",
+      "loginUserId": "AUTOSG01U01"
+    },
+    "SIT": {
+      "loginCompanyId": "AUTOSSM6",
+      "loginUserId": "AUTOSSM6C01",
+      "approveUserId":"AUTOSSM6C02"
+    },
+    "mobileCountry":"+65",
+    "contactDetails": "AUTOSSMAPPROVER@DBS.COM",
+    "nationality":"SINGAPORE",
+    "identityType":"S - Local Identity Number",
+    "mobileNumber": "779980001",
+    "identityNumber": "356900199011001",
+    "dateOfBirth": "01 Mar 2019",
+    "giroAccountNotContain":"2233440002",
+    "selectSubsi":"Customer",
+    "ResponseCode": "Response",
+    "DBSSG": "DBS Singapore",
+    "companyId": "Corporation ID",
+    "SGAffiliate": "AUTOSSM6"
+  },
+  "SupplierHub": {
+    "UAT": {
+      "loginCompanyId": "AUTOSG01",
+      "loginUserId": "AUTOSG01U01"
+    },
+    "SIT": {
+      "loginCompanyId": "AUTOSSM1",
+      "loginUserId": "AUTOSUPPLIERHUB01",
+      "approveUserId":"AUTOSUPPLIERHUB02",
+      "providerId": "ASADM1",
+      "ProviderApproverId": "ASADM2"
+    },
+    "contactDetails": "AUTOSUPPLIERHUMAKER@DBS.COM",
+    "mobileCountry":"+65",
+    "mobileNumber": "779980001",
+    "nationality":"SINGAPORE",
+    "identityType":"S - Local Identity Number",
+    "identityNumber": "356900199011001",
+    "identityNumberEdit":  "1234567890",
+    "dateOfBirth": "01 Mar 2019",
+    "successMsg":"successfully",
+    "userRoleMaker":"is a maker",
+    "userRoleMakerAndApproverAdmin":"is a maker, approver and admin",
+    "singleControlVaule":"can only approve requests created by others (dual control)",
+    "DBSSG": "DBS Singapore",
+    "companyId": "Corporation ID",
+    "SGAffiliate": "AUTOSSM1",
+    "uploadFileName": "SupplierHub_User.pdf"
+  },
+  "Dashboard": {
+    "UAT": {
+      "loginCompanyId": "AUTOSG01",
+      "loginUserId": "AUTOSG01U01"
+    },
+    "SIT": {
+      "loginCompanyId": "SPTWSSM1",
+      "loginUserId": "SPTWSSM1S01",
+      "approveUserId":"SPTWSSM1S02"
+    },
+    "EmailAddress": "SSMTESTUSER@DBS.COM",
+    "mobileCtry": "+593",
+    "mobileNumber": "879653421",
+    "nationality": "AFGHANISTAN",
+    "identityType": "P - Passport Number",
+    "identityNumber": "Malaysian1234",
+    "dateOfBirth": "01 Mar 2019",
+    "rejectReason":"Reject Reason",
+    "noRecord":"No Records Found"
+  },
+  "MyProfileUser": {
+    "UAT": {
+      "loginCompanyId": "AUTOSG01",
+      "loginUserId": "AUTOSG01U01",
+      "loginUserName": "AUTOSG01U01Name",
+      "loginCompanyIdE": "AUTOSSM2",
+      "loginUserIdE":"MULTISUBCOPY01"
+    },
+    "SIT": {
+      "loginCompanyId": "AUTOSG01",
+      "loginUserId": "AUTOSG01S05",
+      "loginUserName": "AUTOSG01S05Name",
+      "loginCompanyIdE": "AUTOSSM2",
+      "loginUserIdE":"MULTISUBCOPY01"
+    },
+    "pageTitleValue":"Edit user request",
+    "userName":"MULTISUBCOPY01Name"
+  },
+  "CompanyProfile": {
+    "SIT": {
+      "loginCompanyId": "AUTOSSM1",
+      "loginUserId": "AUTOSSM1S05",
+      "loginCompanyName": "NCS_KORS9"
+    },
+    "UAT": {
+      "loginCompanyId": "SG2BFE1",
+      "loginUserId": "SG2BFE1S04",
+      "loginCompanyName": "LEONA ALBRECHT"
+    },
+    "payeeName": "AutoTest1"
+  },
+  "EnrolCompanyProduct":{
+    "SIT": {
+      "loginCompanyId": "AUTOSSM2",
+      "loginUserIdA": "AUTOSSM2S01",
+      "loginUserIdB": "AUTOSSM2S02",
+      "loginCompanyName": "NCS_KORS9"
+    },
+    "UAT": {
+      "loginCompanyId": "SG2BFE1",
+      "loginUserId": "SG2BFE1S04",
+      "loginCompanyName": "LEONA ALBRECHT"
+    },
+    "payeeName": "AutoTest1",
+    "requestName":"enrol company product",
+    "PendingApproval":"Pending approval",
+    "Completed":"Completed",
+    "Pendingbankprocessing":"Pending bank processing",
+    "Approved":"Approved"
+    
+  },
+  "BankAcctSetting": {
+    "SIT": {
+      "loginCompanyId": "SPTWSSM1",
+      "loginUserId": "SPTWSSM1S01"
+    },
+    "UAT": {
+      "loginCompanyId": "SPTWSSM1",
+      "loginUserId": "SPTWSSM1S01"
+    },
+    "bankAcctNO": "67039388444",
+    "approvalStatus": "Approved"
+  },
+  "ApprovalPolicies": {
+    "SIT": {
+      "loginCompanyId": "AUTOSSM1",
+      "loginUserId": "AUTOSSM1S05",
+      "approveUser":"AUTOSSM1S02",
+      "TradloginCompanyId": "AUTOSSM1",
+      "TradloginUserId": "AUTOSSM1S05"
+    },
+    "UAT": {
+      "loginCompanyId": "SG2BFE1",
+      "loginUserId": "SG2BFE1S08",
+      "TradloginCompanyId": "AUTOSG01",
+      "TradloginUserId": "AUTOSG01S05"
+    },
+    "policyDescription": "policyDescription",
+    "toAmount": "99",
+    "group": "Group A",
+    "approvalPolicy": "Per-Payment",
+    "currency": "SGD",
+    "amountValue": "0.00 - 99.00",
+    "paymentType": "Intra Company Transfer",
+    "paymentType1": "IN - RTGS Payment",
+    "payrollType":"SG - Payroll,",
+    "TradPamementType": "Import LC Issuance",
+    "responseCode": "Response",
+    "EditPolicyName": "ZZPolicyAuto",
+    "labelNoInformationDisplay": "No Records Found"
+  },
+  "ApprovalGroup": {
+    "SIT": {
+      "loginCompanyId": "SPVNSSM1",
+      "loginUserId": "SPVNSSM1S01",
+      "approveUser":"SPVNSSM1S02",
+      "Grouptype": "Approver",
+      "GroupUsers": "SPVNSSM1S01",
+      "Completed": "Completed",
+      "Approver": "Approver",
+      "Pendingapproval": "Pending approval",
+      "GroupName":"AutoGroup",
+      "GroupA":"Group A"
+    },
+    "UAT": {
+      "loginCompanyId": "HAHA",
+      "loginUserId": "HAHA01",
+      "approveUser":"SPVNSSM1S02",
+      "Grouptype": "Approver",
+      "GroupUsers": "SPVNSSM1S01",
+      "Completed": "Completed",
+      "Pendingapproval": "Pending approval",
+      "GroupName":"AutoGroup",
+      "GroupA":"Group A"
+    }
+  },
+  "Reports": {
+    "SIT": {
+      "loginCompanyId": "AUTOSSM1",
+      "loginUserId": "AUTOSSM1S05"
+    },
+    "UAT": {
+      "loginCompanyId": "SG2BFE1",
+      "loginUserId": "SG2BFE1S04"
+    },
+    "organisation": "NCS_KORS9",
+    "password": "Qa12345!",
+    "remarks": "remarks",
+    "successfulMsg": "successful",
+    "modifySuccessful": "modified successfully",
+    "searchRecord": "No Records Found",
+    "paymentType":"Intra Company Transfer",
+    "paymentType1":"SG - MEPS Payment",
+    "reportName":"AutoTest Report",
+    "userSetupReport":"User Setup Repo",
+    "userList":"AUTOSSM1S02",
+    "remarksModify": "remarks value modify",
+    "companyValue":"NCS_KORS9",
+    "comRepName":"Company Report"
+  },
+  "SAM": {
+    "SIT": {
+      "loginUserId": "ASADM1"
+    },
+    "UAT": {
+      "loginUserId": "ASADM1"
+    },
+    "SelectAffiliate": "DBS Singapore",
+    "SelectAffiliateVN": "DBSVN",
+    "slectCompanyId": "Corporation ID",
+    "CorporationID": "AUTOSG01",
+    "CorporationID02":"SG106",
+    "SSMCorporationID":"AUTOSSM2",
+    "companyId": "Corporation ID"
+  },
+  "PA":{
+    "SIT": {
+      "loginCompanyId": "AUTOSSM2",
+      "loginUserId": "AUTOSSM2S01",
+      "approveUserId":"AUTOSSM2S02",
+      "loginUserIdA":"AUTOSSM2S03",
+      "loginUserIdB":"AUTOSSM2S04",
+      "providerId":"ASADM1",
+      "ProviderApproverId":"ASADM2"
+    },
+    "UAT": {
+      "loginCompanyId": "AUTOSSM2",
+      "loginUserId": "AUTOSSM2S01",
+      "approveUserId":"AUTOSSM2S02",
+      "providerId":"ASADM1",
+      "ProviderApproverId":"ASADM2"
+    },
+    "contactDetails" :"123456789@DBS.COM",
+    "mobileCountry":"+93",
+    "mobileNumber":"987654321",
+    "nationality":"SINGAPORE",
+    "identityType":"S - Local Identity Number",
+    "identityNumber":"998877665544",
+    "dateOfBirth":"01 Mar 2024",
+    "groupName":"Group A",
+    "successMsg":"successfully",
+    "reactiveUserName": "AutoTestReactive",
+    "reactiveUserID":"REACTIVEUSERNAME",
+    "resetLoginDetailUserEmail":"123@123.com",
+    "resetLoginDetailUserID":"AUTOTESTRESETDETAIL1",
+    "resetLoginDetailUserName":"AUTOTESTRESETDETAIL1Name",
+    "resetLoginDetailUserPhone":"+994 131432",
+    "copyUserId":"AUTOSSMCOPY01", 
+    "copyUserId02":"AUTOSSMCOPY02", 
+    "copyUserId03":"AUTOSSMCOPY03",
+    "belongGroup":"Group A",
+    "copyMultiSubUserId":"MULTISUBCOPY01",
+    "paymentType1":"Account Transfer",
+    "paymentType2":"Telegraphic Transfer",
+    "paymentType3":"Payroll",
+    "paymentType4":"Bulk GIRO Collection",
+    "paymentType5":"Cheque Express",
+    "paymentType6":"GIRO Payment",  
+    "paymentType7":"Intra Company Transfer",
+    "transactionManagement":"Merchant Portal",
+    "accountValue":"2024112701Name-2024112701-SGD",
+    "transactionRole":"Maker"
+
+
+
+  },
+
+  "OpenBusinessAccount":{
+    "SIT": {
+      "loginCompanyId": "SG2BE11",
+      "loginUserIdA": "SSMAUTOTEST01",
+      "loginUserIdB": "SG2BE11S01",
+      "loginCompanyName": "Test 02 CANDY SUGAR CORPORATION"
+    },
+    "UAT": {
+      "loginCompanyId": "SG2BFE1",
+      "loginUserId": "SG2BFE1S04",
+      "loginCompanyName": "LEONA ALBRECHT"
+    },
+    "accountName": "accountName01",
+    "requestType":"SGD CA opening application",
+    "accountType":"SGD CA",
+    "purposeOfAccount":"Business operation",
+    "Ccy":"SGD",
+    "PendingApproval":"Pending approval",
+    "Completed":"Completed",
+    "Pendingbankprocessing":"Pending bank processing",
+    "Approved":"Approved"
+  },
+  "DBSBusinessMultiplier":{
+    "SIT": {
+      "loginCompanyId": "AUTOSSM2",
+      "loginUserIdA": "AUTOSSM2S01",
+      "loginUserIdB": "AUTOSSM2S02",
+      "loginCompanyName": "NCS_KORS9"
+    },
+    "UAT": {
+      "loginCompanyId": "AUTOSSM2",
+      "loginUserId": "AUTOSSM2S01",
+      "loginCompanyName": "NCS_KORS9"
+    },
+    "requestType":"Register/Manage for Business Multiplier",
+    "PendingApproval":"Pending approval",
+    "Completed":"Completed"
+
+  },
+  "SubsiCompanyProfile": {
+    "SIT": {
+      "loginCompanyId": "AUTOSSM1",
+      "loginUserId": "AUTOSSM1S05",
+      "approveUser":"AUTOSSM1S02",
+      "TradloginCompanyId": "AUTOSSM1",
+      "TradloginUserId": "AUTOSSM1S05"
+    },
+    "UAT": {
+      "loginCompanyId": "SG2BFE1",
+      "loginUserId": "SG2BFE1S08",
+      "TradloginCompanyId": "AUTOSG01",
+      "TradloginUserId": "AUTOSG01S05"
+    },
+    "policyDescription": "policyDescription",
+    "toAmount": "99",
+    "group": "Group A",
+    "approvalPolicy": "File Total",
+    "currency": "SGD",
+    "amountValue": "0.00 - 99.00",
+    "paymentType": "Intra Company Transfer",
+    "paymentType1": "IN - RTGS Payment",
+    "payrollType":"SG - Payroll,",
+    "TradPamementType": "Import LC Issuance",
+    "responseCode": "12345678",
+    "EditPolicyName": "AutoTest",
+    "labelNoInformationDisplay": "No Records Found",
+    "minAmount":"0.00",
+    "maxAmount":"99.00",
+    "verifyGroup":"VerifyG",
+    "groupType":"Verifier",
+    "groupUser":"AUTOSSM1S02 Name-AUTOSSM1S02",
+    "requestType":"Modify Approval group"
+
+  },
+  "newAdministrator":{
+    "createNewAdministratorPageHeader":"Create a new administrator (CSA)",
+    "signingMandatePageHeader":"Electronic banking board resolution",
+    "updateMandatePageHeader":"Update mandate or authorized signatories",
+    "addNewAccountPageHeader":"Add a new account"
+  },
+
+  "NewGCUser": {
+    "UAT": {
+      "loginCompanyId": "AUTOSSM9",
+      "loginUserId": "GCAUTOSSM01"
+    },
+    "SIT": {
+      "loginCompanyId": "AUTOSSM9",
+      "loginUserId": "GCAUTOSSM01",
+      "providerId": "ASADM1",
+      "ProviderApproverId": "ASADM2"
+    },
+    "groupName": "Group A",
+    "mobileCountry":"+65",
+    "contactDetails": "AUTOSSMAPPROVER@DBS.COM",
+    "nationality":"SINGAPORE",
+    "identityType":"S - Local Identity Number",
+    "mobileNumber": "779980001",
+    "identityNumber": "356900199011001",
+    "dateOfBirth": "01 Mar 2019",
+    "reactiveUserName": "AutoTestReactive",
+    "reactiveUserID": "AUTOTESTREACTIVE",
+    "errorMsg": "No User found for this criteria",
+    "successMsg":"successfully",
+    "DBSGC":"DBS Gift City India",
+    "companyId": "Corporation ID",
+    "GCAffiliate": "AUTOSSM9"
+
+  }
+}

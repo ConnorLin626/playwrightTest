@@ -1,0 +1,33 @@
+{
+    "ResourceCenter": {
+        "UAT": {
+            "loginCompanyId": "SG2BE11",
+            "loginUserId": "SG2BE11S04",
+            "resourceDscription": "rtcenturion",
+            "title": "zbsm_rt021219.zip"
+        },
+        "SIT": {
+            "loginCompanyId": "AUTOSG01",
+            "loginUserId": "AUTOSG01U01",
+            "resourceDscription": "Day 15 Test User IDs",
+            "title": "Day 1.5 Test UserID.txt"
+        }
+    },
+    "ContactUs": {
+        "UAT": {
+            "loginCompanyId": "AUTOSG01",
+            "loginUserId": "AUTOSG01S01",
+            "megTo": "123123",
+            "replyMsgtime": "02 Nov 2020,11:06"
+        },
+        "SIT": {
+            "loginCompanyId": "AUTOSG01",
+            "loginUserId": "AUTOSG01U01",
+            "megTo": "123456",
+            "replyMsgtime": "24 Sep 2021,17:25"
+        },
+        "message": "add test message for contact Us",
+        "attachFile": "Contact Us file.pdf",
+        "inboxValue": "Inbox"
+    }
+}

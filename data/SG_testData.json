@@ -1,0 +1,47 @@
+{
+  "login": {
+    "corpId": "AUTOSG01",
+    "userIdChrome1": "AUTOSG01A16",
+    "userIdChrome2": "AUTOSG01A17",
+    "userIdFirefox": "AUTOSG01A18",
+    "pin": "123123"
+  },
+  "AccountTransfer": {
+    "UAT": {
+      "fromAccount": "001905198377"
+    },
+    "SIT": {
+      "fromAccount": "0039007639"
+    },
+    "Country": "SINGAPORE",
+    "payeeBank": "DBS Bank SINGAPORE",
+    "newPayeeName": "ACT AUTO NewPayeeName",
+    "newPayeeNickname": "newPayeeNickname",
+    "newPayeeAdd1": "ACT AUTO newPayeeAdd1",
+    "newPayeeAdd2": "ACT AUTO newPayeeAdd2",
+    "newPayeeAcctNumber": "38900000001",
+    "paymentDetail": "ACT AUTO PaymentDetails",
+    "emailIdO": "ACT_AUTO_Email0@dbs.com",
+    "emailId1": "ACT_AUTO_Email1@dbs.com",
+    "emailId2": "ACT_AUTO_Email2@dbs.com",
+    "emailId3": "ACT_AUTO_Email3@dbs.com",
+    "emailId4": "ACT_AUTO_Email4@dbs.com",
+    "message": "ACT AUTO TEST message",
+    "transactionNote": "ACT Transaction Note test message",
+    "amountA1": "10.00"
+  },
+  "Beneficiary": {
+    "payeeLocation":"ALBANIA",
+    "townCity":"Town,City",
+    "streetName":"street Name",
+    "postalCode":"postalCode123"
+  },
+  "status": {
+    "Submitted": "Submitted",
+    "Received": "Received",
+    "Approved": "Approved",
+    "PendingApproval": "Pending Approval",
+    "PendingRelease": "Pending Release",
+    "Completed": "Completed"
+  }
+}

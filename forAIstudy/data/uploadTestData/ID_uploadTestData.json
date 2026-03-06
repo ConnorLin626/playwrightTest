@@ -1,0 +1,282 @@
+{
+  "status": {
+    "Approved": "Approved",
+    "PendingApproval": "Pending Approval",
+    "PartialApproved": "Partial Approved",
+    "PendingRelease": "Pending Release",
+    "PendingVerification": "Pending Verification",
+    "PartialCompleted": "Partial Completed",
+    "Received": "Received",
+    "Completed": "Completed",
+    "Saved": "Saved",
+    "Submitted": "Submitted",
+    "BankRejected": "Bank Rejected",
+    "Rejected": "Rejected",
+    "Failed": "Failed",
+    "Cancelled": "Cancelled",
+    "ApproverRejected": "Approver rejected"
+  },
+  "RTGS":{
+    "UAT":{
+      "fromAccount":"3320026099",
+      "payeeBankNameValue":"BANK ARTHA GRAHA INTERNASIONAL",
+      "payeeBankAdd1Value":"PT. BANK ARTHA GRAHA INTERNASIONAL, TBK",
+      "payeeBankAdd2Value":"JL. JEND. SUDIRMAN KAV. 52-53 JAKARTA 12190",
+      "payeeBankCityValue":"JAKARTA",
+      "payeeSwiftBicValue":"ARTGIDJA",
+      "payeeBankCodeValue":"037",
+      "payeeBrchCodeValue":"0028"
+
+    },
+    "SIT":{
+      "fromAccount":"1500088008",
+      "payeeBankNameValue":"DBS",
+      "payeeBankAdd1Value":"PT. BANK RAKYAT INDONESIA (PERSERO)",
+      "payeeBankAdd2Value":"changi BP",
+      "payeeBankCityValue":"YOGYAKARTA",
+      "payeeSwiftBicValue":"INDONESIA",
+      "payeeBankCodeValue":"002",
+      "payeeBrchCodeValue":"8914"
+
+    },
+    "amountValue":"100,000,001",
+    "newPayeeAcct":"123456",
+    "newPayeeName":"ROYAL BANK1ROYAL BANK1ROYAL BA12345",
+    "newPayeeNickname": "newPayeeNickname",
+    "paymentType":"Indonesia RTGS Payment",
+    "payeeBankCountryValue":"IDN",
+    "paymentDetailsValue":"Payment Details",
+    "msgValue":"SDF",
+    "emailValue0":"Email1@163.com",
+    "emailValue1":"Email2@163.com",
+    "emailValue2":"Email3@163.com",
+    "emailValue3":"Email4@163.com",
+    "emailValue4":"Email5@163.com",
+    "bankChargeValue":"OUR",
+    "purposeCodeValue":"2150",
+    "residStatusValue":"Indonesian National",
+    "relationshipValue":"Affiliated"
+  },
+  "BIFAST":{
+    "amountValue":"10,000",
+    "fromAccount":"5550001002",
+    "idBifast":"45632145@dbs.com",
+    "newPayeeName":"ROYAL BANK",
+    "newPayeeNickname": "newPayeeNickname",
+    "paymentType":"Indonesia BIFAST Payment",
+    "paymentDetailsValue":"COLHK12.1.1.7.2",
+    "msgToPayeeValue":"Invoice",
+    "emailValue0":"haribabus@euronetworldwide.com",
+    "emailValue1":"sbaraiya@euronetworldwide.com",
+    "emailValue2":"bbaraiya@euronetworldwide.com",
+    "emailValue3":"vbhandary@euronetworldwide.com",
+    "emailValue4":"kdeo@euronetworldwide.com",
+    "bankChargeValue":"OUR",
+    "purposeCodeValue":"01",
+    "residStatusValue":"Indonesian National",
+    "relationshipValue":"Affiliated"
+  },
+  "SKN":{
+    "UAT":{
+      "fromAccount":"3320026099",
+      "payeeBankNameValue":"BANK BJB SYARIAH",
+      "payeeBankAdd1Value":"PT. BANK JABAR BANTEN SYARIAH",
+      "payeeBankAdd2Value":"JL.PELAJAR PEJUANG 45 NO.54 BANDUNG",
+      "payeeBankCityValue":"JAKARTA",
+      "payeeSwiftBicValue":"SYJBIDJ1",
+      "payeeBankCodeValue":"425",
+      "payeeBrchCodeValue":"0018"
+    },
+    "SIT":{
+      "fromAccount":"1500088008",
+      "payeeBankNameValue":"DBS",
+      "payeeBankAdd1Value":"PT. BANK RAKYAT INDONESIA (PERSERO)",
+      "payeeBankAdd2Value":"changi BP",
+      "payeeBankCityValue":"YOGYAKARTA",
+      "payeeSwiftBicValue":"INDONESIA",
+      "payeeBankCodeValue":"002",
+      "payeeBrchCodeValue":"8914"
+    },
+    "amountValue":"100,000,001",
+    "newPayeeAcct":"123456",
+    "newPayeeName":"ROYAL BANK1ROYAL BANK1ROYAL BA12345",
+    "newPayeeNickname": "newPayeeNickname",
+    "paymentType":"Indonesia SKN Payment",
+    "payeeBankCountryValue":"IDN",
+    "paymentDetailValue":"Payment Details",
+    "msgToPayeeValue":"SDF",
+    "emailValue0":"Email1@163.com",
+    "emailValue1":"Email2@163.com",
+    "emailValue2":"Email3@163.com",
+    "emailValue3":"Email4@163.com",
+    "emailValue4":"Email5@163.com",
+    "bankChargeValue":"OUR",
+    "residStatusValue":"Indonesian National",
+    "beneCategoryValue":"Individual"
+  },
+  "RTOL":{
+    "UAT":{
+      "fromAccount":"3320026099",
+      "payeeBankNameValue":"BANK BJB SYARIAH",
+      "payeeBankAdd1Value":"PT. BANK JABAR BANTEN SYARIAH",
+      "payeeBankAdd2Value":"JL.PELAJAR PEJUANG 45 NO.54 BANDUNG",
+      "payeeBankCityValue":"JAKARTA",
+      "payeeSwiftBicValue":"SYJBIDJ1",
+      "payeeBankCodeValue":"425",
+      "payeeBrchCodeValue":"0018"
+    },
+    "SIT":{
+      "fromAccount":"5550001001",
+      "payeeBankNameValue":"DBS",
+      "payeeBankAdd1Value":"PT. BANK RAKYAT INDONESIA (PERSERO)",
+      "payeeBankAdd2Value":"changi BP",
+      "payeeBankCityValue":"YOGYAKARTA",
+      "payeeSwiftBicValue":"INDONESIA",
+      "payeeBankCodeValue":"002",
+      "payeeBrchCodeValue":"8914"
+    },
+    "amountValue":"20,000",
+    "newPayeeAcct":"123456",
+    "newPayeeName":"ROYAL BANK1ROYAL BANK1ROYAL BA12345",
+    "newPayeeNickname": "newPayeeNickname",
+    "paymentType":"Indonesia RTOL Payment",
+    "payeeBankCountryValue":"IDN",
+    "paymentDetailValue":"Payment Details",
+    "msgToPayeeValue":"SDF",
+    "emailValue0":"Email1@163.com",
+    "emailValue1":"Email2@163.com",
+    "emailValue2":"Email3@163.com",
+    "emailValue3":"Email4@163.com",
+    "emailValue4":"Email5@163.com"
+  },
+  "TAX":{
+    "UAT":{
+      "fromAccount":"3320026099"
+    },
+    "SIT":{
+      "fromAccount":"1000033220"
+    },
+    "amountValue":"666",
+    "viewBillOrg":"KPPN PERSEPSI",
+    "viewTaxNpwp":"888",
+    "viewTaxNpwpDep":"4",
+    "viewTaxIdNum":"666",
+    "viewTaxPayerName":"ivy",
+    "viewTaxPayerAdd":"ad",
+    "viewTaxPayerCity":"city",
+    "viewTaxAcctCode":"666",
+    "viewTaxDepTypeCode":"666",
+    "viewTaxSspDesc":"5",
+    "viewPeriodFromM":"Feb",
+    "viewCaseNum":"1",
+    "viewObjNum":"2",
+    "viewObjAdd":"3"
+  },
+  "BulkPayment": {
+    "UAT":{
+      "fromAccount":"3320026099",
+      "bankNameValue1":"BANK DKI",
+      "bankNameValue2":"BANK DKI"
+    },
+    "SIT":{
+      "fromAccount":"5550001001",
+      "bankNameValue1":"PT. BANK DKI JAKARTA",
+      "bankNameValue2":"PT. BANK DKI JAKARTA"
+    },
+    "paymentTypeView":"Indonesia Bulk Payment",
+    "totalAmount":"21",
+    "bankChargeView":"OUR",
+    "newPayeeName1":"LVT BENE INNEFT",
+    "bankSwiftBicValue1":"111 0012",
+    "accountNumberValue1":"4748884444",
+    "amount1":"10",
+    "TransactionCodeValue1":"20",
+    "referenceForPayeeValue1":"TR1234567890TREN",
+    "paymentDetailValue1":"PaymentDetails",
+    "message1":"InvoiceDetails",
+    "emailId10":"eamil1@cc.com",
+    "newPayeeName2":"AVT BENE INNEFT",
+    "bankSwiftBicValue2":"111 0012",
+    "accountNumberValue2":"5748884444",
+    "amount2":"11",
+    "TransactionCodeValue2":"20",
+    "referenceForPayeeValue2":"TR2234567890TREN",
+    "paymentDetailValue2":"PPymentDetails",
+    "message2":"InvoiceDetail2",
+    "emailId20":"eamil2@cc.com"
+   },
+   "Payroll": {
+    "UAT":{
+      "fromAccount":"3320006675",
+      "bankNameValue1":"BANK DKI",
+      "bankNameValue2":"BANK DKI"
+    },
+    "SIT":{
+      "fromAccount":"5550001001",
+      "bankNameValue1":"PT. BANK DKI JAKARTA",
+      "bankNameValue2":"PT. BANK DKI JAKARTA"
+    },
+    "paymentTypeView":"Indonesia Management Payroll",
+    "totalAmount":"21",
+    "bankChargeView":"OUR",
+    "newPayeeName1":"LVT BENE INNEFT",
+    "bankSwiftBicValue1":"111 0012",
+    "accountNumberValue1":"4748884444",
+    "amount1":"10",
+    "TransactionCodeValue1":"20",
+    "referenceForPayeeValue1":"TR1234567890TREN",
+    "paymentDetailValue1":"PaymentDetails",
+    "message1":"InvoiceDetails",
+    "emailId10":"eamil1@cc.com",
+    "newPayeeName2":"AVT BENE INNEFT",
+    "bankSwiftBicValue2":"111 0012",
+    "accountNumberValue2":"5748884444",
+    "amount2":"11",
+    "TransactionCodeValue2":"20",
+    "referenceForPayeeValue2":"TR2234567890TREN",
+    "paymentDetailValue2":"PPymentDetails",
+    "message2":"InvoiceDetail2",
+    "emailId20":"eamil2@cc.com"
+   },
+   "MT101": {
+    "UAT":{
+      "fromAccount":"20039120034",
+      "intermediaryBankAdd2":"08-Jan"
+    },
+    "SIT":{
+      "fromAccount":"5550001001",
+      "intermediaryBankAdd2":"08-Jan"
+    },
+    "amountValue": "10",
+    "newPayeeAcctNum": "1234567890",
+    "newPayeeName": "BeneficarySino1",
+    "newPayeeNickname": "newPayeeNickname",
+    "payeeAdd1": "Beneficiary Address line 1",
+    "payeeAdd2": "Bangalore Electr",
+    "payeeAdd3": "Beneficiary Address line 3",
+    "paymentType": "MT101 Payment",
+    "fxContract": "MT101(FXContract",
+    "intermediaryBankSwiftbic": "INGPSGS0XXX",
+    "intermediaryBankName": "BANK OF SINGAPORE LIMITED (FORMERLY",
+    "intermediaryBankAdd1": "REPUBLIC PLAZA",
+    "intermediaryBankAdd2": "08-Jan",
+    "intermediaryBankCity": "SINGAPORE",
+    "intermediaryBankCountry": "SINGAPORE",
+    "regulatoryReporting": "RGLTRYRPTTXT1",
+    "paymentDetailsValue": "PaymentDetailsPaymentDetailsPayment",
+    "bankChargeValue": "OUR"
+  },
+
+  "TTPayment":{
+    "UAT":{
+      "fromAccountIDR": "3320026099"
+    },
+    "SIT":{
+      "fromAccountIDR": "2024103101"
+    },
+    
+    "amount": "10",
+    "newPayeeAcctNumber": "123456",
+    "RPPC":"Transfers to personal current accounts for personal income, family maintenance, donation"
+  }
+}

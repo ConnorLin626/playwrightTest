@@ -1,0 +1,710 @@
+{
+  "comment": "AUTOSG01: AUTOSG01U04/AUTOSG01R05/AUTOSG01R06/AUTOSG01U06/AUTOSG01R04 User",
+  "status": {
+    "Approved": "Approved",
+    "PendingApproval": "Pending Approval",
+    "PartialApproved": "Partial Approved",
+    "PendingRelease": "Pending Release",
+    "PendingVerification": "Pending Verification",
+    "PartialCompleted": "Partial Completed",
+    "Received": "Received",
+    "Completed": "Completed",
+    "Saved": "Saved",
+    "Submitted": "Submitted",
+    "BankRejected": "Bank Rejected",
+    "Rejected": "Rejected",
+    "Failed": "Failed",
+    "Cancelled": "Cancelled",
+    "ApproverRejected": "Approver rejected"
+  },
+  "paymentType": {
+    "SG_ACT": "SG - Account Transfer",
+    "SG_BLVT": "SG - Bulk GIRO Payment",
+    "SG_COL": "SG - Bulk GIRO Collection",
+    "SG_TT": "SG - Telegraphic Transfer",
+    "SG_ICT": "Intra Company Transfer",
+    "SG_SAL": "SG - Payroll",
+    "SG_CCH": "SG - Corporate Cheques",
+    "SG_BCH": "SG - Cheque Express",
+    "SG_DD": "SG - Demand Draft",
+    "SG_BILL": "SG - Bill Payment"
+  },
+  "FileService": {
+    "UAT": {
+      "loginCompanyId": "AUTOSG01",
+      "loginUserId": "AUTOSG01A04",
+      "fileName": "SG_UploadFile/SG_SGE_FSUpload_NUFF_UAT.txt",
+      "fileNameForGIRO": "SG_UploadFile/SG_GIRO_FSUpload_NUFF_UAT.txt",
+      "fileNameForBPY": "SG_UploadFile/SG_BPY_FSUpload_NUFF_UAT.txt",
+      "fileNameForBPYv2":"SG_UploadFile/SG_BPY_FSUpload_NUFFv2_UAT.txt",
+      "fileNameForCOL": "SG_UploadFile/SG_COL_FSUpload_NUFF_UAT.txt",
+      "fileNameForCOLv2": "SG_UploadFile/SG_COL_FSUpload_NUFFv2_UAT.txt",
+      "fileNameForSAL": "SG_UploadFile/SG_SAL_FSUpload_NUFF_UAT.txt",
+      "fileNameForSPE": "SG_UploadFile/SG_SPE_FSUpload_NUFF_UAT.txt",
+      "fileNameForSL2": "SG_UploadFile/SG_SL2_FSUpload_NUFF_UAT.txt",
+      "fileNameForSE2": "SG_UploadFile/SG_SE2_FSUpload_NUFF_UAT.txt",
+      "fileNameForMP": "SG_UploadFile/SG_MP_FSUpload_NUFF_UAT.txt",
+      "fileNameForMPE": "SG_UploadFile/SG_MPE_FSUpload_NUFF_UAT.txt",
+      "fileNameForMP2": "SG_UploadFile/SG_MP2_FSUpload_NUFF_UAT.txt",
+      "fileNameForME2": "SG_UploadFile/SG_ME2_FSUpload_NUFF_UAT.txt",
+      "fileNameForBCH": "SG_UploadFile/SG_BCH_FSUpload_NUFF_UAT.txt",
+      "fileNameForCCH": "SG_UploadFile/SG_CCH_FSUpload_NUFF_UAT.txt",
+      "fileNameForMEP": "SG_UploadFile/SG_MEP_FSUpload_NUFF_UAT.txt",
+      "fileNameForALL": "SG_UploadFile/SG_ALL_FSUpload_NUFF_UAT.txt",
+      "fileNameForBPF": "SG_UploadFile/SG_BPF_FS_NUFF_UAT.txt",
+      "fileNameForBPP": "SG_UploadFile/SG_BPP_FS_NUFF_UAT.txt",
+      "fileNameForTT": "SG_UploadFile/SG_TT_NUFF_UAT.txt",
+      "fileNameForICT": "SG_UploadFile/SG_ICT_FSUpload_NUFF_UAT.txt",
+      "fileNameForACT": "SG_UploadFile/SG_ACT_FSUpload_NUFF_UAT.txt"
+    },
+    "SIT": {
+      "loginCompanyId": "AUTOSG01",
+      "loginUserId": "AUTOSG01A04",
+      "fileName": "SG_UploadFile/SG_SGE_FSUpload_NUFF_SIT.txt",
+      "fileNameForGIRO": "SG_UploadFile/SG_GIRO_FSUpload_NUFF_SIT.txt",
+      "fileNameForGIROUFFV2": "SG_UploadFile/SG_GIRO_UFFV2_SIT.txt",
+      "fileNameForBPY": "SG_UploadFile/SG_BPY_FSUpload_NUFF_SIT.txt",
+      "fileNameForBPYv2":"SG_UploadFile/SG_BPY_FSUpload_NUFFv2_SIT.txt",
+      "fileNameForCOL": "SG_UploadFile/SG_COL_FSUpload_NUFF_SIT.txt",
+      "fileNameForCOLv2": "SG_UploadFile/SG_COL_FSUpload_NUFFv2_SIT.txt",
+      "fileNameForSAL": "SG_UploadFile/SG_SAL_FSUpload_NUFF_SIT.txt",
+      "fileNameForSPE": "SG_UploadFile/SG_SPE_FSUpload_NUFF_SIT.txt",
+      "fileNameForSL2": "SG_UploadFile/SG_SL2_FSUpload_NUFF_SIT.txt",
+      "fileNameForSE2": "SG_UploadFile/SG_SE2_FSUpload_NUFF_SIT.txt",
+      "fileNameForMP": "SG_UploadFile/SG_MP_FSUpload_NUFF_SIT.txt",
+      "fileNameForMPE": "SG_UploadFile/SG_MPE_FSUpload_NUFF_SIT.txt",
+      "fileNameForMP2": "SG_UploadFile/SG_MP2_FSUpload_NUFF_SIT.txt",
+      "fileNameForME2": "SG_UploadFile/SG_ME2_FSUpload_NUFF_SIT.txt",
+      "fileNameForBCH": "SG_UploadFile/SG_BCH_FSUpload_NUFF_SIT.txt",
+      "fileNameForCCH": "SG_UploadFile/SG_CCH_FSUpload_NUFF_SIT.txt",
+      "fileNameForMEP": "SG_UploadFile/SG_MEP_FSUpload_NUFF_SIT.txt",
+      "fileNameForALL": "SG_UploadFile/SG_ALL_FSUpload_NUFF_SIT.txt",
+      "fileNameForBPF": "SG_UploadFile/SG_BPF_FS_NUFF_SIT.txt",
+      "fileNameForBPP": "SG_UploadFile/SG_BPP_FS_NUFF_SIT.txt",
+      "fileNameForDD": "SG_UploadFile/SG_DD_FSUpload_NUFF_SIT.txt",
+      "fileNameForGOP": "SG_UploadFile/SG_GOP_FSUpload_NUFF_SIT.txt",
+      "fileNameForGOC": "SG_UploadFile/SG_GOC_FSUpload_NUFF_SIT.txt",
+      "fileNameForTT": "SG_UploadFile/SG_TT_NUFF_SIT.txt",
+      "fileNameForICT": "SG_UploadFile/SG_ICT_FSUpload_NUFF_SIT.txt",
+      "fileNameForACT": "SG_UploadFile/SG_ACT_FSUpload_NUFF_SIT.txt",
+      "fileNameForACTUFFV2": "SG_UploadFile/SG_ACT_UFFV2_Detailed Format_SIT.txt",
+      "fileNameForTTRemit": "SG_UploadFile/SG_TT_Remittance_SIT.txt",
+      "fileNameForMEPSRemit": "SG_UploadFile/SG_MEPS_Remittance_SIT.txt",
+      "fileNameForACTHeaderBlank": "SG_UploadFile/SG_ACT_HeaderBlank_NUFF_SIT.txt",
+      "fileNameForTTUFFV2": "SG_UploadFile/SG_TT_UFFV2_SIT.txt",
+      "fileNameForMEPSUFFV2": "SG_UploadFile/SG_MEPS_UFFV2_simple_SIT.txt"
+    },
+    "fileType": "ALL",
+    "fileFormat": "Universal File Format",
+    "fileTypeIx": "ALL - Universal File Format",
+    "approvalOptionByTransaction": "By Transaction",
+    "approvalOptionByFile": "By File",
+    "approvalCurrency": "SGD",
+    "challengeResponse": "234134",
+    "errorMessage":"Record type in the File Header must be HEADER"
+  },
+  "FileExchange": {
+    "UAT": {
+      "loginCompanyId1": "AUTOSG01",
+      "loginUserId1": "AUTOSG01U04",
+      "loginCompanyId2": "AUTOSG01",
+      "loginUserId2": "AUTOSG01A21",
+      "fileName": "SG_UploadFile/AUTOSG01_SG_GPC_UFF_UAT.txt",
+      "fileName2": "SG_UploadFile/SG_COL_FSUpload_NUFF_UAT.txt",
+      "FileName": "SG_GPC_UFF_UAT.txt",
+      "FileName2": "SG_COL_FSUpload_NUFF_UAT.txt"
+    },
+    "SIT": {
+      "loginCompanyId1": "AUTOSG01",
+      "loginUserId1": "AUTOSG01U04",
+      "loginCompanyId2": "AUTOSG01",
+      "loginUserId2": "AUTOSG01A21",
+      "fileName": "SG_UploadFile/AUTOSG01_SG_GPC_UFF_SIT.txt",
+      "fileName2": "SG_UploadFile/SG_COL_FSUpload_NUFF_SIT.txt",
+      "FileName": "SG_GPC_UFF_SIT.txt",
+      "FileName2": "SG_COL_FSUpload_NUFF_SIT.txt"
+    },
+    "RequestType1": "IDEAL Maintenance Form",
+    "RequestType2": "Others (for non-maintenance request)",
+    "TradeRequestType1": "Application for Transfer of Documentary Credit",
+    "TradeRequestType2": "Settlement Instruction Form",
+    "TradeRequestType3": "Silent Confirmation",
+    "TradeRequestType4": "Trade Instruction Letter",
+    "KYCRequest": "Declaration Form",
+    "KYCCatgory": "KYC",
+    "destinationId": "AUTOSG01",
+    "category": "Cash",
+    "tradecategory": "Trade",
+    "responseCode": "123",
+    "status_PendingApproval": "Pending Approval",
+    "status_Approved": "Approved",
+    "status_Rejected": "Rejected",
+    "status_Sent": "Sent",
+    "statusReadyDownload": "Ready For Download"
+  },
+  "MyApproval": {
+    "UAT": {
+      "loginCompanyId": "AUTOSG01",
+      "loginUserId": "AUTOSG01U04",
+      "loginUserIdWithoutApprovalOwn": "AUTOSG01R05",
+      "loginUserIdWithoutApproval": "AUTOSG01R06",
+      "fileNameByFile": "SG_UploadFile/SG_MyApprovalByFile_NUFF_UAT.txt",
+      "fileNameByTxn": "SG_UploadFile/SG_MyApprovalByTxn_NUFF_UAT.txt",
+      "fromAccount": "0039310439"
+    },
+    "SIT": {
+      "loginCompanyId": "AUTOSG01",
+      "loginUserId": "AUTOSG01U04",
+      "loginUserIdWithoutApprovalOwn": "AUTOSG01R05",
+      "loginUserIdWithoutApproval": "AUTOSG01R06",
+      "fileNameByFile": "SG_UploadFile/SG_MyApprovalByFile_NUFF_SIT.txt",
+      "fileNameByTxn": "SG_UploadFile/SG_MyApprovalByTxn_NUFF_SIT.txt",
+      "fromAccount": "0039007639"
+    },
+    "fileType": "ALL",
+    "fileFormat": "Universal File Format",
+    "approvalOptionByTxn": "By Transaction",
+    "approvalOptionByFile": "By File",
+    "approvalCurrency": "SGD",
+    "approverOption": "AUTOSG01C02",
+    "approverOption1": "SSM AUTO Approverm5d",
+    "challengeResponse": "12341234",
+    "rejectReason": "Reject for AUTO TEST",
+    "labelNoInformationDisplay": "No information to display",
+    "amountA1": "10",
+    "existingPayee": "AUTOSG01-TT-ExistingPayee",
+    "paymentDetail": "PaymentDetails",
+    "transactionNote": "transactionNote",
+    "messageToOrderingBank": "messageToOrderingBank"
+  },
+  "OfflineApprovalByFile": {
+    "UAT": {
+      "loginCompanyId": "SG2BE17",
+      "loginUserId": "SG2BE17T01",
+      "verifyUserId": "SG2BE17T02",
+      "loginUserIdwithoutConfidential": "SG2BE17T02",
+      "fileNameByFile": "SG_UploadFile/SG_MyApprovalByFile_NUFF_UAT.txt",
+      "selectedApprover": "SG2BE17T02",
+      "fromAccount": "0019051991",
+      "pinID":"P@ssword1A!",
+      "pin123ID":"P@ssword123"
+    },
+    "SIT": {
+      "loginCompanyId": "AUTOSG01",
+      "loginUserId": "AUTOSG01U04",
+      "verifyUserId": "AUTOSG01R04",
+      "loginUserIdwithoutConfidential": "AUTOSG01U06",
+      "fileNameByFile": "SG_UploadFile/SG_MyApprovalByFile_NUFF_SIT.txt",
+      "selectedApprover": "AUTOSG01R04",
+      "fromAccount": "0039007639"
+    },
+    "fileType": "ALL",
+    "fileFormat": "Universal File Format",
+    "approvalOptionByTxn": "By Transaction",
+    "approvalOptionByFile": "By File",
+    "approvalCurrency": "SGD",
+    "approverOption": "AUTOSG01C02",
+    "approverOption1": "SSM AUTO Approverm5d",
+    "challengeResponse": "12341234",
+    "rejectReason": "Reject for AUTO TEST",
+    "labelNoInformationDisplay": "No information to display",
+    "amountA1": "10",
+    "existingPayee": "AUTOSG01-TT-ExistingPayee",
+    "paymentDetail": "PaymentDetails",
+    "transactionNote": "transactionNote",
+    "messageToOrderingBank": "messageToOrderingBank"
+  },
+  "OfflineApprovalByTxn": {
+    "UAT": {
+      "loginCompanyId": "SGUATRF4",
+      "loginUserId": "SGUATRF4LT02",
+      "verifyUserId": "SGUATRF4LT05",
+      "loginUserIdwithoutConfidential": "SGUATRF4LT05",
+      "fileNameByTxn": "SG_UploadFile/SG_MyApprovalByTxn_NUFF_UAT.txt",
+      "fileName1": "SG_UploadFile/SG_OfflineApprovals_NUFF_UAT.txt",
+      "fileName2": "SG_UploadFile/SG_VerificationAndRelease_NUFF_UAT.txt",
+      "selectedApprover": "SGUATRF405",
+      "fromAccount": "01010202",
+      "pinID":"P@ssword1A!",
+      "pin123ID":"P@ssword123"
+    },
+    "SIT": {
+      "loginCompanyId": "AUTOSG01",
+      "loginUserId": "AUTOSG01U04",
+      "verifyUserId": "AUTOSG01R04",
+      "loginUserIdwithoutConfidential": "AUTOSG01U06",
+      "fileNameByTxn": "SG_UploadFile/SG_MyApprovalByTxn_NUFF_SIT.txt",
+      "fileName1": "SG_UploadFile/SG_OfflineApprovals_NUFF_SIT.txt",
+      "fileName2": "SG_UploadFile/SG_VerificationAndRelease_NUFF_SIT.txt",
+      "selectedApprover": "AUTOSG01R04",
+      "fromAccount": "0039007639"
+    },
+    "fileType": "ALL",
+    "fileFormat": "Universal File Format",
+    "approvalOptionByTxn": "By Transaction",
+    "approvalOptionByFile": "By File",
+    "approvalCurrency": "SGD",
+    "approverOption": "AUTOSG01C02",
+    "approverOption1": "SSM AUTO Approverm5d",
+    "challengeResponse": "12341234",
+    "rejectReason": "Reject for AUTO TEST",
+    "labelNoInformationDisplay": "No information to display",
+    "amountA1": "10",
+    "existingPayee": "AUTOSG01-TT-ExistingPayee",
+    "paymentDetail": "PaymentDetails",
+    "transactionNote": "transactionNote",
+    "messageToOrderingBank": "messageToOrderingBank"
+  },
+  "OfflineApprovalByGroup": {
+    "UAT": {
+      "loginCompanyId": "SG2BE17",
+      "loginUserId": "SG2BE17T01",
+      "fromAccount": "0019051991",
+      "pinID":"P@ssword1A!",
+      "pin123ID":"P@ssword123"
+    },
+    "SIT": {
+      "loginCompanyId": "AUTOSG01",
+      "loginUserId": "AUTOSG01U04",
+      "fromAccount": "0039007639"
+    },
+    "approverOption": "AUTOSG01C02",
+    "challengeResponse": "12341234"
+  },
+  "OfflineApproval": {
+    "UAT": {
+      "loginCompanyId": "AUTOSG01",
+      "loginUserId": "AUTOSG01U04",
+      "fileName": "SG_UploadFile/SG_OfflineApprovals_NUFF_UAT.txt",
+      "selectedApprover": "AUTOSG01R04",
+      "loginUserIdwithoutConfidential": "AUTOSG01U06",
+      "SubsiAccount": "0725006058",
+      "SubsifileName": "SG_UploadFile/SG_OfflineApprovals_Subsi_UAT.txt",
+      "organisation": "BOOYAH RESORTS CORP LLP"
+    },
+    "SIT": {
+      "loginCompanyId": "AUTOSG01",
+      "loginUserId": "AUTOSG01U04",
+      "loginUserIdwithoutConfidential": "AUTOSG01U06",
+      "fileName": "SG_UploadFile/SG_OfflineApprovals_NUFF_SIT.txt",
+      "fileNameConfidentia": "SG_UploadFile/SG_OfflineApprovals_NUFF_SIT.txt",
+      "selectedApprover": "AUTOSG01R04",
+      "SubsiAccount": "0018001002",
+      "SubsifileName": "SG_UploadFile/SG_OfflineApprovals_Subsi_SIT.txt",
+      "organisation": "KING QUEEN HOLDINGS LTD"
+    },
+    "messageToApprove": "The transaction cannot be approved by the selected approver. Please select another approver.",
+    "ModifyUserA": "AUTOSG01U88",
+    "ModifyUserB": "AUTOSG01U89",
+    "fileType": "ALL",
+    "fileFormat": "Universal File Format",
+    "approvalOptionByTxn": "By Transaction",
+    "approvalOptionByFile": "By File",
+    "approvalCurrency": "SGD",
+    "challengeResponse": "12341234",
+    "rejectReason": "Reject for AUTO TEST",
+    "errorMsg": "The transaction cannot be approved by the selected approver. Please select another approver."
+  },
+  "MyApprovalByFile": {
+    "UAT": {
+      "loginCompanyId": "AUTOSG01",
+      "loginUserId": "AUTOSG01A09",
+      "fileNameByFile": "SG_UploadFile/SG_MyApprovalByFile_NUFF_UAT.txt",
+      "fromAccount": "0039007639"
+    },
+    "SIT": {
+      "loginCompanyId": "AUTOSG01",
+      "loginUserId": "AUTOSG01A09",
+      "fileNameByFile": "SG_UploadFile/SG_MyApprovalByFile_NUFF_SIT.txt",
+      "fromAccount": "0039007639"
+    },
+    "fileType": "ALL",
+    "fileFormat": "Universal File Format",
+    "approvalOptionByTxn": "By Transaction",
+    "approvalOptionByFile": "By File",
+    "approvalCurrency": "SGD",
+    "approverOption": "AUTOSG01C02",
+    "approverOption1": "SSM AUTO Approverm5d",
+    "challengeResponse": "12341234",
+    "rejectReason": "Reject for AUTO TEST",
+    "labelNoInformationDisplay": "No information to display",
+    "amountA1": "10",
+    "existingPayee": "AUTOSG01-TT-ExistingPayee",
+    "paymentDetail": "PaymentDetails",
+    "transactionNote": "transactionNote",
+    "messageToOrderingBank": "messageToOrderingBank"
+  },
+  "MyApprovalByGroup": {
+    "UAT": {
+      "loginCompanyId": "AUTOSG01",
+      "loginUserId": "AUTOSG01A10",
+      "fromAccount": "0019051991",
+      "pinID":"P@ssword1A!",
+      "pin123ID":"P@ssword123"
+    },
+    "SIT": {
+      "loginCompanyId": "AUTOSG01",
+      "loginUserId": "AUTOSG01A10",
+      "fromAccount": "0039007639"
+    },
+    "fileType": "ALL",
+    "fileFormat": "Universal File Format",
+    "approvalOptionByTxn": "By Transaction",
+    "approvalOptionByFile": "By File",
+    "approvalCurrency": "SGD",
+    "approverOption": "AUTOSG01C02",
+    "approverOption1": "SSM AUTO Approverm5d",
+    "challengeResponse": "12341234",
+    "rejectReason": "Reject for AUTO TEST",
+    "labelNoInformationDisplay": "No information to display",
+    "amountA1": "10",
+    "existingPayee": "AUTOSG01-TT-ExistingPayee",
+    "paymentDetail": "PaymentDetails",
+    "transactionNote": "transactionNote",
+    "messageToOrderingBank": "messageToOrderingBank"
+  },
+  "MyApprovalByTxn": {
+    "UAT": {
+      "loginCompanyId": "SGUATRF4",
+      "loginUserId": "SGUATRF4LT02",
+      "loginUserIdWithoutApprovalOwn": "SGUATRF4LT05",
+      "loginUserIdWithoutApproval": "SGUATRF4LT05",
+      "fileNameByTxn": "SG_UploadFile/SG_MyApprovalByTxn_NUFF_UAT.txt",
+      "fromAccount": "01010202",
+      "pinID":"P@ssword1A!",
+      "pin123ID":"P@ssword123"
+    },
+    "SIT": {
+      "loginCompanyId": "AUTOSG01",
+      "loginUserId": "AUTOSG01A11",
+      "loginUserIdWithoutApprovalOwn": "AUTOSG01R05",
+      "loginUserIdWithoutApproval": "AUTOSG01R06",
+      "fileNameByTxn": "SG_UploadFile/SG_MyApprovalByTxn_NUFF_SIT.txt",
+      "fromAccount": "0039007639"
+    },
+    "fileType": "ALL",
+    "fileFormat": "Universal File Format",
+    "approvalOptionByTxn": "By Transaction",
+    "approvalOptionByFile": "By File",
+    "approvalCurrency": "SGD",
+    "approverOption": "AUTOSG01C02",
+    "approverOption1": "SSM AUTO Approverm5d",
+    "challengeResponse": "12341234",
+    "rejectReason": "Reject for AUTO TEST",
+    "labelNoInformationDisplay": "No information to display",
+    "amountA1": "10",
+    "existingPayee": "AUTOSG01-TT-ExistingPayee",
+    "paymentDetail": "PaymentDetails",
+    "transactionNote": "transactionNote",
+    "messageToOrderingBank": "messageToOrderingBank"
+  },
+  "VerificationAndReleases": {
+    "UAT": {
+      "loginCompanyId": "SG2BE17",
+      "loginUserId": "SG2BE17T01",
+      "verifyUserId": "SG2BE17T02",
+      "fileName": "SG_UploadFile/SG_VerificationAndRelease_NUFF_UAT.txt",
+      "pinID":"P@ssword1A!"
+    },
+    "SIT": {
+      "loginCompanyId": "AUTOSG01",
+      "loginUserId": "AUTOSG01U04",
+      "verifyUserId": "AUTOSG01R04",
+      "fileName": "SG_UploadFile/SG_VerificationAndRelease_NUFF_SIT.txt"
+    },
+    "fileType": "ALL",
+    "fileFormat": "Universal File Format",
+    "approvalOption": "By File",
+    "approvalCurrency": "SGD",
+    "rejectReason": "Reject for AUTO TEST",
+    "challengeResponse": "12341234"
+  },
+  "VerificationAndReleasesByGroup": {
+    "UAT": {
+      "loginCompanyId": "SG2BE17",
+      "loginUserId": "SG2BE17T01",
+      "verifyUserId": "SG2BE17T02",
+      "fileName": "SG_UploadFile/SG_VerificationAndRelease_NUFF_UAT.txt",
+      "pinID":"P@ssword1A!",
+      "pin123ID":"P@ssword123"
+    },
+    "SIT": {
+      "loginCompanyId": "AUTOSG01",
+      "loginUserId": "AUTOSG01A05",
+      "verifyUserId": "AUTOSG01A06",
+      "fileName": "SG_UploadFile/SG_VerificationAndRelease_NUFF_SIT.txt"
+    },
+    "fileType": "ALL",
+    "fileFormat": "Universal File Format",
+    "approvalOption": "By File",
+    "approvalCurrency": "SGD",
+    "rejectReason": "Reject for AUTO TEST",
+    "challengeResponse": "12341234"
+  },
+  "VerificationAndReleasesByTxn": {
+    "UAT": {
+      "loginCompanyId": "SG2BE17",
+      "loginUserId": "SG2BE17T01",
+      "verifyUserId": "SG2BE17T02",
+      "fileName": "SG_UploadFile/SG_VerificationAndRelease_NUFF_UAT.txt",
+      "pinID":"P@ssword1A!",
+      "pin123ID":"P@ssword123"
+    },
+    "SIT": {
+      "loginCompanyId": "AUTOSG01",
+      "loginUserId": "AUTOSG01A07",
+      "verifyUserId": "AUTOSG01A08",
+      "fileName": "SG_UploadFile/SG_VerificationAndRelease_NUFF_SIT.txt"
+    },
+    "fileType": "ALL",
+    "fileFormat": "Universal File Format",
+    "approvalOption": "By File",
+    "approvalCurrency": "SGD",
+    "rejectReason": "Reject for AUTO TEST",
+    "challengeResponse": "12341234"
+  },
+  "AccountTransfer": {
+    "UAT": {
+      "fromAccount": "0019051991"
+    },
+    "SIT": {
+      "fromAccount": "0039007639"
+    },
+    "Country": "SINGAPORE",
+    "amountV": "3,100",
+    "existingPayee": "AUTOSG01-ACT-ExistingPayee",
+    "newPayeeName": "ACT AUTO NewPayeeName01",
+    "newPayeeNickname": "newPayeeNickname",
+    "newPayeeAdd1": "ACT AUTO newPayeeAdd1",
+    "newPayeeAdd2": "ACT AUTO newPayeeAdd2",
+    "newPayeeAdd3": "ACT AUTO newPayeeAdd3",
+    "newPayeeAcctNumber": "38900000001",
+    "paymentDetail": "ACT AUTO PaymentDetails",
+    "emailIdO": "ACT_AUTO_Email0@dbs.com",
+    "emailId1": "ACT_AUTO_Email1@dbs.com",
+    "emailId2": "ACT_AUTO_Email2@dbs.com",
+    "emailId3": "ACT_AUTO_Email3@dbs.com",
+    "emailId4": "ACT_AUTO_Email4@dbs.com",
+    "message": "ACT AUTO TEST message",
+    "transactionNote": "ACT Transaction Note test message"
+  },
+  "Reports": {
+    "UAT": {
+      "loginCompanyId": "SGUATRF4",
+      "loginUserId": "SGUATRF4LT02"
+    },
+    "SIT": {
+      "loginCompanyId": "AUTOSG01",
+      "loginUserId": "AUTOSG01U04"
+    },
+    "transferSummaryCustomRptName": "TransferSummary",
+    "fromRelDate": "Prior Business Day",
+    "transactionDetailReportTitle": "Transaction Detail Report",
+    "IncomingOutgoingSummaryCustomRptName": "IncomingOutgoing",
+    "toRelDate": "Today",
+    "selectTransactionType": "All Transaction Types",
+    "fromDate": "01-Dec-2018",
+    "toDate": "01-Dec-2019"
+  },
+  "payrollPaymentTemplate": {
+    "UAT": {
+      "loginCompanyId": "SG2BE17",
+      "loginUserId": "SG2BE17T01",
+      "fromAccount": "0019051991",
+      "pinID":"P@ssword1A!",
+      "pin123ID":"P@ssword123"
+    },
+    "SIT": {
+      "loginCompanyId": "AUTOSG01",
+      "loginUserId": "AUTOSG01U04",
+      "fromAccount": "20160211161900022"
+    },
+    "amountA1": "10",
+    "amountV": "500",
+    "payeeRef": "payeeRef",
+    "maxLengthPayeeRef": "maxLengthPayeeRefmaxLengthPayeeRefm",
+    "payeeRefValue": "Reference for payee Reference",
+    "existingPayeeName1": "AUTO-Test-BulkPayment-ExistingPayee",
+    "existingPayeeName2": "AUTO-Test-MPD-ExistingPayee"
+  },
+  "TelegraphicTransferTemplate": {
+    "UAT": {
+      "loginCompanyId": "SG2BE17",
+      "loginUserId": "SG2BE17T01",
+      "fromAccount": "0019051991",
+      "pinID":"P@ssword1A!",
+      "pin123ID":"P@ssword123"
+    },
+    "SIT": {
+      "loginCompanyId": "AUTOSG01",
+      "loginUserId": "AUTOSG01U04",
+      "fromAccount": "20160211161900022"
+    },
+    "amountA1": "10",
+    "amountV": "500",
+    "inrPaymentCcy": "INR",
+    "currency":"HKD",
+    "PayeeForTemplate": "ExistingTTpayee01",
+    "purposeCodeForINR": "P0502 - Receipts on account of construction works carried out abroad by Indian Companies",
+    "paymentDetail": "Payment details to the payee bank",
+    "country": "INDIA",
+    "HKcountry": "Hong kONG",
+    "newPayeeName": "TT AUTO NewPayeeName01",
+    "newPayeeNickname": "newPayeeNickname",
+    "newPayeeAdd1": "TT AUTO newPayeeAdd1",
+    "newPayeeAdd2": "TT AUTO newPayeeAdd2",
+    "payeeLocation":"THAILAND",
+    "townCity":"Town,City",
+    "postalCode":"postalCode123",
+    "streetName":"streetName12345",
+    "buildingNum":"building894",
+    "buildingName":"buildname333",
+    "floor":"floor 33",
+    "room":"room 09",
+    "department":"department123",
+    "subDepartment":"subDepartment123",
+    "countrySubDivsion":"countrySubDivsion123",
+    "townLocationName":"townLocationName234",
+    "districtName":"districtName567",
+    "newPayeeBankId": "AEIBIND0MAS",
+    "newPayeeBankIdHK":"ABFLHKH0XXX",
+    "accountNum": "12345678",
+    "existingPayee":"TTNoAdd1",
+    "updatePayeeDeatil":"Update payee details"
+  },
+  "RTGSPaymentTemplate": {
+    "UAT": {
+      "loginCompanyId": "SG2BE17",
+      "loginUserId": "SG2BE17T01",
+      "fromAccount": "0019051991",
+      "pinID":"P@ssword1A!",
+      "pin123ID":"P@ssword123"
+    },
+    "SIT": {
+      "loginCompanyId": "AUTOSG01",
+      "loginUserId": "AUTOSG01U04",
+      "fromAccount": "20160211161900022"
+    },
+    "amountA1": "10",
+    "existingPayeeName1": "RTGSPayee1123",
+    "updatePayeeDeatil":"Update payee details"
+  },
+  "FastPayment": {
+    "UAT": {
+      "fromAccount": "0019051991"
+    },
+    "SIT": {
+      "fromAccount": "20160211161900022"
+    },
+    "amountA1": "10",
+    "amountV": "3,100",
+    "existingPayee": "AUTO-Test-Fast-ExistingPayee",
+    "purposeCode": "CLPR",
+    "paymentDetail": "FastPayment AUTO PaymentDetails"
+  },
+  "swicthToSubsi": {
+    "UAT": {
+      "loginCompanyId": "AUTOSG01",
+      "loginUserId": "AUTOSG01U04",
+      "fromAccount": "20250904001",
+      "fromAccount2": "123321123"
+      
+    },
+    "SIT": {
+      "loginCompanyId": "AUTOSG01",
+      "loginUserId": "AUTOSG01U04",
+      "fromAccount": "20250904001",
+      "fromAccount2": "123321123"
+    },
+    "amount": "10",
+    "amountVIX":"10000",
+    "myrPaymentCcy":"MYR",
+    "existingPayee": "AUTO MYR PAYEE",
+    "PayrollExistingPayee":"AUTO PAYEE FOR PAYROLL",
+    "PayrollDBSExistingPayee":"AUTO payee for PAYROLL DBS",
+    "purposeCode":"Grants and gifts",
+    "paymentDetail": "TT AUTO PaymentDetails",
+    "emailIdO": "TT_AUTO_Email0@dbs.com",
+    "emailId1": "TT_AUTO_Email1@dbs.com",
+    "message": "TT AUTO TEST message",
+    "transactionNote": "TT Transaction Note test message",
+    "PaymentType1":"Singapore Payroll",
+    "PaymentType2":"Singapore Payroll DBS",
+    "challengeResponse":"123"
+    
+  },
+  "swicthToSubsiNewApproval": {
+    "UAT": {
+      "loginCompanyId": "AUTOSG11",
+      "loginUserId": "AUTOSG11S01",
+      "fromAccount": "637256532" 
+    },
+    "SIT": {
+      "loginCompanyId": "AUTOSG11",
+      "loginUserId": "AUTOSG11S01",
+      "fromAccount": "637256532" 
+    },
+    "amount": "10",
+    "myrPaymentCcy":"MYR",
+    "existingPayee": "AUTO MYR PAYEE",
+    "purposeCode":"Grants and gifts",
+    "paymentDetail": "TT AUTO PaymentDetails",
+    "emailIdO": "TT_AUTO_Email0@dbs.com",
+    "emailId1": "TT_AUTO_Email1@dbs.com",
+    "message": "TT AUTO TEST message",
+    "transactionNote": "TT Transaction Note test message"   
+  },
+  "Beneficiary": {
+    "UAT": {
+      "loginCompanyId": "SGABCD11",
+      "loginUserId": "SGABCD11V01",
+      "pinID":"P@ssword123"
+    },
+    "SIT": {
+      "loginCompanyId": "AUTOSG01",
+      "loginUserId": "AUTOSG01U04"
+    },
+    "Country": "SINGAPORE",
+    "newPayeeName": "BenePayeeName20",
+    "newPayeeNickname": "newPayeeNickname",
+    "editNewPayeeName": "EditForBenePayeeName20",
+    "newPayeePrintedName": "BenerintedName20",
+    "newPayeeAdd1": "newPayeeAdd1",
+    "editNewPayeeAdd1": "editNewPayeeAdd1",
+    "newPayeeAdd2": "newPayeeAdd2",
+    "newPayeeAdd3": "newPayeeAdd3",
+    "newPayeeBankId": "1",
+    "proxyTypeMobNum": "91111111",
+    "newPayeeAcctNumber": "123456000001",
+    "sgAccountTransfer": "SG-Account Transfer",
+    "chequeDDPrintedName": "(/a-zA-Z0-9 `~!@#$%&()_-+={[}]$/;)",
+    "sgEDP":"SG - Electronic Deferred Payment",
+    "DDpaymentValue": "SG-Demand Draft Payment",
+    "chequPaymentValue": "SG-Cheque Payment",
+    "payeeLocation":"ALBANIA",
+    "townCity":"Town,City",
+    "streetName":"street Name",
+    "postalCode":"postalCode123",
+    "editPayeeLocation":"AFGHANISTAN",
+    "editTownCity":"Edit Town City"
+    
+  },
+  "Accounts": {
+    "fixedDeposit": {
+      "UAT": {
+        "loginCompanyId": "SGABCD11",
+        "loginUserId": "SGABCD11V01",
+        "fromAccount": "2025091906",
+        "pinID":"P@ssword123"
+      },
+      "SIT": {
+        "loginCompanyId": "AUTOSG01",
+        "loginUserId": "AUTOSG01U04",
+        "fromAccount": "0018001851"
+      }
+    }
+  }
+}
+
+
+  

@@ -1,0 +1,5 @@
+HEADER,15072025,AutoTest,
+PAYMENT,BPP,0012001234,VND,,VND,,12082025,,,new bulk napas payee,,,,,13473897438964,,,,970449,,,,,,,,200000,,,,,,qwertyuioplkjhgfdsazxcvbnm123456789,,PaymentDetails123,,,,,,,,,E,,,,,,,,,sbaraiya@euronetworldwide.com,baraiya@euronetworldwide.com,vbhandary@euronetworldwide.com,kdeo@euronetworldwide.com,haribabus@euronetworldwide.com,12345678,111111111,222222222,333333333,4444444444,SDF,,,,,,,,,,,,,,,,,,,,,,,,,,
+PAYMENT,BPP,0012001234,VND,,VND,,12082025,,,new bulk napas payee,,,,,2025073099998888,,,,,,,,,,,,200000,,,,,,ReferenceForPayee2,,PaymentDetails123,,,,,,,,,E,,,,,,,,,Email1@163.com,Email2@163.com,Email3@163.com,Email4@163.com,Email5@163.com,12345678,111111111,222222222,333333333,4444444444,SDF,,,,,,,,,,,,,,,,,,,,,,,,,,
+PAYMENT,BPP,0012001234,VND,,VND,,12082025,,,new bulk napas payee2,,,,,2025073099997777,,,,,,,,,,,,300000,,,,,,ReferenceForPayee3,,PaymentDetails123,,,,,,,,,E,,,,,,,,,Email1@163.com,Email2@163.com,Email3@163.com,Email4@163.com,Email5@163.com,12345678,111111111,222222222,333333333,4444444444,SDF,,,,,,,,,,,,,,,,,,,,,,,,,,
+TRAILER,3,700000

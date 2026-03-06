@@ -1,0 +1,124 @@
+{
+  "refreshSession": {
+    "url": "https://192.168.0.245:9444/mbg-banking/swagger/swagger.json",
+    "refreshSessionReq": "{\"refreshSessionReq\":{\"qs\":\"SG2BE11S01@SG2BE11\",\"subOrgId\":\"SG2BFE1\",\"channelType\":\"WEB\",\"locale\":\"en_gb\"}}",
+    "code": "\"UX0000\""
+  },
+  "UAT": {
+    "loginCompanyId": "SINAUTO1",
+    "loginUserId": "SINAUTO1C01",
+    "acctKey": 915507,
+    "payeeKey": 11796586
+  },
+  "SIT": {
+    "loginCompanyId": "SG2BFE1",
+    "loginUserId": "SG2BFE1S02",
+    "acctKey": 181501,
+    "payeeKey": 208235
+  },
+  "paymentTypeData": {
+    "getDataByPmtTypeReq": {
+      "qs": "SINAUTO1C01@SINAUTO1",
+      "subOrgId": "SINAUTO1",
+      "channelType": "WEB",
+      "locale": "en_gb",
+      "pmtTypeCode": "sgact|sgtt|sgg3pmt|sgmeps|sggiro",
+      "isSingleView": "false",
+      "isBalanceReq": "false",
+      "loadingDataType": "1"
+    },
+    "UAT": {
+      "totalAccounts": 6,
+      "acctNum": "00039483660000 ",
+      "acctSwiftbic": "7171",
+      "canCreateDomesticPayee": true,
+      "canCreateIntlPayee": false,
+      "canCreateNewPayNow": true,
+      "canCreatePayee": true
+    },
+    "SIT": {
+      "totalAccounts": 20,
+      "acctNum": "0018001843 ",
+      "acctSwiftbic": "BCHKSGSG",
+      "canCreateDomesticPayee": true,
+      "canCreateIntlPayee": true,
+      "canCreateNewPayNow": true,
+      "canCreatePayee": true
+    }
+  },
+  "payeeList": {
+    "payeeListInqReq": {
+      "qs": "SG2BFE1S04@SG2BFE1",
+      "subOrgId": "SG2BFE1",
+      "channelType": "WEB",
+      "pmtTypeCode": "sgact|sgtt|sgg3pmt|sgmeps|sggiro"
+    }
+  },
+  "displayLink": {
+    "getDisplayLinkReq": {
+      "qs": "SG2BFE1S04@SG2BFE1",
+      "subOrgId": "SG2BFE1",
+      "channelType": "WEB",
+      "featureType": "DISPLAY_SINGLE_PMT_UX_LINK",
+      "pmtTypeCode": "sgact|sgtt|sgg3pmt|sgmeps|sggiro"
+    }
+  },
+  "countryList": {
+    "countryListInqReq": {
+      "qs": "SG2BFE1S04@SG2BFE1",
+      "subOrgId": "SG2BFE1",
+      "channelType": "WEB",
+      "locale": "en_gb"
+    }
+  },
+  "validatePayment": {
+    "validatePaymentReq": {
+      "qs": "SG2BFE1S04@SG2BFE1",
+      "subOrgId": "SG2BFE1",
+      "channelType": "WEB",
+      "custRef": "",
+      "amount": {
+        "payCcy": "SGD",
+        "payAmt": "123"
+      },
+      "pmtTypeCode": "sgact",
+      "acctKey": 915507,
+      "destCcy": "SGD",
+      "executionDate": "2018-11-14",
+      "isEarliestDate": true,
+      "useFx": false,
+      "payeeList": {
+        "payeeRecord": [
+          {
+            "payeeKey": 11796586
+          }
+        ]
+      }
+    }
+  },
+  "createPayment": {
+    "createPaymentReq": {
+      "qs": "SG2BFE1S04@SG2BFE1",
+      "subOrgId": "SG2BFE1",
+      "channelType": "WEB",
+      "amount": {
+        "payCcy": "SGD",
+        "payAmt": "123"
+      },
+      "pmtTypeCode": "sgact",
+      "acctKey": 915507,
+      "destCcy": "SGD",
+      "executionDate": "2019-01-24",
+      "isEarliestDate": true,
+      "useFx": false,
+      "payeeList": {
+        "payeeRecord": [
+          {
+            "payeeKey": 11796586
+          }
+        ]
+      },
+      "isApproveNow": false
+    }
+  }
+}

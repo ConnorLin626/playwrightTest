@@ -1,0 +1,4 @@
+HEADER,19022019,SG2BFE1,
+PAYMENT,GPP,20000299188,HKD,,HKD,,19022019,,,Betsy BPY NonDBS,,,Bangalore Electr,,21345645,50,016,375,ICIC0000393,,,,,,,,10.00,,,,,21,Particul02,COLReferen02,PaymentDetails150051164,,,,,,,CXBSNS,,E,,,TechProcess Payment Services Ltd,000000000075,Bangalore Electr,,,,sbaraiya@euronetworldwide.com,,vbhandary@euronetworldwide.com,kdeo@euronetworldwide.com,haribabus@euronetworldwide.com,,,,,,1120304.1S39474 19 ,ENI,DCBDCB08204,00000000075,04072013
+PAYMENT,PPP,20000299188,HKD,,HKD,,19022019,,,SG2182hh632,,,,,+65-21345645,50,016,011,,,,,,,,,10.00,,,,,22,,,,,,M,,,,CXBSNS,,E,,,,,,,,,1920645396@qq.com,,,,,,,,,,Invoice Detail,,,,,
+TRAILER,2,20.0

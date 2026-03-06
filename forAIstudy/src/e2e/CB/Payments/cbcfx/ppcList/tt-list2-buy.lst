@@ -1,0 +1,90 @@
+Domestic transactions
+	693 - Foreign exchange transferred to another domestic bank
+		A - Source of fund from equity capital, equity investment, and foreign deposit, etc (Outward foreign remittances are remitted from other domestic banks, not purchased with TWD)
+			210 - Outward direct investments (Government approval letter is required if BBK country is CN and remittance amt is over USD 1M.)
+			250 - Deposits overseas
+			262 - Investments in overseas equity stocks (Government approval letter is required if BBK country is CN.)
+			263 - Investments in overseas long-term bonds and notes (Government approval letter is required if BBK country is CN.)
+			264 - Investments in overseas short-term notes and bills (Government approval letter is required if BBK country is CN.)
+			266 - Outward remittance of funds for overseas deliverable forward and swap transactions (Government approval letter is required if BBK country is CN.)
+			267 - Outward remittance of funds for overseas non-deliverable derivative transactions (Government approval letter is required if BBK country is CN.)
+			270 - Investments in overseas real estate
+			370 - Withdrawal of real estate investment by foreign nationals
+			371 - Withdrawal of purchase of domestic presold house by foreign nationals
+			380 - Redemption of global depository receipts (If FX with TWD, Government approval letter is required)
+		B - Source of fund from external loan, external borrowing and issue overseas corporate bonds, etc (Outward foreign remittances are remitted from other domestic banks, not purchased with TWD)
+			220 - Outward loan investments (Government approval letter is required if BBK country is CN.)
+			280 - Loan financing to non-resident abroad
+			340 - Repayments of overseas borrowing
+		C - Source of fund from overseas investment income (Outward foreign remittances are remitted from other domestic banks, not purchased with TWD)
+			440 - Interest of overseas borrowing
+			441 - Surplus or dividend income of foreign nationals and overseas Chinese from equity investments in the R.O.C. (if FX with TWD or BBK country is CN, Government approval letter is required.)
+			444 - Import finance related interest
+			449 - Other investment income of foreign nationals (Please specify)
+		D - Source of fund from processing and merchanting trade receipts (Outward foreign remittances are remitted from other domestic banks, not purchased with TWD)
+			710 - Payments for processing trade
+			711 - Payments for merchanting trade
+		E - Source of fund from overseas service receipts (Outward foreign remittances are remitted from other domestic banks, not purchased with TWD)
+			111 - Cargo shipping expenditures
+			112 - Passenger shipping expenditures
+			115 - Airfreight expenditures
+			116 - Air passenger service expenditures
+			119 - Other transportation-related expenditures (Please specify)
+			121 - Non-life insurance expenditures
+			122 - Payments for non-life insurance claim (Insurance Company Only)
+			123 - Life insurance expenditures
+			129 - Payments for life insurance claim (Insurance Company Only)
+			131 - Business expenditures
+			132 - Tourism expenditures
+			134 - Expenditures of studying abroad
+			135 - Credit card payment
+			139 - Other traveling expenditures (Please specify)
+			191 - Cultural and leisure expenditures
+			192 - Trade commission and agency expenditures
+			193 - Payments related to local construction project
+			194 - Financial service expenditures
+			195 - Payments for authorized use of intellectual property rights
+			196 - Overseas office expenses (Government approval letter is required if BBK country is CN.)
+			199 - Other service expenditures (Please specify)
+			19A - Postal and courier service expenses
+			19B - Computer and information expenditures
+			19C - Leasing expenditures
+			19D - Professional and technical service expenditures
+			19E - Video-audio expenditures
+			19F - Outward remittance of service income of foreign government agency
+			19G - Other service expenditures of civil or military organs (Official agencies only)
+			19H - Processing fee expenditures
+			19J - Telecommunication expenditures
+			19K - Repair/maintenance expenditures
+			19P - R&D asset purchase expenditures
+		F - Source of fund from inward remittances of overseas donation or allowance for family or relatives (Outward foreign remittances are remitted from other domestic banks, not purchased with TWD)
+			520 - Donation remittance
+			540 - Natural resources and non- R&D assets purchase expenditures
+			580 - Government transfer payments (Official agencies only. Transaction cannot be processed if BBK country is CN,)
+			599 - Other transfer payments (Please specify)
+		G - Source of fund from foreign salary income (Outward foreign remittances are remitted from other domestic banks, not purchased with TWD)
+			410 - Outward remittance of non-resident's wages and salaries
+			511 - Outward remittance by guest workers
+		I - Source of fund from export clearance receipts (Outward foreign remittances are remitted from other domestic banks, not purchased with TWD)
+			701 - Prepayments for goods not yet imported
+			702 - Fuel and supply payments
+			704 - Payments for samples
+			706 - Payments for imported goods with customs clearance not handled by payee (Supporting document is required; or select 801)
+			70A - Payments for imported goods with customs clearance handled by payee
+			720 - Payments for goods ordered offshore but supplied onshore (Supporting document is required; or select 802)
+		Z - Source of fund from other overseas transaction receipts (Outward foreign remittances are remitted from other domestic banks, not purchased with TWD)
+			299 - Other outflows of domestic funds (Please specify)
+			391 - Installment payments for import financing
+			392 - Capital leasing expenditures
+			399 - Other outflows of foreign funds (Please specify)
+			611 - Returns of export payments
+			619 - Other outward remittances
+			801 - Payments for imported goods with customs clearance not handled by payee (without proof documents)
+			802 - Payments for goods ordered offshore but supplied onshore (without proof documents)
+			Others (please specify)
+		R - Domestic goods expenditures
+		S - Foreign currency insurance, funds, bonds, and investment related expenditures (including accrued interest)
+		T - Domestic allowances for family or relatives, donations and inheritance expenditures
+		L - Foreign currency loans expenditures
+		P - Domestic service expenditures
+		N - Other domestic transaction expenditures

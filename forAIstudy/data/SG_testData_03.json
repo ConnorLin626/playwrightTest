@@ -1,0 +1,446 @@
+{
+  "comment": "AUTOSG03 company",
+  "status": {
+    "Approved": "Approved",
+    "PendingApproval": "Pending Approval",
+    "PartialApproved": "Partial Approved",
+    "PendingRelease": "Pending Release",
+    "PendingVerification": "Pending Verification",
+    "PartialCompleted": "Partial Completed",
+    "Received": "Received",
+    "Completed": "Completed",
+    "Saved": "Saved",
+    "Submitted": "Submitted",
+    "BankRejected": "Bank Rejected",
+    "Rejected": "Rejected",
+    "Failed": "Failed",
+    "Cancelled": "Cancelled",
+    "ApproverRejected": "Approver rejected"
+  },
+  "paymentType": {
+    "SG_ACT": "SG - Account Transfer",
+    "SG_BLVT": "SG - Bulk GIRO Payment",
+    "SG_COL": "SG - Bulk GIRO Collection",
+    "SG_TT": "SG - Telegraphic Transfer",
+    "SG_ICT": "Intra Company Transfer",
+    "SG_SAL": "SG - Payroll",
+    "SG_CCH": "SG - Corporate Cheques",
+    "SG_BCH": "SG - Cheque Express",
+    "SG_DD": "SG - Demand Draft",
+    "SG_BILL": "SG - Bill Payment"
+  },
+  "CreateAccountReport": {
+    "UAT": {
+      "loginCompanyId": "SGUATRF3",
+      "loginUserId": "SGUATRF3LT01",
+      "password": "P@ssword123",
+      "account": "KXX.XX PXXXAXXXG XXE XXD - 0113202102381 - SGD",
+      "account2":"Q O U XLZYMCBQM L W - 0010390406 - SGD",
+      "account3":"Q O U XLZYMCBQM L W - 0010390406 - AUD",
+      "accountName": "Name of 11111111",
+      "accountNotInclude": "Q O U XLZYMCBQM L W - 0010390406 - USD",
+      "EDPAccount":"Q O U XLZYMCBQM L W - 0010390406 - SGD",
+      "sendTo": "Sibo.yang@email10cha.com",
+      "LoanAccountNotInclude": "000TLFN111930011 - SGD",
+      "LoanAccountInclude": "1FA0004053C - SGD",
+      "LoanAccount": "1FA0004053C - SGD",
+      "LoanAccount1": "000TLFN111930011 - SGD",
+      "LoanAccount2": "000TLFN111930007 - SGD",
+      "FDAccount": "0113202102381 - 0113202102381",
+      "POBOpAccount": "33333333 - 33333333 - SGD",
+      "viewReportVirtualAccounts":"885DS728AUGVA10",
+      "VirtualAccounts": "885DS728AUGVA2",
+      "VirtualAccountNotInclude": "885DT4AUG18BATCH19",
+      "fileNameForALL": "Reports_UploadFile/Reports_UFF_UAT.txt"
+    },
+    "SIT": {
+      "loginCompanyId": "AUTOSG03",
+      "loginUserId": "AUTOSG03S01",
+      "loginUserId02": "AUTOSG03A02",
+      "loginUserId03": "AUTOSG03S08",
+      "account": "11111111 - 11111111 - SGD",
+      "accountName": "Name of 11111111",
+      "accountNotInclude": "22222222 - 22222222 - SGD",
+      "EDPAccount":"name of 18001410000 - 18001410000 - SGD",
+      "sendTo": "AUTOSG03S01 Name",
+      "LoanAccountNotInclude": "000TLFN111930011 - SGD",
+      "LoanAccount": "000TLFN111930007 - SGD",
+      "LoanAccount1": "000TLFN111930011 - SGD",
+      "LoanAccount2": "000TLFN111930007 - SGD",
+      "FDAccount": "0000104715111 - 0000104715",
+      "POBOpAccount": "33333333 - 33333333 - SGD",
+      "VirtualAccounts": "VAForAUTOTEST1",
+      "VirtualAccountNotInclude": "VAForAUTOTEST2",
+      "fileNameForALL": "Reports_UploadFile/Reports_UFF.txt"
+    },
+    "depositSlipNumber": "depositSlipNumber",
+    "instrumentNumber": "instrumentNumber",
+    "amountRangeFrom": "10",
+    "amountRangeTo": "100",
+    "editAmount": "1000",
+    "accountType": "credit",
+    "batchReference": "batch reference",
+    "customerReference": "customerReference",
+    "groupReference": "groupReference",
+    "chequeNumber": "11111",
+    "startRelativeDate": "Start of current week",
+    "endRelativeDate": "End of current week",
+    "usage": "Shared",
+    "daily": "Afternoon (12PM-2PM)",
+    "deliverySchedule": "Daily",
+    "deliveryOneOff": "One-off / ad-hoc",
+    "password": "123456",
+    "confirmPassword": "123456",
+    "remarks": "remarks",
+    "remarksMaxlen": "maxlengthremarkmaxlengthremarkmaxlengthremarkmaxlengthremarkmaxlengthremarkmaxlengthremarkmaxlengthremarkmaxlengthremarkmaxlengthremarkmaxlengthremarkmaxlengthremarkmaxlengthremarkmaxlengthremarkmaxlengthremarkmaxlengthremarkmaxlengthremarkmaxlengthremarkmaxlengthremarkmaxlengthremarkmaxlengthremarkmaxlengthremarkmaxlengthremarkmaxlengthremarkmaxle",
+    "payeeReference": "payeeReference",
+    "payeeName": "payeeName",
+    "ERPRepDelDialog": "ERP reports will be permanently deleted. This will remove the Bank Feeds with your ERP system."
+  },
+  "CreateOATReport": {
+    "UAT": {
+      "loginCompanyId": "SGUATRF3",
+      "loginUserId": "SGUATRF3LT01",
+      "password": "P@ssword123",
+      "account": "ACESECO1D00",
+      "accountNotInclude": "Q O U XLZYMCBQM L W - 0010390406 - AUD",
+      "sendTo": "Sibo.yang@email10cha.com"
+    },
+    "SIT": {
+      "loginCompanyId": "AUTOSG03",
+      "loginUserId": "AUTOSG03S02",
+      "account": "11111111111",
+      "accountNotInclude": "XXXXXXXXXX11",
+      "sendTo": "AUTOSG03S02Name"
+    },
+    "startRelativeDate": "Start of current week",
+    "endRelativeDate": "End of current week",
+    "usage": "Shared",
+    "daily": "Afternoon (12PM-2PM)",
+    "deliverySchedule": "Daily",
+    "deliveryOneOff": "One-off / ad-hoc",
+    "password": "123456",
+    "confirmPassword": "123456",
+    "remarks": "remarks",
+    "account": "11111111111",
+    "account1": "TEKAPAS1E0E_01",
+    "account2": "TEKAPAS1E0E_02"
+  },
+  "FileService": {
+    "UAT": {
+      "loginCompanyId": "SGUATRF3",
+      "loginUserId": "SGUATRF3LT01",
+      "loginCompanyIdForIBG": "SGUATRF3",
+      "loginUserIdforIBG": "SGUATRF3LT01",
+      "password": "P@ssword123",
+      "fileNameForMEPSRemit13": "SG_UploadFile/SG_RTGS_Remittance1.3_UAT.txt",
+      "fileNameForDDRemit13": "SG_UploadFile/SG_DD_Remittance1.3_UAT.txt",
+      "fileNameForTTRemit13": "SG_UploadFile/SG_TT_Remittance1.3_UAT.txt",
+      "fileNameForACTRemit13": "SG_UploadFile/SG_ACT_Remittance1.3_UAT.txt",
+      "fileNameForMEPSRemit14": "SG_UploadFile/SG_RTGS_Remittance1.4_UAT.txt",
+      "fileNameForDDRemit14": "SG_UploadFile/SG_DD_Remittance1.4_UAT.txt",
+      "fileNameForTTRemit14": "SG_UploadFile/SG_TT_Remittance1.4_UAT.txt",
+      "fileNameForACTRemit14": "SG_UploadFile/SG_ACT_Remittance1.4_UAT.txt",
+      "fileNameForBulkNIBG": "SG_UploadFile/SG_BPY_NIBG_UAT.txt",
+      "fileNameForBulkCOLNIBG": "SG_UploadFile/SG_COL_NIBG_UAT.txt",
+      "fileNameForMP2NIBG": "SG_UploadFile/SG_MP2_NIBG_UAT.txt",
+      "fileNameForBulkIBG": "SG_UploadFile/SG_BPY_IBG_UAT.txt",
+      "fileNameForCOLDBSIBG": "SG_UploadFile/SG_COLDBS_IBG_UAT.txt",
+      "fileNameForMPDBSIBG": "SG_UploadFile/SG_MPDBS_IBG_UAT.txt",
+      "fileNameForTTWithVA": "SG_UploadFile/SG_TT_NUFF_VirtualAccount_UAT.txt",
+      "fileNameForTTWithDebitForVA":"SG_UploadFile/SG_TT_NUFF_BankChargeIsVA_UAT.txt"
+    },
+    "SIT": {
+      "loginCompanyId2": "AUTOSG03",
+      "loginUserId2": "AUTOSG03S02",
+      "loginCompanyIdForIBG": "AUTOSG03",
+      "loginUserIdforIBG": "AUTOSG03S01",
+      "password": "P@ssword123",
+      "fileNameForMEPSRemit13": "SG_UploadFile/SG_RTGS_Remittance1.3_SIT.txt",
+      "fileNameForDDRemit13": "SG_UploadFile/SG_DD_Remittance1.3_SIT.txt",
+      "fileNameForTTRemit13": "SG_UploadFile/SG_TT_Remittance1.3_SIT.txt",
+      "fileNameForACTRemit13": "SG_UploadFile/SG_ACT_Remittance1.3_SIT.txt",
+      "fileNameForMEPSRemit14": "SG_UploadFile/SG_RTGS_Remittance1.4_SIT.txt",
+      "fileNameForDDRemit14": "SG_UploadFile/SG_DD_Remittance1.4_SIT.txt",
+      "fileNameForTTRemit14": "SG_UploadFile/SG_TT_Remittance1.4_SIT.txt",
+      "fileNameForACTRemit14": "SG_UploadFile/SG_ACT_Remittance1.4_SIT.txt",
+      "fileNameForBulkNIBG": "SG_UploadFile/SG_BPY_NIBG_SIT.txt",
+      "fileNameForBulkCOLNIBG": "SG_UploadFile/SG_COL_NIBG_SIT.txt",
+      "fileNameForMP2NIBG": "SG_UploadFile/SG_MP2_NIBG_SIT.txt",
+      "fileNameForBulkIBG": "SG_UploadFile/SG_BPY_IBG_SIT.txt",
+      "fileNameForCOLDBSIBG": "SG_UploadFile/SG_COLDBS_IBG_SIT.txt",
+      "fileNameForMPDBSIBG": "SG_UploadFile/SG_MPDBS_IBG_SIT.txt",
+      "fileNameForTTWithVA": "SG_UploadFile/SG_TT_NUFF_VirtualAccount.txt",
+      "fileNameForTTWithDebitForVA":"SG_UploadFile/SG_TT_NUFF_BankChargeIsVA_SIT.txt"
+    },
+    "fileType": "ALL",
+    "fileFormat": "Universal File Format",
+    "fileTypeIx": "ALL - Universal File Format",
+    "approvalOptionByTransaction": "By Transaction",
+    "approvalOptionByFile": "By File",
+    "approvalCurrency": "SGD",
+    "challengeResponse": "234134",
+    "errorMsgForDebitAccountIsVA":"Debit Account for Bank Charges should not be Virtual Account"
+  },
+  "CustomReport": {
+    "UAT": {
+      "loginCompanyId": "SGUATRF3",
+      "loginUserId": "SGUATRF3LT01",
+      "loginCompanyId2":"SG1R7",
+      "loginUserId2":"SG1R7SA01",
+      "password": "P@ssword123",
+      "HQCompanyName":"202509041045Name",
+      "SCCompanyName1":"202509041100Name",
+      "SCCompanyName2":"202509041101Name",
+      "SCCompanyName3":"202509041103Name",
+      "SCCompanyName4":"202509041553Name"
+    },
+    "SIT": {
+      "loginCompanyId": "AUTOSG03",
+      "loginUserId": "AUTOSG03S02",
+      "loginCompanyId2":"AUTOSG09",
+      "loginUserId2":"AUTOSG09S91"
+    },
+    "daily": "Afternoon (12PM-2PM)",
+    "weekly": "Monday",
+    "password": "123456",
+    "confirmPassword": "123456",
+    "remarks": "remarksremarksremarksremarksremarks",
+    "remarksEdit": "editremarksremarksremarksremarksremarks",
+    "HQCompanyName":"202509041045Name",
+    "SCCompanyName1":"202509041100Name",
+    "SCCompanyName2":"202509041101Name",
+    "SCCompanyName3":"202509041103Name",
+    "SCCompanyName4":"202509041553Name",
+    "HQReportName":"AUTOHQReport01",
+    "SCReportName1":"AUTOSC1Report01",
+    "SCReportName4":"AUTOSCReport04"
+  },
+  "DataExport": {
+    "UAT": {
+      "loginCompanyId": "SGUATRF3",
+      "loginUserId": "SGUATRF3LT01",
+      "password": "P@ssword123"
+    },
+    "SIT": {
+      "loginCompanyId": "AUTOSG03",
+      "loginUserId": "AUTOSG03S03"
+    },
+    "daily": "Afternoon (12PM-2PM)",
+    "password": "123456",
+    "confirmPassword": "123456",
+    "remarks": "remarksremarksremarksremarksremarks"
+  },
+  "Alerts": {
+    "SIT": {
+      "loginCompanyId": "AUTOSG03",
+      "loginUserId": "AUTOSG03S08",
+      "account1": "Name of 11111111 - 11111111 - SGD",
+      "account2": "Name of 22222222 - 22222222 - SGD",
+      "account3": "11111111 - 11111111",
+      "account4": "22222222 - 22222222",
+      "account5": "000TLFN111930011 - SGD",
+      "account6": "000TLFN111930007 - SGD",
+      "account7": "test7777777 - test7777777 - SGD",
+      "account8": "test8888888 - test8888888 - SGD",
+      "account9": "name of 18001410000 - 18001410000 - SGD",
+      "accountFD1": "0000104715111 - 0000104715",
+      "accountFD2": "0000104715222 - 0000104716",
+      "sendEmail": "ForAUTOtestdontdelete@qq.com",
+      "sendEmailIx": "AUTOSG03S01@163.com",
+      "sendTime": "12:12",
+      "beforeDate": "5",
+      "password": "123456",
+      "accountVA1": "VAForAUTOTEST1"
+    },
+    "UAT": {
+      "loginCompanyId": "SGUATRF3",
+      "loginUserId": "SGUATRF3LT01",
+      "password": "P@ssword123",
+      "account1": "Q O U XLZYMCBQM L W - 0010390406 - EUR",
+      "account2": "Q O U XLZYMCBQM L W - 0010390406 - SGD",
+      "account3": "0710000558017022",
+      "account4": "0729270244",
+      "account5": "1FA0004053C - SGD",
+      "account6": "1ST0004060C - SGD",
+      "account7": "Q O U XLZYMCBQM L W - 0010390406 - AUD",
+      "account8": "0710000558017022 - USD",
+      "account9": "28AUGVA10 - 885DS728AUGVA10 - SGD",
+      "accountFD1": "00020004435 - 24000011 - AUD",
+      "accountFD2": "00020004435 - 24000013 - USD",
+      "sendEmailIx": "Sibo.yang@email10cha.com",
+      "sendTime": "12:12",
+      "beforeDate": "5",
+      "accountVA1": "885DS728AUGVA10"
+      
+    },
+    "loansOverdueAlert": {
+      "UAT": {
+        "loginCompanyId": "STARSHIP",
+        "loginUserId": "STARSHIPS01",
+        "account1": "1FA0004053C - SGD",
+        "account2": "1ST0004060C - SGD"
+      }
+    },
+    "creditConfirmAlert": {
+      "UAT": {
+        "loginCompanyId": "STARSHIP",
+        "loginUserId": "STARSHIPS01",
+        "account1": "0113202102381 - SGD",
+        "account2": "0710000558017022 - USD"
+      }
+    }
+  },
+  "AlertsNotificationForNewUI": {
+    "SIT": {
+      "loginCompanyId": "AUTOSG03",
+      "loginUserId": "AUTOSG03S03"
+    },
+    "UAT": {
+      "loginCompanyId": "AUTOSG03",
+      "loginUserId": "AUTOSG03S03"
+    }
+  },
+  
+  "ManageSavedContacts": {
+    "UAT": {
+      "loginCompanyId": "SGUATRF4",
+      "loginUserId": "SGUATRF4LT01",
+      "pinId":"P@ssword123"
+    },
+    "SIT": {
+      "loginCompanyId": "AUTOSG03",
+      "loginUserId": "AUTOSG03S03"
+    },
+    "nickname": "nickname",
+    "email": "autotestemail@aa.com",
+    "emailEdit": "autotestemailforEdit@aa.com",
+    "countryCode": "+686",
+    "areaCode": "1234",
+    "mobileNo": "12345678",
+    "mobileNoEdit": "1111111111",
+    "noInforDisplay": "No information to display",
+    "twCountryCode": "+886",
+    "twMobileNo": "012345678",
+    "errorInforDisplay": "if your mobile number is 0910123456) to proceed update process.",
+    "mobileNoTWEdit": "Add for Test Edit TW mobile can't start with 0"
+  },
+  "AdminReports": {
+    "UAT": {
+      "loginCompanyId": "SGUATRF3",
+      "loginUserId": "SGUATRF3LT01",
+      "password": "P@ssword123"
+    },
+    "SIT": {
+      "loginCompanyId": "AUTOSG03",
+      "loginUserId": "AUTOSG03S01"
+    },
+    "fileFormat_PDF": "PDF"
+  },
+  "cashManagementReports": {
+    "UAT": {
+      "loginCompanyId": "SGUATRF3",
+      "loginUserId": "SGUATRF3LT01",
+      "password": "P@ssword123",
+      "accountNotInclude":"0710000558017022",
+      "edit4account": "0729270252",
+      "virtualAccount":"8AUGLV2 - 885DT18AUGLV2 - USD"
+    },
+    "SIT": {
+      "loginCompanyId": "AUTOSG03",
+      "loginUserId": "AUTOSG03S01",
+      "loginUserId02":"AUTOSG03S03"
+    },
+    "fileName_Sum": "ExpAccSumFileName",
+    "fileName_Det": "ExpAccDetFileName",
+    "edit4account": "11111111 - 11111111 - SGD",
+    "accountNotInclude": "22222222 - 22222222 - SGD",
+    "virtualAccount":"VA-ForAUTOTEST-1 - VAForAUTOTEST1 - EUR",
+    "dateRange01":"Start of current month to Current day",
+    "fileFormate01":"Enhanced MT940",
+    "fileFormate02":"Semicomma Separated Value (SSV)"
+  },
+  "messageToBusinessCare": {
+    "UAT": {
+      "loginCompanyId": "SGUATRF3",
+      "loginUserId": "SGUATRF3LT01",
+      "password":"P@ssword123"
+    },
+    "SIT": {
+      "loginCompanyId": "AUTOSG03",
+      "loginUserId": "AUTOSG03S01"
+    },
+    "messageSubject":"General Enquiry",
+    "msgDetail":"msgDetail"
+  },
+  "profileSettings": {
+    "UAT": {
+      "loginCompanyId": "SGUATRF3",
+      "loginUserId": "SGUATRF3LT01",
+      "password": "P@ssword123"
+    },
+    "SIT": {
+      "loginCompanyId": "AUTOSG03",
+      "loginUserId": "AUTOSG03S01"
+    },
+    "twCountryCode": "886",
+    "twMobileNo": "012345678",
+    "errorInforDisplay": "if your mobile number is 0910123456) to proceed."
+  },
+  "FastPayment":{
+    "UAT": {
+      "loginCompanyId": "SGUATRF3",
+      "loginUserId": "SGUATRF3LT01",
+      "password":"P@ssword123",
+      "fromAccount": "885DS728AUGVA2"
+    },
+    "SIT": {
+      "loginCompanyId": "AUTOSG03",
+      "loginUserId": "AUTOSG03S03"
+    },
+    "fromAccount": "2023101904",
+    "ccy": "SGD",
+    "amount": "500",
+    "deductAmount": "350.63",
+    "existingPayee": "VAPayee02",
+    "purposeCode": "CLPR - Car Loan Principal Repayment",
+    "paymentDetail": "FastPayment AUTO PaymentDetails",
+    "emailIdO": "Email0@dbs.com",
+    "emailId1": "Email1@dbs.com",
+    "emailId2": "Email2@dbs.com",
+    "emailId3": "Email3@dbs.com",
+    "emailId4": "Email4@dbs.com",
+    "message": "message",
+    "transactionNote": "transactionNote"
+  },
+  "TelegraphicTransfer":{
+    "UAT": { 
+      "loginCompanyId": "SGUATRF3",
+      "loginUserId": "SGUATRF3LT01",
+      "password":"P@ssword123",
+      "fromAccount": "0010390406",
+      "fromVirtualAccount": "885DS728AUGVA2"
+    },
+    "SIT": {
+      "loginCompanyId": "AUTOSG03",
+      "loginUserId": "AUTOSG03S03"
+    },
+    "fromVirtualAccount": "VAForAUTOTEST1",
+    "fromAccount": "11111111",
+    "ccy": "SGD",
+    "amount": "500",
+    "fileAmountValue": "31",
+    "deductAmount": "310.08",
+    "existingPayee": "TTPayee01",
+    "specPmtPurpose": "Dividend-related Co.",
+    "paymentDetail": "Telegraphic Transfer AUTO PaymentDetails",
+    "emailIdO": "Email0@dbs.com",
+    "emailId1": "Email1@dbs.com",
+    "emailId2": "Email2@dbs.com",
+    "emailId3": "Email3@dbs.com",
+    "emailId4": "Email4@dbs.com",
+    "message": "message",
+    "transactionNote": "transactionNote",
+    "messageToOrderingBank": "messageToOrderingBank"
+  }
+}

@@ -1,0 +1,882 @@
+{
+  "login": {
+    "loginCompanyId": "",
+    "loginUserId": "",
+    "verifyUserId": ""
+  },
+  "status": {
+    "Approved": "Approved",
+    "PendingApproval": "Pending Approval",
+    "PartialApproved": "Partial Approved",
+    "PendingRelease": "Pending Release",
+    "PendingVerification": "Pending Verification",
+    "PartialCompleted": "Partial Completed",
+    "Received": "Received",
+    "Completed": "Completed",
+    "Saved": "Saved",
+    "Submitted": "Submitted",
+    "BankRejected": "Bank Rejected",
+    "Rejected": "Rejected",
+    "Failed": "Failed",
+    "Cancelled": "Cancelled",
+    "Active": "Active"
+  },
+  "MyApproval": {
+    "UAT": {
+      "loginCompanyId": "SPHK08",
+      "loginUserId": "SPHK08V02",
+      "fileNameByFile": "HK_UploadFile/HK_ACT-RET-_base64.txt",
+      "fileNameByTxn": "HK_UploadFile/HK_ACT-RET-_base64.txt",
+      "fromAccount": "120519673"
+    },
+    "SIT": {
+      "loginCompanyId": "SPHK08",
+      "loginUserId": "SPHK08V02",
+      "fileNameByFile": "HK_UploadFile/HK_ACT-RET.txt",
+      "fileNameByTxn": "HK_UploadFile/HK_ACT-RET.txt",
+      "fromAccount": "120519673"
+    },
+    "fileType": "ALL",
+    "fileFormat": "Universal File Format",
+    "approvalOptionByTxn": "By Transaction",
+    "approvalOptionByFile": "By File",
+    "approvalCurrency": "HKD",
+    "approverOption": "AUTOHK01M01",
+    "approverOption1": "SSM AUTO Approverm5d",
+    "challengeResponse": "12341234",
+    "rejectReason": "Reject for AUTO TEST",
+    "labelNoInformationDisplay": "No information to display",
+    "amountA1": "10",
+    "existingPayee": "MoreMaxlengthPayeeNameis140MoreMaxlengthPayeeNameis140MoreMaxlengthPayeeNameis140MoreMaxlengthPayeeNameis140MoreMaxlengthPayeeNameis14014014",
+    "paymentDetail": "PaymentDetails",
+    "transactionNote": "transactionNote",
+    "messageToOrderingBank": "messageToOrderingBank"
+  },
+  "FileService": {
+    "UAT": {
+      "loginCompanyId": "SPHK08",
+      "loginUserId": "SPHK08V01",
+      "fileName": "HK_UploadFile/HK_PPPGPP_UFF_UAT.txt",
+      "fileNameCOL": "HK_UploadFile/HK BulkCollection_UFF_UAT.txt",
+      "fileNameBPY": "HK_UploadFile/HK BulkPayment_UFF_UAT.txt",
+      "fileNameSAL": "HK_UploadFile/HK PayrollPayment_UFF_UAT.txt",
+      "fileNameCTS": "HK_UploadFile/HK_CTS_UFF_UAT.txt",
+      "fileNameCTSUFFv2": "HK_UploadFile/HK_CTS_UFFv2_UAT.txt",
+      "fileNameCTSFCY":"HK_UploadFile/HK_CTS_FCY_UAT.txt",
+      "fileNameAutoPay": "HK_UploadFile/HK_AutoPay_UFF_UAT.txt",
+      "fileNameBPYAutoPayFormat": "HK_UploadFile/HK_BulkPayment_AutoPayFormat_UAT.txt",
+      "fileNamePayrroll02AutoPayFormat": "HK_UploadFile/HK_MPayroll02Payment_AutoPayFormat_UAT.txt",
+      "fileNameColAutoPayFormat": "HK_UploadFile/HK_BulkCollection_AutoPayFormat_UAT.txt"
+    },
+    "SIT": {
+      "loginCompanyId": "SPHK08",
+      "loginUserId": "SPHK08V01",
+      "fileName": "HK_UploadFile/HK_PPPGPP_UFF_繁體測試_SIT.txt",
+      "fileNameCOL": "HK_UploadFile/HK BulkCollection_UFF_SIT.txt",
+      "fileNameBPY": "HK_UploadFile/HK BulkPayment_UFF_SIT.txt",
+      "fileNameSAL": "HK_UploadFile/HK PayrollPayment_UFF_SIT.txt",
+      "fileNameCTS": "HK_UploadFile/HK_CTS_UFF_SIT.txt",
+      "fileNameCTSUFFv2": "HK_UploadFile/HK_CTS_UFFv2_SIT.txt",
+      "fileNameCTSFCY":"HK_UploadFile/HK_CTS_FCY_SIT.txt",
+      "fileNameAutoPay": "HK_UploadFile/HK_AutoPay_UFF_SIT.txt",
+      "fileNameBPYAutoPayFormat": "HK_UploadFile/HK_BulkPayment_AutoPayFormat_SIT.txt",
+      "fileNamePayrroll02AutoPayFormat": "HK_UploadFile/HK_MPayroll02Payment_AutoPayFormat_SIT.txt",
+      "fileNameColAutoPayFormat": "HK_UploadFile/HK_BulkCollection_AutoPayFormat_SIT.txt",
+      "fileNameCTSRemit": "HK_UploadFile/HK_CHATS_Remittance_SIT.txt",
+      "fileNameACTHighRisk": "HK_UploadFile/HK_ACT_HighRiskPayee_UFF_SIT.txt",
+      "fileNameFPSViaBatchHighRisk": "HK_UploadFile/HK_FPSPaymentviaHighRisk(Batch)_AccountNumber_SIT.txt"
+    },
+    "fileType": "ALL",
+    "fileFormat": "Universal File Format",
+    "approvalOptionTransaction": "By Transaction",
+    "approvalOptionFile": "By File",
+    "approvalCurrency": "HKD",
+    "challengeResponse": "123456",
+    "DateFormat": "DD-MMM-YYYY",
+    "fromAccountBPY": "786000076",
+    "fromAccountBPYMax": "34AccountAccount Number34AccountAc",
+    "receiveAccountBPYMax": "9140100197345673435676544565456443",
+    "receivingPartyNameBPYMax": "TEST 20 SEPNAMSMSSS2324543345655675CC245FFFASSTEST 20 SEPNAMSMSSS2324543345655675CC245FFFASSTEST 20 SEPN3AMSMSSS2324543345655675CC245FFFASS4",
+    "referenceForPayee": "Reference for payeeReferenceforpaee",
+    "fromAccountNum": "54545454545454545454545454545454545 (HKD)",
+    "fromAccountName": "MaxLengthAccountNamevalueee4444444e666666655555545v555vvvveeee4444444e545vvvvveeee4444444e545vvvvveeee4444444e545vvvvveeee4444444e5488888888881",
+    "payerName": "DEBTORNAMEMAXLENGTHEXTENDEDFROMCHAR20TOCHAR140ANDIFLENGTHMORETHAN140WILLUPLOADFAILDEBTORNAMEMAXLENGTHEXTENDEDFROMCHAR20TOCHAR140ANDIFLENGTH1",
+    "payerAcctNum": "1234567890123456789012345678901234",
+    "HighRisk": "HIGH RISK"
+  },
+  "paymentType": {
+    "HK_AutoPay": "HK - AutoPay Payment",
+    "HK_CHATS": "HK - CHATS Payment",
+    "HK_PYRL": "HK - Payroll",
+    "HK_MPYRL": "HK - Management Payroll"
+  },
+  "TelegraphicTransfer": {
+    "UAT": {
+      "loginCompanyId": "HKS01",
+      "loginUserId": "I3SSHKS01USER1",
+      "pinId": "P@ssword1A!",
+      "fromAccount": "001749027",
+      "payeeBankName":"AGRICULTURAL BANK OF CHINA, THE",
+      "payeeBankCity": "SHANGHAI",
+      "payeeBankSwiftbic": "ABOCCNB0099",
+      "intermediaryBankName": "AFGHAN UNITED BANK",
+      "fileName": "HK_UploadFile/HK_TT_CNY_TO_CN_UAT.txt"
+    },
+    "SIT": {
+      "loginCompanyId": "SPHK08",
+      "loginUserId": "SPHK08V99",
+      "pinId": "123123",
+      "fromAccount": "120519673",
+      "payeeBankName": "ABN AMRO BANK (CHINA)CO",
+      "payeeBankCity": "SHANGHAI",
+      "payeeBankSwiftbic": "ABNACNS0888",
+      "intermediaryBankName": "AFGAN UNITED BANK",
+      "fileName": "HK_UploadFile/HK_TT_CNY_TO_CN_SIT.txt"
+    },
+    "newPayeeAdd1": "newPayeeAdd1",
+    "NewTTPayeeForINR": "NewTTPayeeForINR",
+    "INRCCY": "INR",
+    "paymentCurrency": "CNY",
+    "amountA1": "10",
+    "existingPayee": "HK TT CHINA Payee",
+    "existingPayeeNoAdd1": "ExistingTTPayeeNoAdd1",
+    "intermediaryBankCountry": "AFGHANISTAN",
+    "intermediaryBankID": "AFGUAFK0XXX",
+    "purposeCode": "Goods trade",
+    "emailIdO": "Email0@dbs.com",
+    "emailId1": "Email1@dbs.com",
+    "emailId2": "Email2@dbs.com",
+    "emailId3": "Email3@dbs.com",
+    "emailId4": "Email4@dbs.com",
+    "message": "message",
+    "transactionNote": "transactionNote",
+    "messageToOrderingBank": "messageToOrderingBank",
+    "errorMessage": "One or more of the fields below have not been properly filled up. Please amend and submit again.",
+    "paymentDetail": "我爱中国",
+    "EditpaymentDetail": "I Love China",
+    "editAmount": "11",
+    "paymentType": "Hong Kong Telegraphic Transfer",
+    "payeeBankName": "ABN AMRO BANK (CHINA)CO",
+    "payeeBankLocation": "CHINA",
+    "payeeBankCity": "SHANGHAI",
+    "payeeBankRoutingCode": "134134124",
+    "payeeBankSwiftbic": "ABNACNS0888",
+    "intermediaryBankName": "AFGAN UNITED BANK",
+    "bankChargeValue": "OUR",
+    "chargeAcctValue": "Default charge account",
+    "purposeCodeForINR": "P0502 - Receipts on account of construction works carried out abroad by Indian Companies",
+    "updatePayeeDeatil":"Update payee details"
+  },
+  "AutoPayPayment": {
+    "UAT": {
+      "loginCompanyId": "HKS01",
+      "loginUserId": "I3SSHKS01USER1",
+      "verifyUserId": "I3SSHKS01USER2",
+      "pinId": "P@ssword123",
+      "payeeBankID": "185",
+      "payeeBankNameValue": "DBS BANK LTD, HONG KONG BRANCH",
+      "payeeBankAdd1Value": "MAN YEE BUILDING",
+      "payeeBankAdd2Value": "FLOOR 16",
+      "fromAccount": "001749027",
+      "fileName1": "HK_UploadFile/HK_FPSPayment(Batch)_FPSpayee_UAT.txt",
+      "fileName2": "HK_UploadFile/HK_FPSPayment(Batch)_AccountNumber_UAT.txt"
+    },
+    "SIT": {
+      "loginCompanyId": "SPHK08",
+      "loginUserId": "SPHK08V05",
+      "verifyUserId": "SPHK08V06",
+      "pinId": "123123",
+      "payeeBankID": "0256",
+      "payeeBankNameValue": "ALLAHABAD BANK",
+      "payeeBankAdd1Value": "LIPPO CENTRE, TOWER ONE",
+      "payeeBankAdd2Value": "1908-09",
+      "fromAccount": "120519673",
+      "fileName1": "HK_UploadFile/HK_FPSPayment(Batch)_FPSpayee_SIT.txt",
+      "fileName2": "HK_UploadFile/HK_FPSPayment(Batch)_AccountNumber_SIT.txt"
+    },
+    "Country": "Hong Kong",
+    "paymentCurrency": "HKD",
+    "amountA1": "10",
+    "amountA2": "2,500",
+    "amountV": "4,500",
+    "editAmount": "100",
+    "existingPayee": "AUTOPAYPAYEENAME",
+    "PayNowPayee": "AutoTest@HK.com",
+    "AcctNumberPayee": "1234567890123456789012345678901234",
+    "MAXPayeeName": "AUTONEWPAYEENAME0123456789AUTONEWPAYEENAME0123456789AUTONEWPAYEENAME0123456789AUTONEWPAYEENAME0123456789AUTONEWPAYEENAME01234567890123456789",
+    "newPayeeName": "AutoNewPayeeName",
+    "newPayeeNickname": "newPayeeNickname",
+    "newPayeeAdd1": "newPayeeAdd1",
+    "newPayeeAdd2": "newPayeeAdd2",
+    "newPayeeAdd3": "newPayeeAdd3",
+    "newPayeeAcctNumber": "123456000001",
+    "category": "S1",
+    "paymentDetails": "paymentDetails",
+    "emailIdO": "Email0@dbs.com",
+    "emailId1": "Email1@dbs.com",
+    "emailId2": "Email2@dbs.com",
+    "emailId3": "Email3@dbs.com",
+    "emailId4": "Email4@dbs.com",
+    "message": "message",
+    "payeeReference": "PAYEEREFERENCE",
+    "payeeParticulars": "payeeParticulars",
+    "faxAreaCode0": "000",
+    "faxNo0": "76786778",
+    "transactionNote": "transactionNote",
+    "messageToOrderingBank": "messageToOrderingBank",
+    "WithoutChllengeText": "Enter this Challenge to your Digital Token or Security Device",
+    "mChllengeText": "you are receiving the Challenge by SMS because you are trying to approve a transaction that you have created",
+    "existingTemplateName": "AutoPayTempalate",
+    "approvalOptionByTxn": "By Transaction",
+    "paymentTypeValue": "HK FPS Payment (Batch)",
+    "payeeBankCityValue": "HONG KONG",
+    "payeeBankCountryValue": "HKG"
+  },
+  "FPSPayment": {
+    "UAT": {
+      "loginCompanyId": "HKS01",
+      "loginUserId": "I3SSHKS01USER1",
+      "pinId": "P@ssword123",
+      "fromAccount": "001749027"
+    },
+    "SIT": {
+      "loginCompanyId": "SPHK08",
+      "loginUserId": "SPHK08V98",
+      "pinId": "123123",
+      "fromAccount": "120519673"
+    },
+    "Country": "Hong Kong",
+    "sendAmount": "2,005.12",
+    "maxAmount": "5,000,000",
+    "greaterThanMaxAmount": "5,000,001",
+    "newFPSPayeeEmail": "GANGIREDDY@DBS.COM",
+    "newFPSPayeeMobNum": "1111111",
+    "newFPSPayeeFasterID": "1910447",
+    "existingFPSMobNumPayee": "AutoTestMobile",
+    "existingChatsAndFPSBanks": "3426545622",
+    "existingOnlyFPSBanks": "2323232323",
+    "newPayeeName": "FPSPayee",
+    "newPayeeNickname": "newPayeeNickname",
+    "newPayeeBankID": "BSSHKH0XXX",
+    "responseCode": "ivy123123",
+    "errorMessage": "Amount is Invalid. Please enter an Amount less than or equal to HKD 5000000",
+    "PurposeCode": "e-Gift",
+    "paymentDetail": "PaymentDetails",
+    "emailIdO": "Email0@dbs.com",
+    "emailId1": "Email1@dbs.com",
+    "emailId2": "Email2@dbs.com",
+    "emailId3": "Email3@dbs.com",
+    "emailId4": "Email4@dbs.com",
+    "message": "message",
+    "editAmount": "2,004.12",
+    "Greetingtothepayee": "Greeting to the payee",
+    "transactionNote": "transactionNote",
+    "paymentTypeValue": "HK FPS Payment",
+    "purposeCodeValue": "General Business Payment",
+    "payeeLocation":"ALBANIA",
+    "townCity":"Town,City",
+    "newPayeeAdd1": "newPayeeAdd1",
+    "newPayeeAdd2": "newPayeeAdd2"
+    
+  },
+  "Reports": {
+    "UAT": {
+      "loginCompanyId": "HKP2A01",
+      "loginUserId": "HKP2A01S02"
+    },
+    "SIT": {
+      "loginCompanyId": "HKP2A01",
+      "loginUserId": "HKP2A01S02"
+    },
+    "HKCompletedFPSRef": "EBGPP81128131562",
+    "HKFPSRemittanceReportTitle": "Outward HK FPS Payment",
+    "HKFPSRemittanceReportPurposeCodeValue": "CXBSNS",
+    "paymentDateFrom": "20 Nov 2018",
+    "paymentDateTo": "30 Nov 2018"
+  },
+  "Beneficiary": {
+    "UAT": {
+      "loginCompanyId": "HKS01",
+      "loginUserId": "I3SSHKS01USER1",
+      "pinId":"P@ssword1A!"
+    },
+    "SIT": {
+      "loginCompanyId": "SPHK08",
+      "loginUserId": "SPHK08V05",
+      "pinId":"123123"
+    },
+    "Country": "Hong Kong",
+    "sgCountry": "SINGAPORE",
+    "newPayeeName": "BenePayeeName20",
+    "newPayeeNickname": "newPayeeNickname",
+    "PayeeNickname": "PayrollNickname",
+    "Msg": "This nickname already exists. Please try a different one.",
+    "proxyTypeEmail": "GANGIREDDY@DBS.COM",
+    "proxyTypeMobNum": "91111111",
+    "proxyTypeFasterID": "1910447",
+    "noData": "No data to display",
+    "AlertDetails": "Proxy Payee Addition Alert",
+    "newPayeeBankId": "BSSHKH0XXX",
+    "newPayeeAcctNumber": "123456000001",
+    "newTTPayeeAcctNumber": "123456000002",
+    "payeeLocation":"ALBANIA",
+    "townCity":"Town,City",
+    "newPayeeAdd1": "newPayeeAdd1",
+    "newPayeeAdd2": "newPayeeAdd2",
+    "streetName":"street Name",
+    "postalCode":"postalCode123",
+    "editPayeeLocation":"AFGHANISTAN",
+    "editTownCity":"Edit Town City",
+    "buildingNum":"building894",
+    "buildingName":"buildname333",
+    "floor":"floor 33",
+    "room":"room 09",
+    "department":"department123",
+    "subDepartment":"subDepartment123",
+    "countrySubDivsion":"countrySubDivsion123",
+    "townLocationName":"townLocationName234",
+    "districtName":"districtName567",
+    "newPayeeBankName":"Max length of new Bank name is 140Max length of new Bank name is 140Max length of new Bank name is 140Max length of new Bank name is 140MaxL",
+    "newPayeBankAdd1":"newPayeBankAdd1",
+    "newPayeBankAdd2":"newPayeBankAdd1"
+  },
+  "CHATSPayment": {
+    "UAT": {
+      "loginCompanyId": "HKS01",
+      "loginUserId": "I3SSHKS01USER1",
+      "verifyUserId": "I3SSHKS01USER2",
+      "pinId": "P@ssword123",
+      "fromAccount": "001749027"
+    },
+    "SIT": {
+      "loginCompanyId": "SPHK08",
+      "loginUserId": "SPHK08V03",
+      "verifyUserId": "SPHK08V04",
+      "pinId": "123123",
+      "fromAccount": "121686218"
+    },
+    "paymentType": "Hong Kong CHATS Payment",
+    "Country": "Hong Kong",
+    "EUR":"EUR",
+    "amountA1": "10",
+    "amountE": "7.11",
+    "amountA2": "2,500",
+    "amountV": "4,100",
+    "editAmount": "20",
+    "fxRef0": "FxReference0",
+    "fxAmount0": "10",
+    "existingPayee": "hvt02",
+    "chatsExistingPayee":"ChatsNewPayeeName01",
+    "newPayeeName": "ChatsNewPayeeName01",
+    "newPayeeNickname": "newPayeeNickname",
+    "newPayeeAdd1": "newPayeeAdd1",
+    "newPayeeAdd2": "newPayeeAdd2",
+    "newPayeeAdd3": "newPayeeAdd3",
+    "payeeBankID": "DSBAHKH0XXX",
+    "payeeBankIDCHATS":"ANZBHKH0XXX",
+    "newPayeeAcctNumber": "123456",
+    "paymentDetail": "Payment detail for test",
+    "emailIdO": "Email0@dbs.com",
+    "emailId1": "Email1@dbs.com",
+    "emailId2": "Email2@dbs.com",
+    "emailId3": "Email3@dbs.com",
+    "emailId4": "Email4@dbs.com",
+    "message": "message",
+    "bankChargeValue": "OUR",
+    "messageToApprover": "messageToOrderingBank",
+    "existingTemplate": "chatsAutoExistingTemplate",
+    "challengeResponse": "ivy123123",
+    "withoutChallenge": "Enter this Challenge to your Digital Token or Security Device",
+    "pMChallengeText": "you are receiving the Challenge by SMS because you are the 1st approver",
+    "mChallengeText": "you are receiving the Challenge by SMS because you are trying to approve a transaction that you have created"
+  },
+  "Payroll": {
+    "UAT": {
+      "loginCompanyId": "HKS01",
+      "loginUserId": "I3SSHKS01USER1",
+      "pinId": "P@ssword1A!",
+      "fromAccount": "001749027",
+      "fileName": "HK_UploadFile/HK_Payroll_AccountNumber_UAT.txt"
+    },
+    "SIT": {
+      "loginCompanyId": "SPHK08",
+      "loginUserId": "SPHK08V98",
+      "pinId": "123123",
+      "fromAccount": "120519673",
+      "fileName": "HK_UploadFile/HK_Payroll_AccountNumber_SIT.txt"
+    },
+    "amount": "10",
+    "newPayeeNickname": "PayrollNickname",
+    "mobileNumber": "1234567890",
+    "Msg": "The nickname entered already exists. It must be unique.(Duplicate nickname: PayrollNickname)",
+    "AcctNumberPayee": "1234567890123456789012345678901234",
+    "approvalOptionByTxn": "By Transaction"
+  },
+  "Payroll02": {
+    "UAT": {
+      "loginCompanyId": "HKS01",
+      "loginUserId": "I3SSHKS01USER1",
+      "verifyUserId": "I3SSHKS01USER2",
+      "pinId": "P@ssword1A!",
+      "fromAccount": "001749027",
+      "payeeBankID": "256",
+      "fileName": "HK_UploadFile/HK_Payroll02_FPSPayee_UAT.txt"
+    },
+    "SIT": {
+      "loginCompanyId": "SPHK08",
+      "loginUserId": "SPHK08V98",
+      "verifyUserId": "SPHK08V06",
+      "pinId": "123123",
+      "fromAccount": "120519673",
+      "payeeBankID": "0256",
+      "fileName": "HK_UploadFile/HK_Payroll02_FPSPayee_SIT.txt"
+    },
+    "amountA1": "10",
+    "amountA2Ix": "2500",
+    "amountVIx": "4500",
+    "amountA2": "2,500",
+    "amountV": "4,500",
+    "editamount": "20",
+    "payeeRef": "payeeRef",
+    "payeeParticulars": "Particulars",
+    "existingPayee": "autoPayrollPayee",
+    "payeeName": "Payee Name",
+    "newPayeeNickname": "newPayeeNickname",
+    "payeeBankID": "0256",
+    "accountNumber": "987654321",
+    "paymentDetails": "Payment details to the payee bank",
+    "emailIdO": "Email0@dbs.com",
+    "emailId1": "Email1@dbs.com",
+    "emailId2": "Email2@dbs.com",
+    "emailId3": "Email3@dbs.com",
+    "emailId4": "Email4@dbs.com",
+    "message": "message",
+    "faxCountryCode0": "65",
+    "faxAreaCode0": "000",
+    "faxNo0": "76786778",
+    "existingTemplateName": "AutoPayroll02Template",
+    "EnterResponse": "OK",
+    "labelNoInformationDisplay": "No information to display",
+    "errorMessage": "One or more of the fields below have not been properly filled up. Please amend and submit again.",
+    "ViewEmailValue": "AutoTestEmail@HK.com",
+    "approvalOptionByTxn": "By Transaction",
+    "paymentType": "Hong Kong Payroll (Alternate)"
+  },
+  "ManagePayroll": {
+    "UAT": {
+      "loginCompanyId": "HKS01",
+      "loginUserId": "I3SSHKS01USER1",
+      "pinId": "P@ssword1A!",
+      "fromAccount": "001749027",
+      "payeeBankID": "256"
+    },
+    "SIT": {
+      "loginCompanyId": "SPHK08",
+      "loginUserId": "SPHK08V98",
+      "pinId": "123123",
+      "fromAccount": "120519673",
+      "payeeBankID": "0256"
+    },
+    "amount": "100000000.92",
+    "amountIX": "100,000,000.92",
+    "payeeName": "AutoTestMAXPayeeNameIs140Char1234567890AutoTestMAXPayeeNameIs140Char1234567890AutoTestMAXPayeeNameIs140Char1234567890AutoTestMAXPayeeNameIs1",
+    "newPayeeNickname": "newPayeeNickname",
+    "accountNumber": "987654321",
+    "payeeRef": "Reference fo",
+    "payeeParticulars": "Particulars",
+    "paymentDetails": "PaymentDetails1/-?:()+.50051164",
+    "emailIdO": "12345@cc.com",
+    "emailId1": "22345@cc.com",
+    "emailId2": "32345@cc.com",
+    "emailId3": "42345@cc.com",
+    "emailId4": "52345@cc.com",
+    "message": "message",
+    "paymentType": "Hong Kong Management Payroll"
+  },
+  "ManagePayroll02": {
+    "UAT": {
+      "loginCompanyId": "HKS01",
+      "loginUserId": "I3SSHKS01USER1",
+      "pinId": "P@ssword1A!",
+      "fromAccount": "001749027",
+      "HKFPSIDValue":"799732268",
+      "payeeBankID": "256"
+    },
+    "SIT": {
+      "loginCompanyId": "SPHK08",
+      "loginUserId": "SPHK08V98",
+      "pinId": "123123",
+      "fromAccount": "120519673",
+      "HKFPSIDValue": "FPSID0123456",
+      "payeeBankID": "0256"
+    },
+    "amount": "10",
+    "payeeName": "AutoTestMAXPayeeNameIs140Char1234567890AutoTestMAXPayeeNameIs140Char1234567890AutoTestMAXPayeeNameIs140Char1234567890AutoTestMAXPayeeNameIs1",
+    "newPayeeNickname": "newPayeeNickname",
+    "accountNumber": "987654321"
+  },
+  "DOLFxContracts": {
+    "SIT": {
+      "loginCompanyId": "SPHK08",
+      "loginUserId": "SPHK08V02",
+      "fromAccount": "121646218"
+    },
+    "paymentCurrency": "CN",
+    "amount": "10",
+    "amountF01": "5",
+    "existingPayee": "DOLpayee1",
+    "existingPayeeACT": "DOLpayeeACT"
+  },
+  "FixedDeposit": {
+    "HKAccount": {
+      "UAT": {
+        "loginCompanyId": "SPHK08",
+        "loginUserId": "SPHK08V06",
+        "fundingAccount": "5747882443",
+        "fixdDepositAccount": "3D-GOLD JEWELLERY (HK) LIMITED",
+        "amount": "50,001",
+        "maturityValue": "Renew Principal Plus Interest"
+      },
+      "SIT": {
+        "loginCompanyId": "SPHK08",
+        "loginUserId": "SPHK08V06",
+        "fundingAccount": "5747882441",
+        "fixdDepositAccount": "3D-GOLD JEWELLERY (HK) LIMITED",
+        "amount": "50,001",
+        "maturityValue": "Renew Principal Plus Interest"
+      }
+    }
+  },
+  "downloadFile": {
+    "UAT": {
+      "loginCompanyId": "HKS01",
+      "loginUserId": "I3SSHKS01USER1",
+      "pinId":"P@ssword1A!",
+      "fromAccount": "001749027-HKD"
+    },
+    "SIT": {
+      "loginCompanyId": "SPHK04",
+      "loginUserId": "SPHK04V01",
+      "pinId":"123123",
+      "fromAccount": "3034952586-HKD"
+    },
+    "fromDate": "01 Apr 2018",
+    "uploadFileName": "HKBP_Autopay-01.txt",
+    "paymentType": "Bulk Payment - AutoPay"
+  },
+  "MT101Payment": {
+    "UAT": {
+      "loginCompanyId": "SPHK08",
+      "loginUserId": "SPHK08V99"
+    },
+    "SIT": {
+      "loginCompanyId": "SPHK08",
+      "loginUserId": "SPHK08V99"
+    },
+    "fromAccount": "121686218",
+    "paymentCurrency": "HKD",
+    "amount": "18.55",
+    "fxContractReference": "testfxCR0123888",
+    "existingPayee": "DOLpayee1",
+    "paymentTypeName": "MT101 Payment"
+  },
+  "SelectApprover": {
+    "approverName": "SPHK08V02",
+    "selectApproverSuccessMsg": "Selected Approvers has been saved successfully"
+  },
+  "BulkCollection": {
+    "UAT": {
+      "loginCompanyId": "HKS01",
+      "loginUserId": "I3SSHKS01USER1",
+      "pinId": "P@ssword1A!",
+      "fromAccount": "001749027",
+      "payerBankID": "256"
+    },
+    "SIT": {
+      "loginCompanyId": "SPHK08",
+      "loginUserId": "SPHK08V05",
+      "pinId": "123123",
+      "fromAccount": "120519673",
+      "payerBankID": "0256"
+    },
+    "payerName": "DEBTORNAMEMAXLENGTHEXTENDEDFROMCHAR20TOCHAR140ANDIFLENGTHMORETHAN140WILLUPLOADFAILDEBTORNAMEMAXLENGTHEXTENDEDFROMCHAR20TOCHAR140ANDIFLENGTH1",
+    "payerAcctNum": "1234567890123456789012345678901234",
+    "DDAreference": "DDA reference 1234",
+    "MandateID": "Mandate ID Mandate ID Mandate ID123",
+    "amountA1": "10",
+    "transactionCode": "92 - Direct Debit(Merchant Payment)",
+    "purposeOfPayment": "Merchant Initiated Bills Payment",
+    "particular": "Particulars1",
+    "existingPayee": "AutoTestBulkCollection",
+    "transactionCode1": "38 - Direct Debit(Consolidated posting)",
+    "transactionCode2": "98 - Direct Debit(Merchant Payment - Consolidated posting)",
+    "emailIdO": "12345@cc.com",
+    "emailId1": "22345@cc.com",
+    "emailId2": "32345@cc.com",
+    "emailId3": "42345@cc.com",
+    "emailId4": "52345@cc.com",
+    "msg": "msg",
+    "collectionDetails": "PaymentDetails1/-?:()+.50051164",
+    "paymentTypeView": "Hong Kong Bulk Collection",
+    "itemCreditType": "Itemized Credit"
+  },
+  "BulkPayment": {
+    "UAT": {
+      "loginCompanyId": "HKS01",
+      "loginUserId": "I3SSHKS01USER1",
+      "pinId": "P@ssword1A!",
+      "fromAccount": "001749027",
+      "MobileValue": "456789",
+      "payeeBankID": "256",
+      "fileName1": "HK_UploadFile/HK_BulkPayment_FPSpayee_UAT.txt",
+      "fileName2": "HK_UploadFile/HK_BulkPayment_AccountNumber_UAT.txt"
+    },
+    "SIT": {
+      "loginCompanyId": "SPHK08",
+      "loginUserId": "SPHK08V03",
+      "pinId": "123123",
+      "payeeBankID": "0256",
+      "fromAccount": "120519673",
+      "MobileValue": "1234567890",
+      "fileName1": "HK_UploadFile/HK_BulkPayment_FPSpayee_SIT.txt",
+      "fileName2": "HK_UploadFile/HK_BulkPayment_AccountNumber_SIT.txt"
+    },
+    "payee1": {
+      "payeeName": "AutoTestMAXPayeeNameIs140Char1234567890AutoTestMAXPayeeNameIs140Char1234567890AutoTestMAXPayeeNameIs140Char1234567890AutoTestMAXPayeeNameIs1",
+      "accountNumber": "987654321",
+      "amount": "10",
+      "payeeRef": "Reference for payee1",
+      "payeeParticulars": "Reference for particulars",
+      "paymentDetails": "paymentDetails",
+      "emailIdO": "123456@cc.com",
+      "emailId1": "223456@cc.com",
+      "emailId2": "323456@cc.com",
+      "emailId3": "423456@cc.com",
+      "emailId4": "523456@cc.com",
+      "message": "message"
+    },
+    "payee2": {
+      "payeeName": "payeeName2",
+      "accountNumber": "987654322",
+      "amount": "11",
+      "payeeRef": "Reference for payee2",
+      "payeeParticulars": "Reference for particulars2",
+      "paymentDetails": "paymentDetails2",
+      "emailIdO": "1234562@cc.com",
+      "emailId1": "2234562@cc.com",
+      "emailId2": "3234562@cc.com",
+      "emailId3": "4234562@cc.com",
+      "emailId4": "5234562@cc.com",
+      "message": "message2"
+    },
+    "newPayeeNickname": "newPayeeNickname",
+    "totalAmount": "21",
+    "paymentTypeValue": "Hong Kong Bulk Payment",
+    "itemDebitTypeValue": "Itemized Debit",
+    "approvalOptionByTxn": "By Transaction",
+    "amount": "10",
+    "accountNumber": "987654321",
+    "HKFPSIDValue": "FPSID0123456"
+  },
+  "PartnerBank": {
+    "UAT": {
+      "loginCompanyId": "HKP2A01",
+      "loginUserId": "AUTOHKTEST0001",
+      "payeeName": "philippines payee",
+      "RTGS": {
+        "sourceAccount": "PHACCOUNT1234567890",
+        "currency": "PHP",
+        "purposeCode": "BLSPAY"
+      },
+      "PDDTS": {
+        "sourceAccount": "PHACCOUNT888888888",
+        "currency": "USD",
+        "purposeCode": "D07610"
+      }
+    },
+    "SIT": {
+      "loginCompanyId": "HKP2A01",
+      "loginUserId": "AUTOHKTEST0001",
+      "payeeName": "philippines payee",
+      "RTGS": {
+        "sourceAccount": "PHACCOUNT1234567890",
+        "currency": "PHP",
+        "purposeCode": "BLSPAY"
+      },
+      "PDDTS": {
+        "sourceAccount": "PHACCOUNT888888888",
+        "currency": "USD",
+        "purposeCode": "D07610"
+      }
+    },
+    "payeeAddress": "philippines Payee Address",
+    "customerReference": "123123",
+    "amount": "123",
+    "partnerBankLocation": {
+      "MALAYSIA": "MALAYSIA",
+      "THAILAND": "THAILAND",
+      "PHILIPPINES": "PHILIPPINES"
+    }
+  },
+  "HKLimitOrder": {
+    "UAT": {
+      "loginCompanyId": "HKP2A01",
+      "loginUserId": "HKP2A0188",
+      "loginUserIdWithoutApproveOwn": "HKP2A01AUTO01",
+      "sellAccountValue": "66899999",
+      "buyAccountValue": "12121212"
+    },
+    "SIT": {
+      "loginCompanyId": "HKP2A01",
+      "loginUserId": "HKP2A0188",
+      "loginUserIdWithoutApproveOwn": "HKP2A01AUTO01",
+      "sellAccountValue": "66899999",
+      "buyAccountValue": "788401647"
+    },
+    "amountA1": "100",
+    "buyAmount": "94.03",
+    "sellAccountCCY": "HKD",
+    "buyAccountCCY": "CNY",
+    "remarks": "remarks for Limit Order",
+    "responseCode": "123123"
+  },
+  "InstantFXConversion": {
+    "UAT": {
+      "loginCompanyId": "SPHK08",
+      "loginUserId": "SPHK08V190",
+      "loginUserId02": "SPHK08V191",
+      "fromAccountValue": "2025041901",
+      "toAccountValue": "2025051903"
+    },
+    "SIT": {
+      "loginCompanyId": "SPHK08",
+      "loginUserId": "SPHK08V190",
+      "loginUserId02": "SPHK08V191",
+      "fromAccountValue": "2025041901",
+      "toAccountValue": "2025051903"
+    },
+    "approver":"SPHK08V190",
+    "fromCCY": "HKD",
+    "toCCY": "AUD",
+    "amount": "100",
+    "amountView": "1.00",
+    "amountViewValue": "1,000.00",
+    "responseCode": "123123",
+    "messageToApprover": "messageToApprover"
+  },
+  "IntraCompanyTransfer": {
+    "UAT": {
+      "loginCompanyId": "HKS01",
+      "loginUserId": "I3SSHKS01USER1",
+      "pinId": "P@ssword123",
+      "fromAccount": "001749027",
+      "toAccount": "781416185 "
+    },
+    "SIT": {
+      "loginCompanyId": "SPHK08",
+      "loginUserId": "SPHK08V03",
+      "pinId": "123123",
+      "fromAccount": "121686218",
+      "toAccount": "120519673 "
+    },
+    "amountA1": "10",
+    "editAmount": "20",
+    "additionNote": "messageToOrderingBank",
+    "paymentType": "Transfer within Own Accounts"
+  },
+  "template": {
+    "UAT": {
+      "loginCompanyId": "SPHK08",
+      "loginUserId": "SPHK08V03",
+      "approveUserId": "SPHK08V04"
+    },
+    "SIT": {
+      "loginCompanyId": "AUTOHK01",
+      "loginUserId": "AUTOHK01S01",
+      "approveUserId": "AUTOHK01S02"
+    },
+    "bulkPayment": {
+      "fromAccount": "7788922200",
+      "amount": "100000000.76",
+      "amountIX": "100,000,000.76",
+      "existingPayeeName": "AutoPayPayee",
+      "newPayeeNickname": "newPayeeNickname",
+      "payeeRef": "payeeRef"
+    },
+    "singlePayment": {
+      "fromAccount": "7788922200",
+      "amount": "100.56",
+      "existingPayeeName": "existingAutoFPSPayee"
+    }
+  },
+  "PaymentReport": {
+    "UAT": {
+      "loginCompanyId": "HKS01",
+      "loginUserId": "I3SSHKS01USER1",
+      "pinId":"P@ssword1A!",
+      "account": "3XXGXXX XXXEXXXRX XHXX LXXXTXX - 001393605 - CNY",
+      "accountNotInclude": "ABI MCA HKD - 001177900 - HKD"
+    },
+    "SIT": {
+      "loginCompanyId": "SPHK08",
+      "loginUserId": "SPHK08V98",
+      "pinId":"123123",
+      "account": "12051967300000 - 120519673 - HKD",
+      "accountNotInclude": "1216462180 - 121646218 - HKD"
+    },
+    "usage": "Shared",
+    "daily": "Afternoon (12PM-2PM)",
+    "deliverySchedule": "Daily",
+    "deliveryOneOff": "One-off / ad-hoc",
+    "password": "123456",
+    "confirmPassword": "123456",
+    "remarks": "remarks",
+    "payeeReference": "payeeReference",
+    "payeeName": "payeeName"
+  },
+  "AccountTransfer": {
+      "UAT": {
+          "loginCompanyId": "HKS01",
+          "loginUserId": "I3SSHKS01USER1",
+          "pinId": "P@ssword123",
+          "fromAccount": "001749027",
+          "newPayeeAcctNumber": "788362064",
+          "retrieveNameValue":"3X-GXXX X******** (**) L******",
+          "retrieveNameFailMessage":"Sorry, we cannot retrieve the payee name at the moment. Please try again."
+      },
+      "SIT": {
+          "loginCompanyId": "SPHK08",
+          "loginUserId": "SPHK08V07",
+          "pinId": "123123",
+          "fromAccount": "121686218",
+          "newPayeeAcctNumber": "123456000001",
+          "retrieveNameValue":"Retrieve N*** R*****",
+          "retrieveNameFailMessage":"We couldn’t find this payee in our records. Please double check the payee account number. If bank or branch code was included, please remove and try again."
+      },
+      "existingPayeeRetrSuccess":"AutoACTExistingPayee02",
+      "existingPayeeRetrFail":"AutoACTExistingPayee",
+      "amountA1": "10",
+      "Country": "Hong Kong",
+      "newPayeeName": "AutoNewPayeeName",
+      "newPayeeNickname": "newPayeeNickname",
+      "retrieveFailAcctNum": "123456fail",
+      "newPayeeAdd1": "newPayeeAdd1",
+      "newPayeeAdd2": "newPayeeAdd2",
+      "newPayeeAdd3": "newPayeeAdd3"
+    },
+    "fixedDepositPlacement": {
+        "UAT": {
+          "loginCompanyId": "SPHK08",
+          "loginUserId": "SPHK08V08",
+          "fundingAccount": "5747882441",
+          "fixdDepositAccount": "3D-GOLD JEWELLERY (HK) LIMITED"
+        },
+        "SIT": {
+          "loginCompanyId": "SPHK08",
+          "loginUserId": "SPHK08V08",
+          "fundingAccount": "5747882441",
+          "fixdDepositAccount": "3D-GOLD JEWELLERY (HK) LIMITED"
+        },
+        "amount": "50,001"
+    }
+}

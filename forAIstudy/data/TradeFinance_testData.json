@@ -1,0 +1,665 @@
+{
+    "paymentType": {
+        "IDLC": "IDLC",
+        "IDLC_ISS": "IDLC-ISS",
+        "TradeFinance": "FIN",
+        "TradeFinance_ARF": "FIN-ARF",
+        "IGUA": "IGUA",
+        "IGUA_ISS": "IGUA-ISS",
+        "TradeFinance_APF": "FIN-APF",
+        "StandbyLC": "ISLC",
+        "IBUC": "IBUC",
+        "ISSG": "ISSG",
+        "EDLC": "EDLC",
+        "EDC": "EDC",
+        "TradeFinance_PSF": "FIN-LPC"
+    },
+    "transactionType": {
+        "app": "APP"
+    },
+    "status": {
+        "incomplete": "I",
+        "PendingApproval": "Pending approval",
+        "QueuedForTransmission": "Queued for Transmission",
+        "Sent": "Sent",
+        "Arrived": "Arrived",
+        "ModificationRequired": "Modification Required",
+        "Template": "Template",
+        "Approved": "Approved",
+        "Proceed": "Proceed",
+        "Processing": "Processing"
+    },
+    "currency": {
+        "USD": "USD - US Dollar"
+    },
+    "transactionParties": {
+        "UAT": {
+            "loginCompanyId": "AUTOSG02",
+            "loginUserId": "AUTOSG02C02"
+        },
+        "SIT": {
+            "loginCompanyId": "SG2BE11",
+            "loginUserId": "SG2BE11S07"
+        }
+    },
+    "importLC": {
+        "UAT": {
+            "loginCompanyId": "AUTOSG02",
+            "loginUserId": "AUTOSG02C02",
+            "beneficiaryPartyID": "001"
+        },
+        "SIT": {
+            "loginCompanyId": "SG2BE11",
+            "loginUserId": "SG2BE11S07",
+            "beneficiaryPartyID": "111111"
+        },
+        "transAmount": "22",
+        "tenorDays": "1",
+        "tenorPhrase": "FM",
+        "descOfGoods": "ivy123456descOfGoods",
+        "shipmentPeriod": "ivy123456shipmentPeriod",
+        "bankChgOtherDesc": "ivy123456bankChgOtherDesc",
+        "cntPerson": "22",
+        "areaCode": "376",
+        "number": "8866677",
+        "telNumber": "1234567890",
+        "approvePassword": "approve123"
+    },
+    "importLCAmendment": {
+        "UAT": {
+            "loginCompanyId": "SG102HC",
+            "loginUserId": "SG102A01",
+            "balanceCustomerRef": "00553011777143",
+            "customerRef": "IRAC-SG-LC-09",
+            "debitAccNo": "141504-020-SGD"
+        },
+        "SIT": {
+            "loginCompanyId": "SG2BE11",
+            "loginUserId": "SG2BE11S07",
+            "balanceCustomerRef": "00853010000025",
+            "customerRef": "SL-LC2",
+            "debitAccNo": "138003-022-USD"
+        },
+        "areaCode": "376",
+        "number": "8866677",
+        "transAmount": "22",
+        "cntPerson": "22",
+        "approvePassword": "approve123",
+        "NoRecords": "No records found"
+    },
+    "TradeFinance_ARF": {
+        "UAT": {
+            "loginCompanyId": "AUTOSG02",
+            "loginUserId": "AUTOSG02C02"
+        },
+        "SIT": {
+            "loginCompanyId": "SG2BE11",
+            "loginUserId": "SG2BE11S07"
+        },
+        "custRef": "custRef",
+        "routeApplicationTo": "ARF-TF",
+        "applicant": "PARTY123",
+        "invoiceCcy": "10",
+        "invoiceAmt": "22",
+        "financeCcy": "10",
+        "descriptionOfGoods": "description Of Goods",
+        "contactPerson": "Contact Person",
+        "telCtrycode": "376",
+        "telAreacode": "0505",
+        "telNumber": "1234567890",
+        "attachmentsOptions": "AOS",
+        "debitAccountOnMaturity": "96502-030-HKD",
+        "debitChargesFromAnotherAccount": "99502-CFODA-SGD",
+        "approvePassword": "1234567"
+    },
+    "bankerGuarantee": {
+        "UAT": {
+            "loginCompanyId": "AUTOSG02",
+            "loginUserId": "AUTOSG02C02"
+        },
+        "SIT": {
+            "loginCompanyId": "SG2BE11",
+            "loginUserId": "SG2BE11S07"
+        },
+        "beneficiaryPartyID": "001",
+        "beneficiaryPartyName": "001Name",
+        "beneficiaryPartyAddress1": "Address1",
+        "advisingBankPartyID": "00000000",
+        "advisingBankPartyName": "DBS BANK LIMITED, SPORE",
+        "advisingBankPartyAddress1": "12 MARINA BOULEVARD",
+        "transAmount": "22.00",
+        "detailsText": "ivy123456detailsText",
+        "cntPerson": "22",
+        "areaCode": "376",
+        "number": "8866677",
+        "telNumber": "1234567890",
+        "approvePassword": "approve123"
+    },
+    "TradeFinance_APF": {
+        "UAT": {
+            "loginCompanyId": "AUTOSG02",
+            "loginUserId": "AUTOSG02C02"
+        },
+        "SIT": {
+            "loginCompanyId": "SG2BE11",
+            "loginUserId": "SG2BE11S07"
+        },
+        "invoiceCcy": "10",
+        "invoiceAmt": "22",
+        "financeCcy": "10",
+        "financePeriod": "10",
+        "supplierName": "supplierName",
+        "natureOfUnderlyingTrade": "Goods",
+        "descriptionOfGoods": "description Of Goods",
+        "contactPerson": "Contact Person",
+        "telCtrycode": "376",
+        "telAreacode": "0505",
+        "telNumber": "1234567890",
+        "attachmentsOptions": "AOS",
+        "debitAccountOnMaturity": "96502-030-HKD",
+        "debitChargesFromAnotherAccount": "99502-CFODA-SGD",
+        "approvePassword": "1234567",
+        "offlinereportTitle": "Offline Approval Print",
+        "viewReportTitle": "Pre-Shipment Financing Application"
+    },
+    "bankerGuaranteeAmendment": {
+        "UAT": {
+            "loginCompanyId": "SG102HC",
+            "loginUserId": "SG102A02",
+            "balanceCustomerRef": "00553020465695",
+            "customerRef": "IRAC-SG-BGAMD-1",
+            "loginCompanyIdHK": "HK100",
+            "loginUserIdHK": "HK100A01"
+        },
+        "SIT": {
+            "loginCompanyId": "SG2BE11",
+            "loginUserId": "SG2BE11S07",
+            "balanceCustomerRef": "00853010000025",
+            "customerRef": "SL-LC2",
+            "loginCompanyIdHK": "HK100",
+            "loginUserIdHK": "HK100A01"
+        },
+        "areaCode": "376",
+        "number": "8866677",
+        "transAmount": "22",
+        "cntPerson": "22",
+        "approvePassword": "approve123",
+        "filname": "300dpiTrade.jpg",
+        "lessthan300dpi": "96dpiTrade.jpg"
+    },
+    "StandbyLettersOfCredit": {
+        "UAT": {
+            "loginCompanyId": "AUTOSG02",
+            "loginUserId": "AUTOSG02C02",
+            "benePartyId": "001",
+            "advisingBankPartyId": "00000002",
+            "debitChargeFrom": "881017-021-SGD"
+        },
+        "SIT": {
+            "loginCompanyId": "SG2BE11",
+            "loginUserId": "SG2BE11S07",
+            "benePartyId": "NEWPARTY",
+            "advisingBankPartyId": "32160000",
+            "debitChargeFrom": "138003-022-USD"
+        },
+        "selectApplicationType": "Issuance",
+        "amount": "10",
+        "details": "details",
+        "contactPerson": "Contact Person",
+        "telAreacode": "0505",
+        "telephoneNum": "1234567890",
+        "approvePassword": "1234567"
+    },
+    "ImportBiillunderCollection": {
+        "UAT": {
+            "loginCompanyId": "SG102HC",
+            "loginUserId": "SG102A02",
+            "verifyUserId": "SG102A02"
+        },
+        "sendResponseTo": "IBUCBILL",
+        "responseOption": "Reject",
+        "contactPerson": "Contact Person",
+        "telCtrycode": "225",
+        "telAreacode": "1212",
+        "telNumber": "1234567890",
+        "faxCtrycode": "225",
+        "faxAreacode": "1212",
+        "faxNumber": "1234567890",
+        "approvePassword": "1234567"
+    },
+    "TradeApplicationManager": {
+        "UAT": {
+            "DBSCM1": "DBSCM1",
+            "ASADM2": "ASADM2"
+        },
+        "SIT": {
+            "ASADM1": "ASADM1",
+            "ASADM2": "ASADM2"
+        },
+        "DBSSG": "DBS Singapore",
+        "companyId": "Corporation ID",
+        "SGAffiliate": "AUTOSG02"
+    },
+    "TradeReport": {
+        "UAT": {
+            "loginCompanyId": "AUTOSG02",
+            "loginUserId": "AUTOSG02C02",
+            "companyName": "BOOYAH RESORTS CORP LLP"
+        },
+        "SIT": {
+            "loginCompanyId": "SG2BE11",
+            "loginUserId": "SG2BE11S07",
+            "companyName": "Test 02 CANDY SUGAR CORPORATION"
+        },
+        "reportType": "C",
+        "reportTitle": "Company User Details"
+    },
+    "shippingGuarantee": {
+        "UAT": {
+            "loginCompanyId": "AUTOSG02",
+            "loginUserId": "AUTOSG02C02"
+        },
+        "SIT": {
+            "loginCompanyId": "SG2BE11",
+            "loginUserId": "SG2BE11S07"
+        },
+        "transAmount": "22.00",
+        "departure": "departureXiaMen",
+        "destination": "destinationHeNan",
+        "shippingAirline": "567890",
+        "vesselFlight": "123456",
+        "blReference": "blReference",
+        "goodsDescription": "goodsDescription",
+        "areaCode": "376",
+        "number": "8866677",
+        "cntPerson": "22",
+        "approvePassword": "approve123"
+    },
+    "exportLC": {
+        "UAT": {
+            "loginCompanyId": "AUTOSG02",
+            "loginUserId": "AUTOSG02C02"
+        },
+        "SIT": {
+            "loginCompanyId": "SG2BE11",
+            "loginUserId": "SG2BE11S07"
+        },
+        "applicantName": "applicantName",
+        "applicantNameAddress": "applicantNameAddress",
+        "issuingBankName": "issuingBankName",
+        "issuingBankNameAddress": "issuingBankNameAddress",
+        "issuingBankSWIFTAddress": "issuingBankSWIFTAddress",
+        "lcNumber": "2345688",
+        "transAmount": "22.00",
+        "tenorDays": "1",
+        "tenorPhrase": "FM",
+        "descOfGood": "descOfGood",
+        "mixedPaymentDetails": "ivy123456mixedPaymentDetails",
+        "vesselNameFlightNo": "vesselNameFlightNo",
+        "imoNo": "imoNo",
+        "blAwbOrCargoReceiptNo": "blAwbOrCargoReceiptNo",
+        "portofloading": "portofloading",
+        "portofdischarge": "portofdischarge",
+        "payeeAcctNo": "payeeAcctNo",
+        "payeeBnkName": "payeeBnkName",
+        "payeeBankAddr1": "payeeBankAddr1",
+        "payeeBankSwift": "payeeBankSwift",
+        "intermediaryBankName": "intermediaryBankName",
+        "intermediaryBankAddr1": "intermediaryBankAddr1",
+        "intermediaryBankSWIFT": "intermediaryBankSWIFT",
+        "cntPerson": "22",
+        "areaCode": "376",
+        "number": "8866677",
+        "faxAreaCode": "376",
+        "faxNum": "8866677",
+        "telNumber": "1234567890",
+        "drweBankName": "drweBankName",
+        "drweBankAddr1": "drweBankAddr1",
+        "approvePassword": "approve123"
+    },
+    "exportBillUnderCollection": {
+        "UAT": {
+            "loginCompanyId": "AUTOSG02",
+            "loginUserId": "AUTOSG02C02",
+            "partyId": "001",
+            "collectFromPartyId": "00000000"
+        },
+        "SIT": {
+            "loginCompanyId": "SG2BE11",
+            "loginUserId": "SG2BE11S07",
+            "partyId": "89898",
+            "collectFromPartyId": "32160000"
+        },
+        "collFromBnkSWIFTAdrs": "collFromBnkSWIFTAdrs",
+        "transAmount": "22.00",
+        "tenorDays": "1",
+        "tenorPhrase": "FM",
+        "mixedPaymentDetails": "ivy123456mixedPaymentDetails",
+        "vesselNameFlightNo": "vesselNameFlightNo",
+        "imoNo": "imoNo",
+        "blAwbOrCargoReceiptNo": "blAwbOrCargoReceiptNo",
+        "portofloading": "portofloading",
+        "portofdischarge": "portofdischarge",
+        "yourBankCharges": "BCR",
+        "amount": "22",
+        "fxType": "1",
+        "cntPerson": "22",
+        "areaCode": "376",
+        "number": "8866677",
+        "telNumber": "1234567890",
+        "drawName": "drawName",
+        "drawNameAddress": "drawNameAddress",
+        "valueReceived": "valueReceived",
+        "quanity": "quanity",
+        "fillInAmount": "21",
+        "descOfGood": "descOfGood",
+        "approvePassword": "approve123"
+    },
+    "PreShipmentFinancing": {
+        "UAT": {
+            "loginCompanyId": "AUTOSG02",
+            "loginUserId": "AUTOSG02C02",
+            "selectApprover": "AUTOSG02C01@AUTOSG02"
+        },
+        "SIT": {
+            "loginCompanyId": "SG2BE11",
+            "loginUserId": "SG2BE11S07",
+            "selectApprover": "SG2BE11S02@SG2BE11"
+        },
+        "relatedlc": "relatedlc",
+        "invoiceCcy": "10",
+        "invoiceAmt": "22",
+        "invoiceAmtEdit": "23",
+        "financeCcy": "10",
+        "descriptionOfGoods": "description Of Goods",
+        "contactPerson": "Contact Person",
+        "telCtrycode": "376",
+        "telAreacode": "0505",
+        "telNumber": "1234567890",
+        "attachmentsOptions": "AOS",
+        "debitAccountOnMaturity": "96502-030-HKD",
+        "debitChargesFromAnotherAccount": "99502-CFODA-SGD",
+        "approvePassword": "1234567",
+        "rejectReason": "rejectReason",
+        "payeeName": "payeeNamex1234567890123456789",
+        "payeeAddr1": "payeeAddr11234567890123456789",
+        "payeeAddr2": "payeeAddr21234567890123456789",
+        "payeeAddr3": "payeeAddr31234567890123456789",
+        "payeeRef": "payeeRefxx1234567890123456789",
+        "payeeACNum": "payeeACNum12345678901234567890123456789012345678901234",
+        "payeeBankName": "payeeBankName1234567890123456",
+        "payeeBankAddr1": "payeeBankAddr1123456789012345",
+        "payeeBankAddr2": "payeeBankAddr2123456789012345",
+        "payeeBankAddr3": "payeeBankAddr3123456789012345",
+        "payeeBankSWIFT": "swift",
+        "inBankName": "inBankName1234567890123456789",
+        "inBankAddr1": "inBankAddr1123456789012345678",
+        "inBankAddr2": "inBankAddr2123456789012345678",
+        "inBankAddr3": "inBankAddr3123456789012345678",
+        "inBankSWIFT": "swift"
+    },
+    "FileExchange": {
+        "UAT": {
+            "loginCompanyId": "AUTOSG01",
+            "loginUserId": "AUTOSG01S01",
+            "fileName": "SG_UploadFile/AUTOSG01_SG_GPC_UFF_UAT.txt",
+            "fileName2": "SG_UploadFile/SG_COL_FSUpload_NUFF_UAT.txt",
+            "FileName": "SG_GPC_UFF_UAT.txt",
+            "FileName2": "SG_COL_FSUpload_NUFF_UAT.txt"
+        },
+        "SIT": {
+            "loginCompanyId": "AUTOSG01",
+            "loginUserId": "AUTOSG01S01",
+            "fileName": "SG_UploadFile/AUTOSG01_SG_GPC_UFF_SIT.txt",
+            "fileName2": "SG_UploadFile/SG_COL_FSUpload_NUFF_SIT.txt",
+            "FileName": "SG_GPC_UFF_SIT.txt",
+            "FileName2": "SG_COL_FSUpload_NUFF_SIT.txt"
+        },
+        "RequestType": "Application for Transfer of Documentary Credit",
+        "RequestType1": "Settlement Instruction Form",
+        "RequestType2": "Silent Confirmation",
+        "RequestType3": "Trade Instruction Letter",
+        "destinationId": "AUTOSG01",
+        "category": "Trade",
+        "responseCode": "123",
+        "status_PendingApproval": "Pending Approval",
+        "status_Approved": "Approved",
+        "status_Rejected": "Rejected",
+        "statusReadyDownload": "Ready For Download"
+    },
+    "samplingRequest": {
+        "UAT": {
+            "loginCompanyId": "SG102HC",
+            "loginUserId": "SG102A02"
+        },
+        "SIT": {
+            "loginCompanyId": "SG2BE11",
+            "loginUserId": "SG2BE11S03"
+        },
+        "samplingRequestRef": "SRPIF000000000984",
+        "Completed": "Completed"
+    },
+    "OverView": {
+        "UAT": {
+            "loginCompanyId": "SG102HC",
+            "loginUserId": "SG102A02"
+        },
+        "SIT": {
+            "loginCompanyId": "SG2BE11",
+            "loginUserId": "SG2BE11S07"
+        },
+        "defaultCcy": "SGD",
+        "totalAmount": "239,920.51",
+        "changeCcy": "HKD",
+        "inquiryTitle": "Transaction Inquiry"
+    },
+    "newBankerGuarantee": {
+        "UAT": {
+            "loginCompanyId": "AUTOSG02",
+            "loginUserId": "AUTOSG02C02"
+        },
+        "SIT": {
+            "loginCompanyId": "SG2BE11",
+            "loginUserId": "SG2BE11S07"
+        },
+        "debitFrom": "0018001428",
+        "beneficiaryPartyID": "AutoTestBGBene",
+        "ebeneficiaryPartyID": "Republic Polytechnic",
+        "applicantPartyID": "AutoTestBG",
+        "fileName": "Trade_UploadFile/BG guarantee format.pdf",
+        "guaranteeAmount": "10",
+        "claimPeriod": "Same as expiry date",
+        "contractNumber": "Contract number",
+        "contractAmount": "20",
+        "purposeOfContract": "Purpose of contract",
+        "additionalInformation": "Additional Information",
+        "deliveryMode": "Collection at trade counter of bank",
+        "contactPerson": "ForAutoTest",
+        "contactPersonNumber": "1234567890",
+        "responseCode": "approve123",
+        "reasonForReject": "reasonForRejection",
+        "NoRecordFound": "No transactions found",
+        "uenNum": "AutoTestUENNum",
+        "purposeOfGuarantee": "purpose Of Guarantee",
+        "specialiInstructions": "Special instructions",
+        "guaranteeFormatValue": "GOV_UT",
+        "caseRefNumTitle": "Case Reference Number"
+    },
+    "purchaseInvoiceFinanceCN": {
+        "UAT": {
+            "loginCompanyId": "CNP2A01",
+            "loginUserId": "CNP2A01A01"
+        },
+        "SIT": {
+            "loginCompanyId": "CNP2A01",
+            "loginUserId": "CNP2A01A01"
+        },
+        "applicant": "applicant123123",
+        "supplier": "payeename23123",
+        "invoiceAmt": "123",
+        "invoiceCcy": "CNY",
+        "numberOfDays": "99",
+        "debitAccount": "-",
+        "descriptionOfGoods": "description Of Goods",
+        "bankLocation": "CN",
+        "payeeBankAccount": "123456798",
+        "payeeRef": "56561212",
+        "reportAccount": "30001606588",
+        "editReportAccount": "30001589988",
+        "editPaymentNature": "出口加工区 Export Related Zone",
+        "fullRef": "12145315",
+        "editFullRef": "4657987123",
+        "transactionRemark1": "121010",
+        "editBopCode": "121040",
+        "contractNumber": "123123123546",
+        "editContractNumber": "9879879877",
+        "proportionOfContractAmt": "5",
+        "editProportionOfContractAmt": "10",
+        "declarationDays": "88",
+        "editDeclarationDays": "188",
+        "additionalRemarks": "additional Information",
+        "editAdditionalRemarks": "edit additional Information",
+        "fileName": "Trade_UploadFile/PIF format.pdf",
+        "specialInstruction": "Special Instructions",
+        "messageToApprover": "message to approver",
+        "ChargeAccount":"-"
+    },
+    "purchaseInvoiceFinanceSG": {
+        "UAT": {
+            "loginCompanyId": "AUTOSG02",
+            "loginUserId": "AUTOSG02C02"
+        },
+        "SIT": {
+            "loginCompanyId": "SG2BE11",
+            "loginUserId": "SG2BE11S07"
+        },
+        "applicant": "AutoTestPIF",
+        "supplier": "AutoTestPIFSupplier",
+        "billRef": "Bill reference",
+        "financingTypeFC": "For import freight charges post-shipment",
+        "financingTypeGS": "For the import of goods and services post-shipment",
+        "financingType": "For the import of goods and services pre-shipment",
+        "invoiceAmt": "10",
+        "editAmount": "100",
+        "numberOfDays": "600",
+        "debitAccount": "0018001428",
+        "descriptionGoods": "descriptionGoods",
+        "payeeAddress":"payeeAddress123payeeAddress123payeeAddress123payeeAddress123payeeAddress123payeeAddress123payeeAddress123payeeAddress123payeeAddress123payee",
+        "payeeLocation":"Afghanistan (AF)",
+        "townCity":"TownCity12345TownCity12345TownCity1",
+        "postalCode":"postalCode123456",
+        "bankLocation": "HK",
+        "payeeBankAccount": "1234567890",
+        "payeeRef": "payeeRef",
+        "fileName": "Trade_UploadFile/PIF format.pdf",
+        "sliFileName": "Trade_UploadFile/SLi Template PIF.csv",
+        "contactPerson": "ForAutoTest",
+        "contactPersonNumber": "1234567890",
+        "specialInstruction": "Special instructions",
+        "messageToApprover": "messageToApprover"
+    },
+    "newPreShipmentFinancing": {
+        "UAT": {
+            "loginCompanyId": "SG2BE11",
+            "loginUserId": "SG2BE11A01"
+        },
+        "SIT": {
+            "loginCompanyId": "SG2BE11",
+            "loginUserId": "SG2BE11S07"
+        },
+        "exportLetterofCreditNumber": "123654789",
+        "purchaseOrderReference": "987521345",
+        "invoiceAmt": "123",
+        "editInvoiceAmt": "125",
+        "invoiceCcy": "CNY",
+        "numberOfDays": "99",
+        "debitAccount": "0018001010",
+        "editDebitAccount": "0018001410",
+        "descriptionOfServices": "description Of Services",
+        "payee": "AutoAutoTestPSFBen",
+        "bankLocation": "AF",
+        "payeeBankAccount": "123456798",
+        "payeeRef": "56561212",
+        "invocieFile": "Trade_UploadFile/SLi Template.csv",
+        "fileName": "Trade_UploadFile/PSF format.pdf",
+        "specialInstruction": "Special Instructions",
+        "messageToApprover": "message to approver",
+        "payeeAddress":"payeeAddress123payeeAddress123payeeAddress123payeeAddress123payeeAddress123payeeAddress123payeeAddress123payeeAddress123payeeAddress123payee",
+        "payeeLocation":"Hong Kong (HK)",
+        "townCity":"TownCity12345TownCity12345TownCity1",
+        "postalCode":"postalCode123456"
+    },
+    "newImportLCIssuance": {
+        "UAT": {
+            "loginCompanyId": "AUTOSG02",
+            "loginUserId": "AUTOSG02C02"
+        },
+        "SIT": {
+            "loginCompanyId": "SG2BE11",
+            "loginUserId": "SG2BE11S07"
+        },
+        "debitFrom": "0018001428",
+        "applicantPartyID": "AutoTestIDLC",
+        "beneficiaryPartyID": "AutoTestIDLCBene",
+        "amount": "10",
+        "editAmount": "100",
+        "creditTransfer": "Yes",
+        "creditConfirmation": "No (Without)",
+        "availableWith": "Issuing bank",
+        "availableBy": "By acceptance",
+        "partialShipment": "Allowed",
+        "transShipment": "Allowed",
+        "shipmentTerms": "CIF - Cost, Insurance and Freight",
+        "presentationDays": "88",
+        "presentationPeriod": "After shipment date",
+        "descriptionGoods": "descriptionGoods",
+        "transportBySeaOrAir": "No",
+        "placeOfDispatchOrReceipt": "Place of dispatch or receipt Place of dispatch or receiptPlace of dispatch or receiptPlace of dispatch or receiptPlace of dispatch or receip",
+        "loadingDestination": "Port of loading/airport of departurePort of loading/airport of departurePort of loading/airport of departurePort of loading/airport of depar",
+        "dischargeDestination": "Port of discharge/airport of destination Port of discharge/airport of destinationPort of discharge/airport of destinationPort of discharge/a",
+        "placeOfDestinationOrDelivery": "Place of destination or deliveryPlace of destination or deliveryPlace of destination or deliveryPlace of destination or deliveryPlace of des",
+        "otherDocuments": "Other documents",
+        "additionalInformation": "Additional Information",
+        "fileName": "Trade_UploadFile/Test IDLC.jpg",
+        "docBeneficiary": "for Beneficiary",
+        "docReceivingBank": "for Receiving bank",
+        "contactPerson": "ForAutoTest",
+        "contactPersonNumber": "1234567890",
+        "specialInstruction": "Special instructions",
+        "responseCode": "approve123",
+        "reasonForReject": "reasonForRejection",
+        "NoRecordFound": "No transactions found",
+        "importfinancingrequest":"Please provide us with import financing"
+    },
+    "SalesInvoiceFinancing": {
+        "UAT": {
+            "loginCompanyId": "SG2BE11",
+            "loginUserId": "SG2BE11A01"
+        },
+        "SIT": {
+            "loginCompanyId": "SG2BE11",
+            "loginUserId": "SG2BE11S07"
+        },
+        "buyer": "12312",
+        "buyerAdress": "1. 12312",
+        "uploadBuyerAddress":"1. Name of Supplier or Buyer 11",
+        "invoiceAmt": "123",
+        "editInvoiceAmt": "500",
+        "uploadinvoiceAmt": "155",
+        "financedAmount": "123",
+        "invoiceCcy": "SGD",
+        "financedCCY": "SGD",
+        "numberOfDays": "99",
+        "debitAccount": "0001033133012",
+        "creditAccount": "0001033135016",
+        "chargeAccountName": "文CANDY & SUGAR CORPORATION",
+        "descriptionOfGoods": "description Of Goods",
+        "descriptionOfServices": "Description of services",
+        "Specify": "Specify123",
+        "specialInstruction": "Special Instructions",
+        "messageToApprover": "message to approver",
+        "fileName": "Trade_UploadFile/SLi Template.csv",
+        "digiDocFile": "Trade_UploadFile/Test IDLC.jpg",
+        "financingValueDate": "upon bank approval"
+    }
+}

@@ -1,0 +1,48 @@
+{
+    "status": {
+        "Approved": "Approved",
+        "PendingApproval": "Pending Approval",
+        "PartialApproved": "Partial Approved",
+        "PendingRelease": "Pending Release",
+        "PendingVerification": "Pending Verification",
+        "PartialCompleted": "Partial Completed",
+        "Received": "Received",
+        "Completed": "Completed",
+        "Saved": "Saved",
+        "Submitted": "Submitted",
+        "BankRejected": "Bank Rejected",
+        "Rejected": "Rejected",
+        "Failed": "Failed",
+        "Cancelled": "Cancelled",
+        "ApproverRejected": "Approver rejected"
+    },
+    "paymentType": {
+        "TW_ACT": "TW - Account Transfer",
+        "TW_eACH": "TW - eACH Payment",
+        "TW_FISC": "TW - FISC Payment",
+        "TW_TT": "TW - Telegraphic Transfer",
+        "TW_BACH": "TW - ACH Bulk Payment",
+        "TW_BulkeACH": "TW - Bulk eACH Payment",
+        "TW_BulkCOL": "TW - ACH Bulk Collection",
+        "TW_SL2": "TW - Payroll (Alternate)",
+        "TW_ASA": "TW - ACH Payroll",
+        "TW_AS2": "TW - ACH Payroll(Alternate)"
+    },
+    "BulkForFISCFormat": {
+        "fromAccount": "477743225",
+        "amountValue": "10,000",
+        "DebitType": "Itemized Debit",
+        "newPayeeName": "DBS TAIWAN",
+        "newPayeeNickName": "DBS TAIWAN",
+        "newPayeeAcctNumber": "009031007507",
+        "paymentType": "Taiwan Bulk Payment",
+        "payeeBank": "810 036",
+        "transactionCode": "20 - Sundry Credit",
+        "paymentDetail": "Payment detail",
+        "message": "ADVICE DETAIL",
+        "bankChargeUs": "You (DEBT/OUR)\nYou pay DBS and other banks' fees.",
+        "chargeAccount": "477743225",
+        "billerServiceId": "201 - Cash Dividends",
+        "emailIdO": "sbaraiya@euronetworldwide.com"
+    }
+}

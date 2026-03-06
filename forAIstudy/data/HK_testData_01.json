@@ -1,0 +1,344 @@
+{
+    "login": {
+      "loginCompanyId": "",
+      "loginUserId": "",
+      "verifyUserId": ""
+    },
+    "status": {
+      "Approved": "Approved",
+      "PendingApproval": "Pending Approval",
+      "PartialApproved": "Partial Approved",
+      "PendingRelease": "Pending Release",
+      "PendingVerification": "Pending Verification",
+      "PartialCompleted": "Partial Completed",
+      "Received": "Received",
+      "Completed": "Completed",
+      "Saved": "Saved",
+      "Submitted": "Submitted",
+      "BankRejected": "Bank Rejected",
+      "Rejected": "Rejected",
+      "Failed": "Failed",
+      "Cancelled": "Cancelled",
+      "Active": "Active"
+    },
+
+    "template": {
+    "UAT": {
+      "loginCompanyId": "HK1R11",
+      "loginUserId": "HK1R11M01",
+      "approveUserId": "HK1R11N01",
+      "pinId":"P@ssword1A!"
+    },
+    "SIT": {
+      "loginCompanyId": "AUTOHK01",
+      "loginUserId": "AUTOHK01S01",
+      "approveUserId": "AUTOHK01S02",
+      "pinId":"123123"
+    },
+    "bulkPayment": {
+      "UAT":{
+        "fromAccount": "000887162"
+      },
+      "SIT":{
+        "fromAccount": "778892220"
+      },
+      "amount": "100000000.76",
+      "amountIX": "100,000,000.76",
+      "existingPayeeName": "AutoPayPayee",
+      "payeeRef": "payeeRef"
+    },
+    "singlePayment": {
+      "UAT":{
+        "fromAccount": "001110544"
+      },
+      "SIT":{
+        "fromAccount": "778892220"
+      },
+      "amount": "100.56",
+      "existingPayeeName": "existingAutoFPSPayee"
+    },
+    "TT": {
+      "UAT":{
+        "fromAccount": "001110544"
+      },
+      "SIT":{
+        "fromAccount": "778892220"
+      },
+      "amount": "100.56",
+      "PayeeCountry": "SINGAPORE",
+      "MaxPayeeBankName":"MaxPayeeBankName140MaxPayeeBankName140MaxPayeeBankName140MaxPayeeBankName140MaxPayeeBankName140MaxPayeeBankName140MaxPayeeBankName140MaxPaye",
+      "payeeBankAdd1":"payeeBankAdd1",
+      "PayeeLocation":"ALBANIA",
+      "payeeBankAdd2":"payeeBankAdd2",
+      "TownCity":"TownCity",
+      "payeeAddress1":"payeeAddress1",
+      "payeeAddress2":"payeeAddress2",
+      "PostalCode":"PostalCode123456",
+      "newPayeeAcctNumber":"998877654"
+    }
+  },
+    "TelegraphicTransfer": {
+      "UAT": {
+        "loginCompanyId": "AUTOHK01",
+        "loginUserId": "AUTOHK01S01",
+        "verifyUserId": "AUTOHK01S02"
+      },
+      "SIT": {
+        "loginCompanyId": "AUTOHK01",
+        "loginUserId": "AUTOHK01S01",
+        "verifyUserId": "AUTOHK01S02"
+      },
+      "fromAccount": "8889000022",
+      "amount": "1100",
+      "amountValue": "1,100.00",
+      "payeeLocation": "AFGHANISTAN",
+      "payeeBankName": "AFGAN UNITED BANK",
+      "payeeBankId": "AFGUAFK0XXX",
+      "routingCodeValue": "123455667",
+      "acctNumberValue": "0123456782312",
+      "add1Value": "add11",
+      "add2Value": "add22",
+      "add3Value": "add33",
+      "intermediaryBankName": "ABN AMRO BANK N.V. HONG KONG BRANCH ",
+      "intermediaryBankCountry": "HONG KONG",
+      "intermediaryBankAddr": "CHEUNG KONG CENTER\n2 QUEENS ROAD, CENTRAL\nHONG KONG\nHONG KONG",
+      "intermediaryBankID": "ABNAHKA0XXX",
+      "adviceContent": "adviceContent",
+      "paymentDetail": "我爱中国",
+      "email": "123456@123.com\n234567@123.com\n345678@123.com\n456789@123.com\n567890@123.com\n",
+      "emailValue": "123456@123.com,234567@123.com,345678@123.com,456789@123.com,567890@123.com",
+      "messageToOrderingBank": "messageToOrderingBank",
+      "transactionNote": "transactionNote",
+      "uploadFileName": "DIGI_DOC.pdf",
+      "paymentCurrency": "HKD",
+      "bankAddress1": "SHAR-E-NAW",
+      "bankCity": "KABUL",
+      "bankChargeValue": "OUR",
+      "chargeAcctValue": "Default charge account"
+    },
+    "AccountTransfer": {
+      "UAT": {
+        "loginCompanyId": "AUTOHK01",
+        "loginUserId": "AUTOHK01S01",
+        "approveUserId": "AUTOHK01S03"
+      },
+      "SIT": {
+        "loginCompanyId": "AUTOHK01",
+        "loginUserId": "AUTOHK01S01",
+        "approveUserId": "AUTOHK01S03"
+      },
+      "fromAccount": "8889000022",
+      "amount": "20",
+      "actExistingPayee": "ExistingAutoACTPayee",
+      "retrieveFailAcctNum": "123456fail",
+      "existingPayeeRetrFail":"AutoRetrieveNameFailPayee ",
+      "acctNumberValue": "1133344556677",
+      "adviceContent": "adviceContent",
+      "paymentDetail": "我爱中国",
+      "email": "123456@123.com\n234567@123.com\n345678@123.com\n456789@123.com\n567890@123.com\n",
+      "approverOption": "AUTOHK01S01",
+      "payeeLocation":"HONG KONG",
+      "add1":"add1",
+      "retrieveNameValue":"Retrieve N*** R*****",
+      "retrieveNameFailMessage":"We couldn’t find this payee in our records. Please double check the payee account number. If bank or branch code was included, please remove and try again."
+
+    },
+
+    "FPSPayment": {
+      "UAT": {
+        "loginCompanyId": "AUTOHK01",
+        "loginUserId": "AUTOHK01S01"
+      },
+      "SIT": {
+        "loginCompanyId": "AUTOHK01",
+        "loginUserId": "AUTOHK01S01"
+      },
+      "fromAccount": "8889000022",
+      "amount": "20",
+      "editAmount": "25",
+      "fpsExistingPayee": "existingAutoFPSPayee ",
+      "payeeLocation": "HONG KONG",
+      "payeeBankName": "DBS BANK LTD, HONG KONG BRANCH",
+      "payeeBankId": "DBSSHKH0XXX",
+      "acctNumberValue": "0123456782312",
+      "add1Value": "add11",
+      "add2Value": "add22",
+      "add3Value": "add33",
+      "adviceContent": "adviceContent",
+      "paymentDetail": "payment Details for test",
+      "email": "123456@123.com\n234567@123.com\n345678@123.com\n456789@123.com\n567890@123.com\n"
+    },
+    "CHATSPayment": {
+      "UAT": {
+        "loginCompanyId": "AUTOHK01",
+        "loginUserId": "AUTOHK01S01"
+      },
+      "SIT": {
+        "loginCompanyId": "AUTOHK01",
+        "loginUserId": "AUTOHK01S01"
+      },
+      "fromAccount": "8889000022",
+      "amount": "20",
+      "cnyCcy": "CNY",
+      "deductAmountValue": "21.29",
+      "payeeLocation": "HONG KONG",
+      "payeeBankName": "DBS BANK LTD, HONG KONG BRANCH",
+      "payeeBankId": "DBSSHKH0XXX",
+      "fpsExistingPayee": "existingAutoFPSPayee ",
+      "acctNumberValue": "0123456782312",
+      "add1Value": "add11",
+      "add2Value": "add22",
+      "add3Value": "add33",
+      "adviceContent": "adviceContent",
+      "paymentDetail": "payment Details for test",
+      "email": "123456@123.com\n234567@123.com\n345678@123.com\n456789@123.com\n567890@123.com\n"
+    },
+    "FPSViaBatch": {
+      "UAT": {
+        "loginCompanyId": "AUTOHK01",
+        "loginUserId": "AUTOHK01S01"
+      },
+      "SIT": {
+        "loginCompanyId": "AUTOHK01",
+        "loginUserId": "AUTOHK01S01"
+      },
+      "fromAccount": "8889000022",
+      "amount": "20",
+      "cnyCcy": "CNY",
+      "deductAmountValue": "21.29",
+      "payeeLocation": "HONG KONG",
+      "payeeBankName": "DBS BANK LTD, HONG KONG BRANCH",
+      "payeeBankId": "DBSSHKH0XXX",
+      "fpsExistingPayee": "existingAutoFPSPayee ",
+      "acctNumberValue": "0123456782312",
+      "add1Value": "add11",
+      "add2Value": "add22",
+      "add3Value": "add33",
+      "adviceContent": "adviceContent",
+      "paymentDetail": "payment Details for test",
+      "email": "123456@123.com\n234567@123.com\n345678@123.com\n456789@123.com\n567890@123.com\n"
+    },
+    "IntraCompanyTransfer": {
+      "UAT": {
+        "loginCompanyId": "SPHK08",
+        "loginUserId": "SPHK08V03",
+        "fromAccount": "121686218",
+        "toAccount": "120519673 "
+      },
+      "SIT": {
+        "loginCompanyId": "SPHK08",
+        "loginUserId": "SPHK08V03",
+        "fromAccount": "121686218",
+        "toAccount": "120519673 "
+      },
+      "amountA1": "10",
+      "editAmount": "20",
+      "additionNote": "messageToOrderingBank",
+      "paymentType": "Transfer within Own Accounts"
+    },
+    "Alerts": {
+        "UAT": {
+            "loginCompanyId": "AUTOHK01",
+            "loginUserId": "AUTOHK01S03"
+        },
+        "SIT": {
+            "loginCompanyId": "AUTOHK01",
+            "loginUserId": "AUTOHK01S03"
+        },
+        "account0": "02120004435",
+        "account1": "021200044352",
+        "email": "AUTOHK01S03@dbs.com",
+        "EStateAltType": "eStatement Alert",
+        "FDAlertDetails": "Fixed Deposit advices",
+        "editAccount0":"021200044353",
+        "editAccount1":"021200044354"
+    },
+    "GlobesendPayment": {
+    "UAT": {
+      "loginCompanyId": "AUTOHK01",
+      "loginUserId": "AUTOHK01S01",
+      "verifyUserId": "AUTOHK01S02",
+      "loginUserId02":"AUTOHK01S06"
+    },
+    "SIT": {
+      "loginCompanyId": "AUTOHK01",
+      "loginUserId": "AUTOHK01S01",
+      "verifyUserId": "AUTOHK01S04",
+      "loginUserId02":"AUTOHK01S06" 
+    },
+    "fromAccount": "8889000022",
+    "payeeLocation": "PHILIPPINES",
+    "CNPayeeLocation": "CHINA",
+    "bankID": "PHSAPHM0XXX",
+    "CNbankID":"ABNACNS0BJG",
+    "ccy": "AUD",
+    "jpyCcy": "JPY",
+    "ccyNew": "PHP",
+    "ccyCNY": "CNY",
+    "existingAUDPayee": "existingAUDPayee",
+    "existingCNYPayee": "existingCNYPayee",
+    "existingINRPayee":"ExistingINRPayee",
+    "deductCcyValue": "HKD",
+    "deductAmountValue": "14.22",
+    "bankNameValue": "AIG-PHILAM SAVINGS BANK, INC",
+    "cnyBankValue":"ABN AMRO BANK (CHINA)CO., LTD",
+    "paidByVlue": "You (DEBT/OUR)\nYou pay DBS fees only.",
+    "routingCodeValue": "abcde",
+    "PurposePaymentFiled":"Allotment",
+    "BeneTypeFiled":"Corporate",
+    "SourceFundFiled":"1 - Bonds",
+    "RelationshipBeneFiled":"Contractee - Contractor",
+    "acctNumberValue": "11223344556677889900",
+    "add1Value": "add1",
+    "add2Value": "add2",
+    "add3Value": "add3",
+    "INRPPC":"P0502 - Receipts on account of construction works carried out abroad by Indian Companies",
+    "purposeCodeValue": "Personal",
+    "CNpurposeCodeValue":"Transfers to personal current accounts for personal income, family maintenance, donation",
+    "purposeCodeValue3": "00000 - Food and live animals",
+    "verifyAmount": "5,000.00",
+    "amount": "20",
+    "detailsToPayeeValue": "auto test for details to payee 123456789000000000000000000000000000000000000000000000000000000000000",
+    "addInfor1": "Corporate",
+    "addInfor2": "1 - Bonds",
+    "addInfor3": "Contractee - Contractor",
+    "addInfor4": "Information 44444444444444444444444",
+    "adviceContent": "adviceContent",
+    "email": "123456@123.com\n234567@123.com\n345678@123.com\n456789@123.com\n567890@123.com\n",
+    "emailValue": "123456@123.com,234567@123.com,345678@123.com,456789@123.com,567890@123.com",
+    "chargViewValue":"Default charge account",
+    "routingCodeValueJPY": "111",
+    "challengeResponse": "123456",
+    "Country": "JAPAN",
+    "newPayeeAdd1": "newPayeeAdd1",
+    "editNewPayeeAdd1": "editNewPayeeAdd1",
+    "newPayeeAdd2": "newPayeeAdd2",
+    "newPayeeAdd3": "newPayeeAdd3",
+    "newPayeeBankId": "ANOOJPJ0XXX",
+    "newPayeeAcctNumber": "12345",
+    "newPayeeAcctNumber1": "123456789",
+    "oldaddInfor1": "Information 11111111111111111111111",
+    "oldaddInfor2": "Information 22222222222222222222222",
+    "oldaddInfor3": "Information 33333333333333333333333",
+    "oldaddInfor4": "Information 44444444444444444444444"
+  },
+  "Beneficiary": {
+    "payeeLocation":"ALBANIA",
+    "townCity":"Town,City",
+    "streetName":"street Name",
+    "newPayeeAdd1": "newPayeeAdd1",
+    "newPayeeAdd2": "newPayeeAdd2",
+    "postalCode":"postalCode123",
+    "editPayeeLocation":"AFGHANISTAN",
+    "editTownCity":"Edit Town City",
+    "buildingNum":"building894",
+    "buildingName":"buildname333",
+    "floor":"floor 33",
+    "room":"room 09",
+    "department":"department123",
+    "subDepartment":"subDepartment123",
+    "countrySubDivsion":"countrySubDivsion123",
+    "townLocationName":"townLocationName234",
+    "districtName":"districtName567"
+  }   
+}

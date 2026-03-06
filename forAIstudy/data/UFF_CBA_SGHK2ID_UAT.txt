@@ -1,0 +1,4 @@
+HEADER,03012019,SG2BFE1,Sino
+PAYMENT,CBA,0018001436,SGD,,HKD,,03012019,OUR,OUR,IDSKNBene20171106,,BeneAddress,,,11112222,02,001,0016,,,RWERW,BeneBankAddr,HK,,,,1,CR11,1,,,,Reference for payee,3.1.1.1.1,Payment Details1,transactionNote,1,A0,,,,,,E,SUPP,,,,,,,,caijw10@163.com,caijw20@sina.com,caijw30@sina.com,caijw40@sina.com,caijw50@sina.com,12345678,,,,,message1,,,,
+PAYMENT,CBA,0018001436,SGD,,HKD,,03012019,OUR,OUR,NEWBENEG1,,BeneAddressI,,,21112222,02,046,0019,,,RWERW,BeneBankAddrI,HK,,,,2,CR22,2,,,,Reference for payee2,3.1.1.1.1,Payment Details2,transactionNote,2,E0,,,,,,E,SALA,,,,,,,,caijw11@163.com,caijw21@sina.com,caijw31@sina.com,caijw41@sina.com,caijw51@sina.com,12345678,,,,,message2,,,,
+TRAILER,00000002,3

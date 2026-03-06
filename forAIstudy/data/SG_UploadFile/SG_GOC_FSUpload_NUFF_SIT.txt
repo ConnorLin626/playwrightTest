@@ -1,0 +1,4 @@
+HEADER,15012021,SG2BFE1,AutoTest
+PAYMENT,GOC,0039007639,SGD,,SGD,,15012021,,,Cai,,Address 11,Address 22,Address 33,8888866666,,7375,311,,DBSSSGS0XXX,Pactera LTD,,,,,,20,,,,,30,,Reference01,,,,,,,0,TRAD,,,,,,,,,,,,,,,,,,,,,,,,
+PAYMENT,GOC,0039007639,SGD,,SGD,,15012021,,,Cai,,Address 11,Address 22,Address 33,8888877777,,7375,311,,DBSSSGS0XXX,Pactera LTD,,,,,,20,,,,,30,,Reference01,,,,,,,0,TRAD,,,,,,,,,,,,,,,,,,,,,,,,
+TRAILER,00000002,40

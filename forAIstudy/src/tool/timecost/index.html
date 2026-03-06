@@ -1,0 +1,108 @@
+  <html>
+    <style>
+        .chart-container {
+        position: relative;
+        margin: auto;
+        height: 80vh;
+        width: 80vw;
+        }
+    </style>
+    <div class="chart-container">
+        filter user:
+        <select id="userSelect">
+            <option>all</option>
+        </select>
+        <canvas id="chart"></canvas>
+        max instance number:<span id="maxinstnum"/>
+    </div>
+  </html>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script type="text/javascript" src="./simulate_result.js"></script>
+  <script>
+    let tasks=data.tcInfos;
+    //let simulateRunStartTime=data.startTime;
+    // Function to calculate task duration in min
+    // function getDuration(task) {
+    //     return (task.runEndTime-task.runStartTime)/10; 
+    // }
+    // Function to calculate task start time in min
+    // function getTaskStartTime(task) {
+    //     return (task.runStartTime-simulateRunStartTime)/10;
+    // }
+
+    function constructChartDataSet(tasks,filterUser){
+        return tasks.filter(task=>{
+            if(filterUser){
+               return task.tcUsers.find(u=>u==filterUser) !=undefined
+            }
+            return {};
+        }).map(task => {
+            return {
+                x:[task.startTime,task.startTime+task.duration],
+                y:task.tcFile,
+                users:task.tcUsers
+            }
+        });
+    }
+
+    const DATA_COUNT = tasks.length;
+    const NUMBER_CFG = {count: DATA_COUNT, min: 0, max: 180};
+    const ctx = document.getElementById('chart');
+    let chart = new Chart(ctx, {
+      type: 'bar',
+      data: {
+        datasets: [{data:constructChartDataSet(tasks)}]
+      },
+      options: {
+        indexAxis: 'y',
+        responsive: true,
+        events: ['mousemove', 'click'],
+        elements: {
+            bar:{
+               // inflateAmount:1
+            }
+        },
+        plugins: {
+            legend: false,
+            title: {
+                display: true,
+                text: 'test case simulate run result'
+            },
+            tooltip: {
+                callbacks: {
+                    label: ctx=>{
+                        let label = `${[...new Set(ctx.dataset.data[ctx.dataIndex].users)]}`;
+                        return label;
+                    }
+                },
+                events: ['click','mousemove']
+            }
+        }
+       }   
+    });
+
+    const userSelect = document.getElementById('userSelect');
+    let userSet=new Set();
+    tasks.forEach(tcinfo => {  userSet.add(...tcinfo.tcUsers) });
+    [...userSet].forEach(u=>{
+          userSelect.options.add(new Option(u,u));
+    })
+    userSelect.onchange=function(event){
+        let choseUser = event.target.value;
+        chart.data.datasets[0].data=constructChartDataSet(tasks,choseUser=='all'?null:choseUser);
+        chart.update();       
+    }
+
+    document.getElementById('maxinstnum').innerText=data.maxInstanceNum;
+    // Filter function based on user selection (e.g., from a dropdown or input field)
+    // function filterChartData(selectedUsers) {
+    //     if(selectedUsers){
+    //         return {
+    //             ...chartData,
+    //             datasets: chartData.datasets.filter(dataset => selectedUsers.includes(dataset.label))
+    //          };
+    //     }else{
+    //         return chartData;
+    //     }
+    // }
+  </script>

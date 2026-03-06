@@ -1,0 +1,3 @@
+HEADER,04122018,SG2BFE1,Sino
+PAYMENT,PPP,0018001851,SGD,,SGD,,04122018,,,Cai,,,,,+6512345678,,050,0306,,DBSSSGS0XXX,ABNASGSG,QQ,,,,,10,,,,,20,Particul03,COLReferen02,PaymentDetails150051164,InstructionToOrderingBank,,M,,,,STDY,,E,,,,,,,,,sbaraiya@euronetworldwide.com,bbaraiya@euronetworldwide.com,vbhandary@euronetworldwide.com,kdeo@euronetworldwide.com,haribabus@euronetworldwide.com,,,,,,1120304.1S39474 19,,,
+TRAILER,00000001,10

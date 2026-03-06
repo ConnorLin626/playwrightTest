@@ -1,0 +1,363 @@
+{
+    "BulkPayment": {
+        "UAT": {
+            "loginCompanyId": "XPPOVN01",
+            "loginUserId": "XPPOVN01T01",
+            "fromAccount": "30000259289",
+            "payeeBankID": "79659001",
+            "Password":"P@ssword123"
+        },
+        "SIT": {
+            "loginCompanyId": "VNAUTO01",
+            "loginUserId": "VNAUTO01S03",
+            "fromAccount": "0012001234",
+            "payeeBankID": "01203500"
+        },
+        "maxAmountIx": "500000000",
+        "moreThanMaxAmountIx": "500000001",
+        "amountIx": "200000000",
+        "maxAmount": "500,000,000",
+        "moreThanMaxAmount": "500,000,001",
+        "amount": "200,000,000",
+        "bulkExistingPayee": "PayrollExistingPayee",
+        "newPayeeName": "NewPayeeName",
+        "newPayeeNickname": "newPayeeNickname",
+        "newPayeeAcctNumber": "123456000001",
+        "paymentDetails": "paymentDetails",
+        "amountErrorTip": "Amount is invalid.",
+        "errorMessage": "One or more of the fields below have not been properly filled up. Please amend and submit again."
+    },
+    "Payroll": {
+        "UAT": {
+            "loginCompanyId": "XPPOVN01",
+            "loginUserId": "XPPOVN01T01",
+            "fromAccount": "30000259289",
+            "payeeBankID": "79659001",
+            "Password":"P@ssword123"
+        },
+        "SIT": {
+            "loginCompanyId": "VNAUTO01",
+            "loginUserId": "VNAUTO01S03",
+            "fromAccount": "0012001234",
+            "payeeBankID": "01203500"
+        },
+        "maxAmountIx": "500000000",
+        "moreThanMaxAmountIx": "500000001",
+        "amountIx": "200000000",
+        "maxAmount": "500,000,000",
+        "moreThanMaxAmount": "500,000,001",
+        "amount": "200,000,000",
+        "bulkExistingPayee": "PayrollExistingPayee",
+        "newPayeeName": "NewPayeeName",
+        "newPayeeNickname": "newPayeeNickname",
+        "newPayeeAcctNumber": "123456000001",
+        "paymentDetails": "paymentDetails",
+        "amountErrorTip": "Amount is invalid.",
+        "errorMessage": "One or more of the fields below have not been properly filled up. Please amend and submit again."
+    },
+    "ManagePayroll": {
+        "UAT": {
+            "loginCompanyId": "XPPOVN01",
+            "loginUserId": "XPPOVN01T01",
+            "fromAccount": "30000259289",
+            "payeeBankID": "79659001",
+            "Password":"P@ssword123"
+        },
+        "SIT": {
+            "loginCompanyId": "VNAUTO01",
+            "loginUserId": "VNAUTO01S03",
+            "fromAccount": "0012001234",
+            "payeeBankID": "01203500"
+        },
+        "maxAmount": "500,000,000",
+        "maxAmountIx": "500000000",
+        "moreThanMaxAmount": "500,000,001",
+        "moreThanMaxAmountIx": "500000001",
+        "amount": "200,000,000",
+        "amountIx": "200000000",
+        "bulkExistingPayee": "PayrollExistingPayee",
+        "newPayeeName": "NewPayeeName",
+        "newPayeeNickname": "newPayeeNickname",
+        "newPayeeAcctNumber": "123456000001",
+        "paymentDetails": "paymentDetails",
+        "amountErrorTip": "Amount is invalid.",
+        "errorMessage": "One or more of the fields below have not been properly filled up. Please amend and submit again."
+    },
+    "LVT": {
+        "UAT": {
+            "loginCompanyId": "XPPOVN01",
+            "loginUserId": "XPPOVN01T01",
+            "fromAccount": "30000259289",
+            "payeeBankID": "79659001",
+            "Password":"P@ssword123"
+        },
+        "SIT": {
+            "loginCompanyId": "VNAUTO01",
+            "loginUserId": "VNAUTO01S04",
+            "fromAccount": "0012001234",
+            "payeeBankID": "01203500"
+        },
+        "Country": "VIETNAM",
+        "maxAmount": "499,999,999",
+        "moreThanMaxAmount": "500,000,001",
+        "newPayeeName": "NewPayeeName",
+        "newPayeeNickname": "newPayeeNickname",
+        "newPayeeAcctNumber": "123456000001",
+        "paymentDetails": "paymentDetails"
+    },
+    "OTT": {
+        "UAT": {
+            "loginCompanyId": "XPPOVN01",
+            "loginUserId": "XPPOVN01SA01",
+            "fromAccount": "30000259289",
+            "payeeBankID": "79659001",
+            "Password":"P@ssword123",
+            "existingPayee": "VN TT Payee"
+        },
+        "SIT": {
+            "loginCompanyId": "VNAUTO01",
+            "loginUserId": "VNAUTO01S01",
+            "fromAccount": "0012001234",
+            "existingPayee": "1234567890"
+        },
+        "paymentCCY": "HKD",
+        "amount": "499",
+        "purposeCode": "P1 - Profit or dividend",
+        "payeeCountry": "ANDORRA",
+        "uploadDocument": "VN Digi upload file.pdf",
+        "DocumentType": "Audited financial report",
+        "PaymentDetail": "PaymentDetail"
+    },
+    "FSuploadFile": {
+        "UAT": {
+            "loginCompanyId": "VNAUTO01",
+            "loginUserId": "VNAUTO01S02",
+            "fileName": "VN_UploadFile/VN_TT_UAT_UFF.txt",
+            "fileName2": "VN_UploadFile/VN_SingleNAPASPayment_SIT_UFF.txt",
+            "fileName3": "VN_UploadFile/VN_BulkNAPASPayment_SIT_UFF.txt",
+            "uploadFailFileName": "VN_UploadFile/VN_TT_UAT_UFF - no payee address1.txt"
+        },
+        "SIT": {
+            "loginCompanyId": "VNAUTO01",
+            "loginUserId": "VNAUTO01S02",
+            "fileName": "VN_UploadFile/VN_TT_SIT_UFF.txt",
+            "fileName2": "VN_UploadFile/VN_SingleNAPASPayment_SIT_UFF.txt",
+            "fileName3": "VN_UploadFile/VN_BulkNAPASPayment_SIT_UFF.txt",
+            "uploadFailFileName": "VN_UploadFile/VN_TT_SIT_UFF - no payee address1.txt"
+        },
+        "fileType": "ALL",
+        "fileFormat": "Universal File Format",
+        "approvalOptionByTxn": "By Transaction",
+        "errorMsg": "Beneficiary Address line 1 is required."
+    },
+    "files": {
+        "UAT": {
+            "loginCompanyId": "VNAUTO01",
+            "loginUserId": "VNAUTO01C01",
+            "dateFrom": "01 Mar 2019",
+            "dateTo": "31 Jul 2019",
+            "fileName1": "VN_UploadFile/VN_TT_UAT_UFF.txt",
+            "fileName2": "VN_UploadFile/VN_Tax_GDT_UAT.txt",
+            "fileName3": "VN_UploadFile/VN_TT_UAT_UFF.txt",
+            "FromAccount": "Account_004001362221 - 004001362221 - TWD",
+            "Amount": "10,000"
+        },
+        "SIT": {
+            "loginCompanyId": "VNAUTO01",
+            "loginUserId": "VNAUTO01S01",
+            "dateFrom": "01 Mar 2020",
+            "dateTo": "11 Mar 2020",
+            "fileName1": "VN_UploadFile/VN_TT_SIT_UFF.txt",
+            "fileName2": "VN_UploadFile/VN_Tax_GDT_SIT.txt",
+            "fileName3": "VN_UploadFile/VN_TT_SIT_UFF.txt",
+            "FromAccount": "00181898Name - 00181898 - USD",
+            "Amount": "100,002.00"
+        },
+        "paymentType1": "ALL - Universal File Format",
+        "paymentType2": "Tax Payment - Tax Payment File",
+        "approvalOption1": "transaction",
+        "approvalOption2": "file"
+    },
+    "status": {
+        "Approved": "Approved",
+        "PendingApproval": "Pending Approval",
+        "PartialApproved": "Partial Approved",
+        "PendingRelease": "Pending Release",
+        "PendingVerification": "Pending Verification",
+        "PartialCompleted": "Partial Completed",
+        "Received": "Received",
+        "Completed": "Completed",
+        "Saved": "Saved",
+        "Submitted": "Submitted",
+        "BankRejected": "Bank Rejected",
+        "Rejected": "Rejected",
+        "Failed": "Failed",
+        "Cancelled": "Cancelled"
+    },
+    "paymentType": {
+        "VN_Custom": "VN - Customs Payment"
+    },
+    "ITT": {
+        "UAT": {
+            "loginCompanyId": "VNAUTO01",
+            "loginUserId": "VNAUTO01C01"
+        },
+        "SIT": {
+            "loginCompanyId": "VNAUTO01",
+            "loginUserId": "VNAUTO01S01"
+        },
+        "dateFrom": "22 Apr 2020",
+        "dateTo": "22 Apr 2020",
+        "purposeCode": "P1 - Profit or dividend",
+        "uploadDocument": "VN Digi upload file.pdf",
+        "DocumentType": "Audited financial report"
+    },
+    "eCorporate": {
+        "UAT": {
+            "loginCompanyId": "VNAUTO01",
+            "loginUserId": "VNAUTO01C01",
+            "fromAccount": "00181898",
+            "fileName": "VN_UploadFile/VN_TAX_UAT.txt",
+            "fileName2": "VN_UploadFile/VN_TAX_ErrorTaxPeriod_SIT.txt"
+        },
+        "SIT": {
+            "loginCompanyId": "VNAUTO01",
+            "loginUserId": "VNAUTO01S05",
+            "fromAccount": "00181898",
+            "fileName": "VN_UploadFile/VN_TAX_SIT.txt",
+            "fileName2": "VN_UploadFile/VN_TAX_ErrorTaxPeriod_SIT.txt"
+        },
+        "taxCode": "111111111",
+        "rejectReason": "Reason for rejection",
+        "challengeResponse": "12345678",
+        "fileType": "Tax Payment",
+        "fileFormat": "Tax Payment File",
+        "approvalOptionByTxn": "By Transaction",
+        "taxPeriodErrorFormate01":"00/Q0/2025",
+        "taxPeriodErrorFormate02":"33/12/9999",
+        "taxPeriodErrMsg":"Sai định dạng kỳ thuế. Định dạng đúng: DD/MM/YYYY, 00/MM/YYYY, 00/Qx/YYYY, 00/Kx/YYYY, 00/CN/YYYY or 00/QT/YYYY.",
+        "errorMsg":"Tax period is in wrong format. Correct format: DD/MM/YYYY, 00/MM/YYYY, 00/Qx/YYYY, 00/Kx/YYYY, 00/CN/YYYY or 00/QT/YYYY"
+    },
+    "CustomPayment": {
+        "UAT": {
+            "loginCompanyId": "VNAUTO01",
+            "loginUserId": "VNAUTO01C01",
+            "fromAccount": "0016001654",
+            "taxCode": "111111111",
+            "fileName": "VN_UploadFile/VN_Custom_UFF_UAT.txt",
+            "EnterID": "827219278662"
+        },
+        "SIT": {
+            "loginCompanyId": "VNAUTO01",
+            "loginUserId": "VNAUTO01S04",
+            "fromAccount": "00181898",
+            "taxCode": "111111111",
+            "fileName": "VN_UploadFile/VN_Custom_UFF_SIT.txt",
+            "EnterID": "827219278662"
+        },
+        "CustomerReference": "HF10086-10",
+        "challengeResponse": "OK",
+        "rejectReason": "rejectReason",
+        "labelNoInformationDisplay": "No information to display",
+        "fileType": "Customs Payment",
+        "fileFormat": "Customs Payment File",
+        "approvalOptionByTxn": "By Transaction"
+    },
+    "ViewFile": {
+        "UAT": {
+            "loginCompanyId": "VNAUTO01",
+            "loginUserId": "VNAUTO01C01",
+            "fileName1": "VN_UploadFile/VN_ACT_UAT.txt",
+            "fileName2": "VN_UploadFile/VN_TT_UAT_UFF.txt"
+        },
+        "SIT": {
+            "loginCompanyId": "VNAUTO01",
+            "loginUserId": "VNAUTO01S02",
+            "fileName1": "VN_UploadFile/VN_ACT_Chữ_Quốc_Ngữ_SIT.txt",
+            "fileName2": "VN_UploadFile/VN_TT_SIT_UFF.txt"
+        },
+        "GroupName": "TestGroupName",
+        "labelNoInformationDisplay": "No information to display",
+        "FileName": "AutoTestfile"
+    },
+    "PaymentReport": {
+        "UAT": {
+            "loginCompanyId": "VNAUTO01",
+            "loginUserId": "VNAUTO01S01",
+            "account": "0012001234Name - 0012001234 - VND",
+            "accountNotInclude": "00181898Name - 00181898 - USD"
+        },
+        "SIT": {
+            "loginCompanyId": "VNAUTO01",
+            "loginUserId": "VNAUTO01S01",
+            "account": "0012001234Name - 0012001234 - VND",
+            "accountNotInclude": "00181898Name - 00181898 - USD"
+        },
+        "usage": "Shared",
+        "daily": "Morning (6AM-9AM)",
+        "deliverySchedule": "Daily",
+        "deliveryOneOff": "One-off / ad-hoc",
+        "password": "123456",
+        "confirmPassword": "123456",
+        "remarks": "remarks",
+        "payeeReference": "payeeReference",
+        "payeeName": "payeeName"
+    },
+    "NAPASFastFund247": {
+        "UAT": {
+            "loginCompanyId": "VNAUTO01",
+            "loginUserId": "VNAUTO01S02",
+            "verifyUserId":"VNAUTO01S03",
+            "fromAccount": "0012001234",
+            "payeeBankID": "970418"
+        },
+        "SIT": {
+            "loginCompanyId": "VNAUTO01",
+            "loginUserId": "VNAUTO01S02",
+            "verifyUserId":"VNAUTO01S03",
+            "fromAccount": "0012001234",
+            "payeeBankID": "970418"
+        },
+        "Country": "VIETNAM",
+        "amount":"2000",
+        "amount2":"6000",
+        "amountValue2":"6,000",
+        "editAmount":"3000",
+        "editAmountValue":"3,000",
+        "amountValue":"2,000",
+        "maxAmount": "499999999",
+        "maxAmountValue":"499,999,999",
+        "moreThanMaxAmount": "500,000,001",
+        "newCardNumber":"1234567890123456",
+        "newCardNumberValue":"•••• •••• •••• 3456",
+        "existingCardPayee":"Existing Auto Card Payee",
+        "existingCardnumber":"•••• •••• •••• 1111",
+        "newPayeeName": "MaxlengthofNewNAPASPayeeNameis70MaxlengthofNewNAPASPayeeNameis70NAPAS1",
+        "newPayeeNickname": "newPayeeNickname",
+        "newNAPASPaymentname":"CXXG?XX?XXXH?XX?XXXEX?XVXXX?XXX)",
+        "Msg": "The nickname entered already exists. It must be unique.(Duplicate nickname: newPayeeNickname)",
+        "newPayeeAcctNumber": "1234567890123456789012345678901234",
+        "editPayeeAcctNumber": "123456789012345678901234567890edit",
+        "bankName":"Bank for Investment and Development of Vietnam",
+        "bankCountry":"VNM",
+        "paymentDetails": "paymentDetails",
+        "challengeCode":"123",
+        "cutoffTime": "23:59 hrs"
+    },
+    "Beneficiary": {
+    "UAT": {
+      "loginCompanyId": "VNAUTO01",
+        "loginUserId": "VNAUTO01S02",
+        "pinID":"P@ssword123"
+    },
+    "SIT": {
+      "loginCompanyId": "VNAUTO01",
+        "loginUserId": "VNAUTO01S02",
+        "pinID":"P@ssword123"
+    },
+    "Country": "VIETNAM",
+    "newCardNumber":"1234567890123456",
+    "newCardNumberValue":"•••• •••• •••• 3456"
+    
+  }
+}

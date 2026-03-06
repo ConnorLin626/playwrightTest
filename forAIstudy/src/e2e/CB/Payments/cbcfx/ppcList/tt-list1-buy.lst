@@ -1,0 +1,103 @@
+Transportation expenditures
+	111 - Cargo shipping expenditures
+	112 - Passenger shipping expenditures
+	115 - Airfreight expenditures
+	116 - Air passenger service expenditures
+	119 - Other transportation-related expenditures (Please specify)
+Insurance expenditures
+	121 - Non-life insurance expenditures
+	122 - Payments for non-life insurance claim (Insurance Company Only)
+	123 - Life insurance expenditures
+	129 - Payments for life insurance claim (Insurance Company Only)
+Traveling expenditures
+	131 - Business expenditures
+	132 - Tourism expenditures
+	134 - Expenditures of studying abroad
+	135 - Credit card payment
+	139 - Other traveling expenditures (Please specify)
+Other service expenditures for services other than those of transportation, insurance and traveling
+	191 - Cultural and leisure expenditures
+	192 - Trade commission and agency expenditures
+	193 - Payments related to local construction project
+	194 - Financial service expenditures
+	195 - Payments for authorized use of intellectual property rights
+	196 - Overseas office expenses (Government approval letter is required if BBK country is CN.)
+	199 - Other service expenditures (Please specify)
+	19A - Postal and courier service expenses
+	19B - Computer and information expenditures
+	19C - Leasing expenditures
+	19D - Professional and technical service expenditures
+	19E - Video-audio expenditures
+	19F - Outward remittance of service income of foreign government agency
+	19G - Other service expenditures of civil or military organs (Official agencies only)
+	19H - Processing fee expenditures
+	19J - Telecommunication expenditures
+	19K - Repair/maintenance expenditures
+	19P - R&D asset purchase expenditures
+Outflow of domestic funds
+	210 - Outward direct investments (Government approval letter is required if BBK country is CN and remittance amt is over USD 1M.)
+	220 - Outward loan investments (Government approval letter is required if BBK country is CN.)
+	250 - Deposits overseas
+	262 - Investments in overseas equity stocks (Government approval letter is required if BBK country is CN.)
+	263 - Investments in overseas long-term bonds and notes (Government approval letter is required if BBK country is CN.)
+	264 - Investments in overseas short-term notes and bills (Government approval letter is required if BBK country is CN.)
+	266 - Outward remittance of funds for overseas deliverable forward and swap transactions (Government approval letter is required if BBK country is CN.)
+	267 - Outward remittance of funds for overseas non-deliverable derivative transactions (Government approval letter is required if BBK country is CN.)
+	270 - Investments in overseas real estate
+	280 - Loan financing to non-resident abroad
+	299 - Other outflows of domestic funds (Please specify)
+Outflow of foreign funds
+	340 - Repayments of overseas borrowing
+	370 - Withdrawal of real estate investment by foreign nationals
+	371 - Withdrawal of purchase of domestic presold house by foreign nationals
+	380 - Redemption of global depository receipts (Government approval letter is required if BBK country is CN.)
+	392 - Capital leasing expenditures
+	399 - Other outflows of foreign funds (Please specify)
+Payments for salaries
+	410 - Outward remittance of non-resident's wages and salaries
+Investment income of foreign nationals (excluding capital gain or loss)
+	440 - Interest of overseas borrowing
+	444 - Import finance related interest
+	449 - Other investment income of foreign nationals (Please specify)
+Transfer payments
+	511 - Outward remittance by guest workers
+	520 - Donation remittance
+	540 - Natural resources and non- R&D assets purchase expenditures
+	580 - Government transfer payments (Official agencies only.)
+	599 - Other transfer payments (Please specify)
+Other overseas transactions
+	611 - Returns of export payments
+	619 - Other outward remittances
+Payments for customs-cleared imported goods
+	70A - Payments for imported goods with customs clearance handled by payee
+	701 - Prepayments for goods not yet imported
+	702 - Fuel and supply payments
+	704 - Payments for samples
+	706 - Payments for imported goods with customs clearance not handled by payee (Supporting document is required; or select 801)
+Payments for goods not cleared through R.O.C. customs
+	710 - Payments for processing trade
+	711 - Payments for merchanting trade
+Payments for goods supplied onshore
+	720 - Payments for goods ordered offshore but supplied onshore (Supporting document is required; or select 802)
+Other payments for goods
+	801 - Payments for imported goods with customs clearance not handled by payee (without proof documents)
+	802 - Payments for goods ordered offshore but supplied onshore (without proof documents)
+Converting one foreign currency to another
+	694 - Converting one foreign currency to another
+Transactions without the flow of funds
+	695 - Transactions without the flow of funds
+		B - Fundings and repayments of short-term foreign exchange loans of domestic banks
+		C - Deposit lodgements or deposit repayments of foreign exchange transactions
+		D - Realized gain or loss on foreign exchange transactions
+		E - Interest payments and receipts from foreign exchange loans
+		F - Fundings and repayments of domestic banks medium and long-term foreign exchange loans
+		G - Unrealized gain or loss on valuation
+		X - SWAP between NTD and foreign currency
+		Y - CCS between NTD and foreign currency
+		Z - The same customer's foreign currency funds change engaged in overseas transaction expenditures and receipts
+		R - Domestic loans receipts between customers
+		S - Foreign currency insurance, funds, bonds, and investment related receipts (including interest accrued)
+		T - Domestic allowances for family or relatives, donations and inheritance expenditures and receipts
+		L - Foreign currency loans receipts between customers
+		P - Domestic service receipts between customers
+		N - Domestic transaction receipts other than those described above ( i.e. spot transaction settlements,customer's handling fees, and receipts and expenditures of tax)

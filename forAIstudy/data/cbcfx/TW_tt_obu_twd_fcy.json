@@ -1,0 +1,21 @@
+{
+    "TT": {
+        "UAT": {
+            "loginCompanyId": "TWAUTO01",
+            "loginUserId": "TWAUTO01S01",
+            "fromAccount": "10001400388"
+        },
+        "SIT": {
+            "loginCompanyId": "SPTW08",
+            "loginUserId": "SPTW08V01",
+            "fromAccount": "0019001941"
+        },
+        "amountCcy": "USD",
+        "amountA1": "1",
+        "existingPayee": "ExistingPayeeTT001",
+        "existingPayeeForCN": "ExistingPayeeTTCN",
+        "cutOffTime": "15:30",
+        "list1": "tt-list1-buy",
+        "list1CN": "tt-list1-buy-CN"
+    }
+}

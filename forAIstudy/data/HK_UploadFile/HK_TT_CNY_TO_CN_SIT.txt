@@ -1,0 +1,3 @@
+HEADER,10052019,AUTOHK01,
+PAYMENT,TT,120519673,HKD,,CNY,,21052019,OUR,0018001851,BetsyCollectionDBS,,Beneficiary Address line 1,Bangalore Electr,Beneficiary Address line 3,345234568,,016,375,ICIC0000393,BARBSGS0XXX,ALMA,HK,,,BARBSGS0XXX,1,1.00,,,,,22,Particul01,COLReferen01,PaymentDetails150051164,,,,,,,OTF,,A,,,TechProcess Payment Services Ltd,000000000075,Bangalore Electr,,,,111111sbaraiya@euronetworldwide.com,22222vbhandary@euronetworldwide.com,22222vbhandary@euronetworldwide.com,333333kfeefdeo@euronetworldwide.com,44444haribabus@euronetworldwide.com,160592888888888888888,260592888888888888888,360592888888888888888,460592888888888888888,560592888888888888888,1120304.1S39474 19 ,ENI,DCBDCB08204,00000000075,04072013
+TRAILER,1,1.0

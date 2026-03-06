@@ -1,0 +1,3 @@
+HEADER,18012021,SG2BFE1,Sino
+PAYMENT,ICT,0039007639,SGD,IUFF3.1.1.1.1,SGD,,18012021,OUR,OUR,BeneficarySino,,,,,18001410000,,,,,,RWERW,QQ,,,,,200.1,,,,,,,3.1.1.1.2,,,,,,,,1,,E,,,,,,,,,caijw10@sina.com,,,,,,,,,,Invoice Detail,,,,,
+TRAILER,00000001,200.1

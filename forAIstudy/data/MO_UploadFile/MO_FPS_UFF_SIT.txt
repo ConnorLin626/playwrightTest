@@ -1,0 +1,3 @@
+HEADER,08012019,SG2BFE1,
+PAYMENT,GPP,88888888888,MOP,,MOP,,08012019,,,FPSNewPayeeName,,,Bangalore Electr,,1234560000011234560000011234560000,50,100,375,ICIC0000393,,,,,,,,10.00,,,,,21,Particul02,COLReferen02,PaymentDetails150051164,,,1,,,,FCOL,,E,,,TechProcess Payment Services Ltd,000000000075,Bangalore Electr,,,,sbaraiya@euronetworldwide.com,,vbhandary@euronetworldwide.com,kdeo@euronetworldwide.com,haribabus@euronetworldwide.com,,,,,,1120304.1S39474 19 ,ENI,DCBDCB08204,00000000075,04072013
+TRAILER,1,10.0

@@ -1,0 +1,1171 @@
+{
+  "getUserInfoToIVR": {
+    "url":"/idealsso-banking/customer/getUserInfoToIVR",
+    "requestData": {
+      "identityNum": "S1111111A",
+      "accountNum": "00018001460000",
+      "rqUID": "1234567890"
+    },
+    "expectedResponses": {
+      "userNotFound": {
+        "returnStatus": "Failed",
+        "returnCode": "UX9999",
+        "errorDesc": "User not found"
+      }
+    }
+  },
+  "createEDPPayment": {
+    "url": "/idealsso-banking/payment/createPayment",
+    "requestData": {
+      "rqUID": "SGEDP-YYMMDD-CTRY_CODE-NNNN6",
+      "channelType": "MFE",
+      "countryCode": "SG",
+      "userId": "AUTOSG03API01",
+      "orgId": "AUTOSG03",
+      "subsiId": "AUTOSG03",
+      "useraction": "CREATE",
+      "pmtTypeCode": "sgedp",
+      "paymentSubType": "EDP",
+      "custReference": "",
+      "msgToApprover": "msgToApp02",
+      "purposeCode": "purposeCode",
+      "fromAcctNo": "test8888888",
+      "fromAcctCcy": "SGD",
+      "chargesAcctNo": "test8888888",
+      "chargesAcctCcy": "SGD",
+      "fromAcctNoDisplay": "test8888888",
+      "changesAcctNoDisplay": "test8888888",
+      "isPayNow": false,
+      "amount": {
+        "payCcy": "SGD",
+        "payAmt": 1500.00
+      },
+      "payeeList": [
+        {
+          "newPayNow": {
+            "acctNum": "12345678",
+            "name": "0710edp002",
+            "ctyCode": "SGP",
+            "proxyType": "N",
+            "proxyValue": "+651111",
+            "prodType": "PPP",
+            "prefixPhone": "65"
+          },
+          "msgToPayee": "adviMsg02",
+          "payeeAdvice": "email",
+          "emailList": [
+            {
+              "id": "aaaa123123@b.c"
+            }
+          ],
+          "faxList": [
+            {
+              "ctryCode": "aaaa123123@b.c",
+              "areaCode": "+91",
+              "faxNo": "8512112122"
+            }
+          ]
+        }
+      ],
+      "ipaddress": "10.10.10.10",
+      "comments": "this is a comments"
+    },
+    "expectedResponses": {
+      "success": {
+        "returnStatus": "Successful",
+        "returnCode": "UX0000"
+      }
+    }
+  },
+
+  "rejectEDPPayment": {
+    "url": "/idealsso-banking/payment/process",
+    "requestData": {  
+      "rqUID": "rqUID_9c7aaccaef2a",
+      "channelType": "MFE",
+      "apiName": "UPDATEEDPSTATUS",
+      "qs": "AUTOSG03API01@AUTOSG03",
+      "subOrgId": "AUTOSG03",
+      "rejectPayments": [
+        {
+          "instructionId": "",  
+          "custReference":"R1243135",
+          "rejectedReason": "reject for API",
+          "fromAcctNo": "20250303001",
+          "fromAcctCcy": "SGD",
+          "amount": {
+            "payCcy": "SGD",
+            "payAmt": "200.00"
+          },
+          "executionDate": "2025-03-10"
+        }
+      ]
+    },
+    "expectedResponse": {  
+      "rejectPayments": [
+        {
+          "instructionId": "",  
+          "custReference": "",  
+          "status": "REJECTED",
+          "returnStatus": "Successful",
+          "returnCode": "UX0000"
+        }
+      ]
+    },
+    "uiVerifyParams": {  
+      "expectedStatus": "Rejected",
+      "expectedReason": "reject for API",
+      "expectedAmount": "200.00 SGD"
+    }
+  },
+  "verifyEDPPayment": {
+    "url": "/idealsso-banking/payment/process",
+    "requestData": {
+      "rqUID": "rqUID_9c7aaccaef2a",
+      "channelType": "MFE",
+      "apiName": "UPDATEEDPSTATUS",
+      "qs": "AUTOSG03API02@AUTOSG03",
+      "subOrgId": "AUTOSG03",
+      "verifyPayments": [
+        {
+          "instructionId": "EBTHV60226012566",
+          "custReference":"R1243135",
+          "fromAcctNoDisplay": "00018001430006",
+          "fromAcctCcyDisplay": "SGD",
+          "amount": {
+            "payCcy": "SGD",
+            "payAmt": "200.00"
+          },
+          "executionDate": "2026-02-26"
+        }
+      ]
+    },
+    "expectedResponse": {  
+      "verifyPayments": [
+        {
+          "instructionId": "EBTHV60226012566",
+          "custReference": "EBTHV60226012566",
+          "status": "PENDING_CREATE_APPROVAL",
+          "returnStatus": "Successful",
+          "returnCode": "UX0000"
+        }
+    ]
+    },
+    "uiVerifyParams": {  
+      "expectedStatus": "Pending Approval"
+    }
+  },
+
+  "approveEDPPayment": {
+    "url": "/idealsso-banking/payment/process",
+    "requestData": {
+      "rqUID": "rqUID_9c7aaccaef2a",
+      "channelType": "MFE",
+      "apiName": "UPDATEEDPSTATUS",
+      "qs": "AUTOSG03API01@AUTOSG03",
+      "subOrgId": "AUTOSG03",
+        "approvePayments": [
+        {
+          "instructionId": "EBTHV60226012565",
+          "custReference":"R1243135",
+          "fromAcctNoDisplay": "00018001430006",
+          "fromAcctCcyDisplay": "SGD",
+          "amount": {
+            "payCcy": "SGD",
+            "payAmt": "200.00"
+          },
+          "executionDate": "2026-02-26"
+        }
+      ]
+    },
+    "expectedResponse": {  
+      "approvePayments": [
+        {
+          "instructionId": "EBTHV60226012565",
+          "custReference": "EBTHV60226012565",
+          "status": "CREATE_APPROVED",
+          "returnStatus": "Successful",
+          "returnCode": "UX0000"
+        }
+    ]
+    },
+    "uiVerifyParams": {  
+      "expectedStatus": "Approved"
+    }
+  },
+
+  "issuedEDPPayment": {
+    "url": "/idealsso-banking/payment/process",
+    "requestData": {
+      "rqUID": "rqUID_9c7aaccaef2a",
+      "channelType": "MFE",
+      "apiName": "UPDATEEDPSTATUS",
+      "qs": "AUTOSG03API01@AUTOSG03",
+      "subOrgId": "AUTOSG03",
+      "updateIssuedEDPs": [
+        {
+          "instructionId": "EBTHV60226012565",
+          "custReference": "zzzzzzzzzzzzzz",
+          "status": "CREATE_SUCCESS",
+          "expiryDay": "",
+          "paymentSubType": "EDP",
+          "earliestDate": "2025-01-06 12:12:12",
+          "expiryDate": "2025-01-07 12:12:12",
+          "comments": "xxxx",
+          "reason": "xxxxx",
+          "actionDatetime": "2024-11-20 12:12:12"
+        }
+      ]
+    },
+    "expectedResponse": {
+      "rqUID": "rqUID_9c7aaccaef2a",
+      "returnStatus": "Successful",
+      "returnCode": "UX0000",
+      "updateIssuedEDPs": [
+      {
+        "instructionId": "EBTHV60226012565",
+        "custReference": "zzzzzzzzzzzzzz",
+        "returnStatus": "Failed",
+        "returnCode": "UX9999",
+        "errorDesc": "No eligible alerts can be sent"
+      }
+      ]
+    },
+    "uiVerifyParams": {  
+      "expectedStatus": "Issued"
+    }
+  },
+
+  "cancelEDPPayment": {
+    "url": "/idealsso-banking/payment/process",
+    "requestData": {
+      "rqUID": "rqUID_9c7aaccaef2a",
+      "channelType": "MFE",
+      "apiName": "UPDATEEDPSTATUS",
+      "qs": "AUTOSG03API01@AUTOSG03",
+      "subOrgId": "AUTOSG03",
+      "cancelPayments":[
+        {
+          "instructionId":"EBTHV60225012561",
+          "custReference":"EBTHV60225012561",
+          "status":"PENDING_PAYER_CANCEL_APPROVAL",
+          "returnStatus":"Successful",
+          "executionDate":"2026-02-24 21:12:12",
+          "approveNow":false,
+          "returnCode":"UX0000",
+          "failedReason":"",
+          "errorDesc":""
+        }
+    ]
+    },
+    "expectedResponse":{
+    "cancelPayments": [
+        {
+          "instructionId": "EBTHV60225012561",
+          "status": "PENDING_PAYER_CANCEL_VERIFICATION",
+          "returnStatus": "Successful",
+          "returnCode": "UX0000"
+        }
+      ]
+    },
+    "uiVerifyParams": {  
+      "expectedStatus": "Pending verification for cancellation"
+    }
+  },
+  "getPaymentStatus": {
+    "url": "/idealsso-banking/payment/getPaymentStatus",
+    "requestData": {
+      "rqUID": "INTAX-YYMMDD-CTRY_CODE-NNNN2",
+      "channelType": "MFE",
+      "pmtTypeCode": "sgedppmt",
+      "idealRefNumber": "EBTHV50530001464"
+    },
+    "expectedResponse": {
+      "rqUID": "INTAX-YYMMDD-CTRY_CODE-NNNN2",
+      "returnStatus": "Successful",
+      "returnCode": "UX0000",
+      "channelId": "MFE",
+      "idealRefNumber": "EBTHV50530001464",
+      "effectiveDateTime": "20250529213000",
+      "paymentType": "sgedp",
+      "paymentSubType": "EDP+",
+      "signatureTrail": "1",
+      "nextSignature": "1",
+      "approveByDateTime": "20250529235900",
+      "paymentDate": "20250530120720",
+      "transactionAmt": "100.00",
+      "remittanceAmt": "100.00",
+      "status": "Pending Approval"
+    }
+  },
+  "createINTAXPayment": {
+    "url": "/idealsso-banking/payment/createPayment",
+    "requestData": {
+      "rqUID": "INTAX-YYMMDD-CTRY_CODE-NNNN4",
+      "channelType": "TGBS",
+      "countryCode": "IN",
+      "userId": "SPIN08API01",
+      "orgId": "SPIN08",
+      "subsiId": "SPIN08",
+      "useraction": "CREATE",
+      "pmtTypeCode": "intaxpmt",
+      "paymentSubType": "customduty",
+      "executionDate": "2026-02-09",
+      "custReference": "",
+      "msgToApprover": "msgToApp02",
+      "purposeCode": "purposeCode",
+      "fromAcctNo": "0017001765",
+      "fromAcctCcy": "INR",
+      "chargesAcctNo": "",
+      "chargesAcctCcy": "",
+      "isPayNow": false,
+      "amount": {
+        "payCcy": "INR",
+        "payAmt": 1200.00
+      },
+      "payeeList": [
+        {
+          "newPayee": {
+            "acctNum": "987654321",
+            "name": "INTAXPayeeFast4",
+            "add1": "add1",
+            "add2": "add2",
+            "add3": "add3",
+            "ctyCode": "IND",
+            "bankSwiftBIC": "DBSSSGS0XXX",
+            "bankCode": "",
+            "branchCode": "",
+            "category": "01"
+          },
+          "newPayNow": null,
+          "msgToPayee": "adviMsg02",
+          "payeeAdvice": "email",
+          "emailList": [
+            {
+              "id": "aaaa@b.c"
+            }
+          ],
+          "faxList": [
+            {
+              "ctryCode": "aaaa@b.c",
+              "areaCode": "+91",
+              "faxNo": "8512112122"
+            }
+          ]
+        }
+      ],
+      "ipaddress": "10.10.10.10",
+      "expiryDateTime": "2026-02-10 19:47:00"
+    },
+    "expectedResponses": {
+      "success": {
+        "rqUID": "INTAX-YYMMDD-CTRY_CODE-NNNN4",
+        "returnStatus": "Successful",
+        "returnCode": "UX0000",
+        "channelId": "TGBS",
+        "idealRefNumber": "EBTAX60209034949",
+        "effectiveDateTime": "20260209000000",
+        "paymentType": "intax",
+        "paymentSubType": "customduty",
+        "signatureTrail": "1,2",
+        "nextSignature": "1 or 2",
+        "status": "Pending Approval"
+      }
+    }
+  },
+  "createBIFASTRequest": {
+    "url": "/idealsso-banking/bifast/rfp/request",
+    "requestData": {
+      "header": {
+        "msgId": "1234567899",
+        "channelId": "IP",
+        "timeStamp": "2025-01-10T11:05:10.723"
+      },
+      "txnInfo": {
+        "requestType": "RPI",
+        "endToEndId": "ID394959501",
+        "txnRefId": "txnRef002",
+        "purposeCode": "01",
+        "txnAmt": "50000004",
+        "txnCcy": "IDR",
+        "txnCharges": "DEBT",
+        "accountIdentification1": {
+          "senderPartyAccountNumber": "1500763813",
+          "senderPartyAccountType": "SVGS",
+          "senderPartyAccountName": "CADIS LTD",
+          "senderPartyCorporateCustomerId": "384949392",
+          "senderPartyBankCode": "DBSBIDJA"
+        },
+        "accountIdentification2": {
+          "receivingPartyAccountNumber": "1500088008"
+        },
+        "executionDate": "2026-02-10",
+        "expiryDate": "2026-02-10 23:00:00"
+      }
+    },
+    "expectedResponses": {
+      "success": {
+        "header": {
+          "msgId": "1234567899",
+          "channelId": "IP",
+          "timeStamp": "2026-02-10T13:11:21.220"
+        },
+        "txnInfo": {
+          "requestType": "RPI",
+          "txnRefId": "txnRef002"
+        },
+        "txnStatus": {
+          "code": "ACTC",
+          "desc": "Success"
+        }
+      }
+    },
+    "AmountValue":"IDR 50,000,004"
+  },
+  "getActivityLog": {
+    "url": "/idealsso-banking/getActivityLog",
+    "requestData": {
+      "qs": "AUTOSG03API01@AUTOSG03",
+      "subOrgId": "AUTOSG03",
+      "channelType": "WEB",
+      "locale": "en_gb",
+      "instructionId": "EBTHV60211012535",
+      "pmtTypeCode": "sgedp"
+    },
+    "expectedResponse": {
+      "returnCode": "UX0000",
+      "returnStatus": "Successful",
+      "channelType": "WEB",
+      "idealRefNumber": "EBTHV60211012535",
+      "workFlowList": [
+        {
+          "pmtHistoryKy": "2b8ab5ecc5f04e4245443a296cc7b26a",
+          "action": "create",
+          "userName": "AUTOSG03API01Name",
+          "updatedDateTime": "2026-02-11 15:29"
+        },
+        {
+          "isList": true,
+          "displayStatusAndCutOffTime": false,
+          "workFlowList": [
+            [
+              {
+                "pmtHistoryKy": "9a6037243a6488d845443a296cc7b26a",
+                "action": "approve",
+                "userName": "AUTOSG03API01Name",
+                "updatedDateTime": "2026-02-11 15:29",
+                "pending": false,
+                "sequential": false
+              }
+            ]
+          ],
+          "flowType": "approve",
+          "flowStatus": "completed"
+        },
+        {
+          "action": "issuance_in_progress",
+          "pending": false
+        },
+        {
+          "action": "issued",
+          "pending": true
+        },
+        {
+          "action": "cashed_out",
+          "pending": true
+        }
+      ]
+    }
+  },
+  "createAuditConfirmation": {
+    "url": "/idealx-common/accp/createAuditConfirmation",
+    "requestData": {
+      "requestID": "YJ3imlFjzc6PzyByjz6qHDNq1coMZ2QqADT",
+      "apiName": "createAuditConfirmation",
+      "requestDate": "2026-02-10 17:05:44",
+      "channelType": "ACCN",
+      "affiliate": "DBSCN",
+      "cin": "1021421",
+      "suffix": "00",
+      "requestRef": "",
+      "internalRef": "0a5efd44-8dd973836a058",
+      "customerName": "YADU_9",
+      "paymentMode": "CASA",
+      "fye": "2026-02-10",
+      "copyType": "T",
+      "emails": "auditor1@domain.com,auditor9@domain.com,auditor10@domain.com",
+      "auditor": {
+        "auditorName": "auditorName",
+        "address": {
+          "addressField1": "addressField1",
+          "addressField2": "addressField2",
+          "addressField3": "addressField3",
+          "block": "block",
+          "city": "city",
+          "level": "level",
+          "unit": "unit",
+          "zipCode": "zipCode",
+          "country": "Singapore"
+        }
+      },
+      "requestorName": "Samantha Chang",
+      "requestorTitle": "requestorTitle",
+      "requestorPhone": "+65 9123 4567",
+      "account": {
+        "accountName": "CandyAccountName2019073000001",
+        "accountNum": "2019073000001",
+        "accountType": "LCS01",
+        "accountCcy": "CNY"
+      }
+    },
+    "expectedResponses": {
+      "success": {
+        "rqUID": "YJ3imlFjzc6PzyByjz6qHDNq1coMZ2QqADT",
+        "apiName": "createAuditConfirmation",
+        "affiliate": "DBSCN",
+        "requestReference": "EBACR2026021014744",
+        "returnCode": "UX0000",
+        "returnStatus": "SUCCESS"
+      }
+    }
+  },
+
+  "accpStatusUpdate": {
+    "url": "/idealsso-banking/accp/statusUpdate",
+    "requestData": {  
+      "channel": "IDEAL",
+      "corplist": [
+        {
+          "cin": "1021421",
+          "suffix": "00",
+          "ctrycode": "CN",
+          "status": [
+            {
+              "referenceId": "",  
+              "auditstatus": "Rejected",
+              "documentId": "23123132",
+              "reason": "reject by API"
+            }
+          ]
+        }
+      ]
+    },
+    "expectedResponse": {
+      "returnStatus": "Successful",
+      "returnCode": "UX0000"
+    },
+    "uiVerifyParams": {
+      "cin": "1021421",
+      "suffix": "00",
+      "expectedAuditStatus": "Rejected",
+      "expectedReason": "reject by API"
+    }
+  },
+  "createDDADirectDebitRequest": {
+    "url": "/idealsso-banking/dda/request/create",
+    "requestData": {
+      "rqUID": "BO",
+      "channelType": "BOSIN",
+      "qs": "SG2BE11SE991@SG2BE11",
+      "subOrgId": "",
+      "rqstDt": "",
+      "boDetail": {
+        "requestId": "a6bfc2c0-3d46-11eb-adc1-0242ac120002",
+        "boClientID": "BOSIN20250915",
+        "boTransactionReferenceNo": "BOSINBOSIN20260915001",
+        "boDDARefNo": "DDA20260915001",
+        "boName": "Set up by API",
+        "segment": "Corporate",
+        "nonce": "79399129924850509749",
+        "purpose": "UBIL"
+      },
+      "applicantBankAccount": "0018001410",
+      "maxAmount": "100",
+      "fromDate": "01-03-2025",
+      "toDate": "01-05-2025",
+      "purposeofDD": "purposeofDD",
+      "messageToApprover": "messageToApprover"
+    },
+    "expectedResponses": {
+      "success": {
+      "returnStatus": "Successful",
+      "returnCode": "UX0000",
+      "rqUID": "BO"
+      }
+    }
+  },
+  "createFileExRequest": {
+    "url": "/idealsso-banking/customer/createFileExRequest",
+    "requestData": {
+      "rqUID": "123456789",
+      "apiName": "createFileExRequest",
+      "channelType": "PWEB",
+      "queryStr": "SG2BE11API01@SG2BE11",
+      "affiliateId": "DBSSG",
+      "rqstDt": "2025-09-15T15:51:05",
+      "rqstType": "STMTOPT",
+      "pwebRefNo": "STMTOPT-221129-65-98007",
+      "fileName": "STMTOPT-221129-65-98005-T190522.pdf",
+      "fileDesc": "CreateByAPI",
+      "fileData": "asdadsasdnakndknjoi2oi3jei234092j34j3n4k2m32ecw223cr4kn2342kj34n2j3n4k2n34kj2n4k2j3n4k2jn34kjn3dfsdfvsawsdfsr23rc23rcq3cr4...",
+      "BRN": "DDD0",
+      "accountNo": ["32322323","343443344343"]
+    },
+    "expectedResponses": {
+      "success": {
+        "rqUID": "123456789",
+        "apiName": "createFileExRequest",
+        "returnStatus": "Successful",
+        "returnCode": "ACCP"
+      }
+    }
+  },
+  "getFileExRequest": {
+    "url": "/idealsso-banking/customer/getFileExRequest",
+    "requestData": {			
+    "rqUID": "123456789",			
+    "apiName": "getFileExRequest",			
+    "channelType": "PWEB",			
+    "queryStr": "SG2BE11API01@SG2BE11",			
+    "rqstDt":"2025-09-15T13:51:05",			
+    "rqstType": "STMTOPT",			
+    "rqstRef": "STMTOPT-2026022602"			
+    },
+    "expectedResponses": {
+      "success": {
+        "rqUID": "123456789",
+        "apiName": "getFileExRequest",
+        "returnStatus": "Successful",
+        "returnCode": "ACCP",
+        "rqstRef": "STMTOPT-2026022602",
+        "fileName": "STMTOPT-221129-65-98005-T190522.pdf",
+        "activityLog": [
+            {
+                
+                "action": "create",
+                "userName": "SG2BE11API01  for Auto API Test",
+                "orgID": "SG2BE11",
+                "userID": "SG2BE11API01",
+                "actionDateTime": "2026-02-26T15:51:00",
+                "approvalGroup": "",
+                "actionRemark": ""
+            }
+          ]
+        }			
+      }
+  },
+  "getThirdPartyApproval": {
+    "url": "/idealsso-banking/getThirdPartyApproval",
+    "requestData": {
+      "rqUID": "1234567890",
+      "channelType": "WEB",
+      "channelId": "CNSPSCHN",
+      "qs": "CNP2A01API01@CNP2A01",
+      "subOrgId": "",
+      "rqstDt": "2026-02-25 10:00:00",
+      "approvalItems": [
+        {
+          "customerRefNo": "CN2026091502",
+          "customerMessageId": "CNSPSMCNrequest000000001",
+          "requestType": "drawdown",
+          "txnAmt": 580,
+          "txnCcy": "CNY",
+          "acctNo": "01231232424",
+          "acctName": "Account Name",
+          "acctCcy": "CNY",
+          "remarks": "this is remark"
+        }
+      ]
+    },
+    "expectedResponses": {
+      "success": {
+        "rqUID": "1234567890",
+        "returnCode": "UX0000",
+        "returnStatus": "Ack"
+      }
+    },
+    "amountValue":"580.00",
+    "requestTypeValue":"Drawdown",
+    "ccyValue":"CNY"
+  },
+  "createThirdpartyPayment": {
+    "url": "/idealsso-banking/payment/createThirdpartyPayment",
+    "requestData": {
+      "rqUID": "41DFAFF9-7982-4690-927F-74261B300EB0",
+      "channelType": "I3BE",
+      "qs": "SPIN01V01@SPIN01",
+      "subOrgID": "SPIN01",
+      "rqdtDt": "2026-02-25T16:05:41.314",
+      "merchantName": "merchantName008",
+      "creditAccountNo": "830210050245",
+      "customerDetails": {
+        "merchantReference": "UDB1000726600",
+        "companyName": "1001208",
+        "requestType": "payment",
+        "txnAmount": "1.79",
+        "acctProdCode": "CLODA",
+        "debitAccountNo": "830210050245",
+        "debitAccountName": null,
+        "acctCcy": "INR"
+      },
+      "remarks": null,
+      "messageToApprover": null,
+      "approvalStatus": "makerChecker"
+    },
+    "expectedResponses": {
+      "success": {
+        "rqUID": "41DFAFF9-7982-4690-927F-74261B300EB0",
+        "returnCode": "0000",
+        "returnStatus": "Successful",
+        "bankRefId": "EBTPP60225011267"
+      }
+    },
+    "amountValue":"1.79",
+    "rqstTypeValue":"Payment",
+    "ccyValue":"INR"
+
+  },
+  "checkNicknameExist": {
+    "url": "/idealsso-banking/checkNicknameExist",
+    "requestData": {
+      "rqUID": "f86af0d186ff44849ee6c1adcf5560e1",
+      "channelType": "MFE",
+      "apiName": "checkNicknameExist",
+      "qs": "AUTOSG03API01@AUTOSG03",
+      "subOrgId": "",
+      "nickname": "VAPayee02"
+    },
+    "expectedResponses": {
+      "success": {
+        "rqUID": "f86af0d186ff44849ee6c1adcf5560e1",
+        "apiName": "checkNicknameExist",
+        "returnStatus": "Successful",
+        "returnCode": "UX0000",
+        "isNicknameExist": true
+      }
+    }
+  },
+  "getPayeeListForEDP": {
+    "url": "/mbg-banking/customer/erp/getPayeeList",
+    "requestData": {
+      "getPayeeListReq": {
+        "rqUID": "1234567890123456789012345678901234567890",
+        "channelType": "MFE",
+        "qs": "AUTOSG05API01@AUTOSG05",
+        "functionKeys": "/payment/sgedp",
+        "paymentOptions": "sgedp|sgepp",
+        "countryCode": "SG"
+      }
+    },
+    "expectedResponses": {
+      "success": {
+        "getPayeeListRes": {
+          "rqUID": "1234567890123456789012345678901234567890",
+          "payeeList": {
+            "payeeRecord": {
+              "key": 1712022,
+              "name": "AUTO EDO PAYEE",
+              "nickname": "TXX HXX",
+              "acctNum": "854956348956 ",
+              "isPriorityPay": false,
+              "type": 3,
+              "beneCategoryId": "05",
+              "beneCategoryName": "Others",
+              "isIBAN": false,
+              "bankInfo": {
+                "key": 990665,
+                "name": "DBS BANK LTD",
+                "brchName": "",
+                "bankCode": 7171,
+                "brchCode": "",
+                "swiftBic": "DBSSSGSGXXX",
+                "displayBankId": "7171  DBSSSGSGXXX",
+                "displayBankDetails": "7171 DBSSSGSGXXX",
+                "add1": "",
+                "add2": "",
+                "add3": "",
+                "city": "Singapore",
+                "country": "SGP",
+                "countryInfo": {
+                  "key": 193,
+                  "code": "SGP",
+                  "alpha2Code": "SG",
+                  "name": "SINGAPORE",
+                  "countryPhone": 65
+                },
+                "authorizedTypeCodes": {
+                  "values": [
+                    "GIRO",
+                    "MEPS",
+                    "EDP"
+                  ]
+                },
+                "isBsbBank": false
+              },
+              "payeeCountryInfo": {
+                "key": 193,
+                "code": "SGP",
+                "alpha2Code": "SG",
+                "name": "SINGAPORE",
+                "countryPhone": 65
+              },
+              "payeeCategory": {
+                "bencatagoryId": "05",
+                "bencatagoryName": "Others"
+              },
+              "status": 7,
+              "chequeName": "TXX HXX",
+              "lastUpdateUser": "AUTOSG05S01",
+              "lastUpdateDttm": "26-Feb-2026,11:23",
+              "inBankPayer": false,
+              "inBankPayee": false,
+              "nameOfRetrieve": "TXX HXX",
+              "userOfRetrieve": "AUTOSG05S01 Name",
+              "timeOfRetrieve": "2026-02-26 11:23:48",
+              "authorizedTypeCodes": {
+                "values": "sgedp"
+              }
+            }
+          },
+          "returnCode": "UX0000",
+          "returnStatus": "Successful"
+        }
+      }
+    }
+  },
+  "updateThirdPartyStatus": {
+    "url": "/idealsso-banking/updateThirdPartyStatus",
+    "requestData": {
+      "qs": "CNP2A01API01@CNP2A01",
+      "subOrgId": "CNP2A01",
+      "countryCode": "CN",
+      "rqstDt": "2026-02-26 10:00:00",
+      "approvalItems": [{
+        "rejectReason": "rejectReason",
+        "requestType": "drawdown",
+        "txnRefNo": "CN1772071143510",
+        "customerRefNo": "CN2026022602",
+        "remarks": "remarks",
+        "status": "RJCT"
+      }],
+      "rqUID": "1234567890",
+      "channelType": "WEB",
+      "channelId": "CNSPSCHN"
+    },
+    "expectedResponses": {
+      "success": {
+        "rqUID": "1234567890",
+        "returnCode": "UX0000",
+        "returnStatus": "Ack"
+      }
+    }
+  },
+  "auBillPayment": {
+    "debitAccount": "912345678",
+    "billCode":"1234567890",
+    "CustomerReference": "98765432109876543210",
+    "viewBillerName":"TYALGUM HOODLUMS",
+    "amount": "100",
+    "BillercodeNum":"1234567890",
+    "successmsg1":"Biller's CRN exists.",
+    "successmsg2":"Amount entered is also within biller's payment limits.",
+    "rejectReason":"TEST REJECT REASON"
+  },
+  "aubpAck2": {
+    "url": "/idealsso-banking/aubp/ack2",
+    "requestData": {
+      "header": {
+        "messageKey": {
+            "channelId": "IDEAL"
+        },
+        "messageInfo": {
+            "messageType": "ACK2",
+            "messageDateTime": "2024-10-10T18:49:06.254+08:00",
+            "messageId": "de6de2f350214cdeb649e7972de5df2"
+        }
+      },
+      "body": {
+        "trnResponse": {
+            "interfaceRefNum": "EBBPM60227124009",
+            "status": "RJCT",
+            "code": "U998",
+            "desc": "Reject by API"
+        }
+      }
+    },
+     "expectedResponses": {
+      "success": {
+        
+      }
+    }
+  },
+   "sgBillPayment": {
+    "BillOrganisation": "string1",
+    "BillReference": "BillReference",
+    "debitAccount": "11111111",
+    "amount": "2345",
+    "BillercodeNum":"1234567890",
+    "successmsg1":"Biller's CRN exists.",
+    "successmsg2":"Amount entered is also within biller's payment limits.",
+    "rejectReason":"TEST REJECT REASON"
+  },
+  "sgbpAck2": {
+    "url": "/idealsso-banking/sgbp/ack2",
+    "requestData": {
+      "eventType": "",
+      "eventSubType": "",
+      "eventDateTime": "",
+      "eventPayload": {
+        "header": {
+            "responseHeader": {
+                "messageKey": {
+                    "channelId": "I3",
+                    "subChannelId": ""
+                },
+                "messageInfo": {
+                    "messageType": "ACK2",
+                    "messageDateTime": "2025-06-03T18:49:06.254+08:00",
+                    "messageId": "de6de2f350214cdeb649e7972de5df2"
+                }
+            }
+        },
+        "body": {
+            "trnResponse": {
+                "interfaceRefNum": "EBBPM60227124507",
+                "txnStatus": {
+                    "status": "ACTC",
+                    "reasonCode": "Success",
+                    "reasonDesc": "completed by API"
+                }
+            }
+        }
+    }
+    },
+     "expectedResponses": {
+      "success": {
+        "eventType": "",
+        "eventSubType": "",
+        "eventDateTime": "",
+        "eventPayload": {
+          "header": {
+            "responseHeader": {
+                "messageKey": {
+                    "channelId": "I3",
+                    "subChannelId": ""
+                },
+                "messageInfo": {
+                    "messageType": "ACK2",
+                    "messageDateTime": "2026-02-27T11:14:15.299",
+                    "messageId": "de6de2f350214cdeb649e7972de5df2"
+                }
+            }
+          },
+          "body": {
+            "trnResponse": {
+                "interfaceRefNum": "EBBPM60227124507",
+                "txnStatus": {
+                    "status": "S00",
+                    "reasonCode": "Success",
+                    "reasonDesc": ""
+                }
+            }
+          }
+        }
+      }
+    }
+  },
+  "terminateDDADirectDebit": {
+    "url": "/idealsso-banking/dda/request/terminate",
+    "requestData": {
+      "rqUID": "BO",
+      "channelType": "BOSIN",
+      "qs": "SG2BE11API01@SG2BE11",
+      "subOrgId": "",
+      "rqstDt": "2026-02-27 16:00:00",
+      "boDetail": {
+        "requestId": "a6bfc2c0-3d46-11eb-adc1-0242ac120003",
+        "timeStamp": "20260227",
+        "boClientID": "BOSIN199201624D",
+        "boTransactionReferenceNo": "BOSIN9998",
+        "boDDARefNo": "A99999",
+        "boName": "Terminate by API",
+        "segment": "Corporate",
+        "nonce": "79399129924850509749",
+        "purpose": "UBIL",
+        "effectiveTerminationDate": "27/02/2026",
+        "boAccountNo": ""
+      },
+      "applicantBankAccount": "0018001410",
+      "CIN": "C042812006G",
+      "cinSuffix": "00",
+      "Segment": "Segment",
+      "accountCurrency": "SGD",
+      "purposeofDD": "purposeofDD",
+      "messageToApprover": "messageToApprover"
+    },
+    "expectedResponses": {
+      "success": {
+        "returnStatus": "Successful",
+        "returnCode": "UX0000",
+        "rqUID": "BO"
+      }
+    }
+  },
+  "queryFixedDepositList": {
+    "url": "/idealsso-banking/customer/queryFixedDepositList",
+    "requestData": {
+      "affiliate": "SG",
+      "cin": "C024181998D",
+      "cinSuffix": "00",
+      "orderBy": ["executionDate"],
+      "requestStartDate": "1594688066",
+      "requestEndDate": "1594695179",
+      "direction": "desc",
+      "pageSize": 100,
+      "pageNo": 1
+    },
+    "expectedResponses":{
+      "payments": [
+        {
+          "accountName": "009008007Name",
+          "accountNumber": "009008007",
+          "accountNoDisplay": "009008007",
+          "depositAccountName": "LEONA ALBRECHT",
+          "depositAccountNumber": "0018001843",
+          "depositNumber": "",
+          "depositAccountNoDisplay": "Unknow_undefined",
+          "requestReference": "EBOFD00714036501",
+          "requestStatus": "Pending Approval",
+          "requestDate": "1594684800",
+          "lastAction": "Create",
+          "tenure": "1M",
+          "interestRate": 1.45,
+          "placementCurrency": "SGD",
+          "principalAmount": "5,555.00",
+          "instructionId": "EBOFD00714036501",
+          "bnkRemarks": "",
+          "rejectReason": "",
+          "lastActionDateTime": "1594688066"
+        },
+        {
+          "accountName": "009008007Name",
+          "accountNumber": "009008007",
+          "accountNoDisplay": "009008007",
+          "depositAccountName": "LEONA ALBRECHT",
+          "depositAccountNumber": "0018001843",
+          "depositNumber": "",
+          "depositAccountNoDisplay": "Unknow_undefined",
+          "requestReference": "EBOFD00714036502",
+          "requestStatus": "Pending Approval",
+          "requestDate": "1594684800",
+          "lastAction": "Create",
+          "tenure": "1M",
+          "interestRate": 1.45,
+          "placementCurrency": "SGD",
+          "principalAmount": "5,555.00",
+          "instructionId": "EBOFD00714036502",
+          "bnkRemarks": "",
+          "rejectReason": "",
+          "lastActionDateTime": "1594695179"
+        }
+    ]
+    }
+  },
+  "queryFixedDepositDetail": {
+    "url": "/idealsso-banking/customer/queryFixedDepositDetail",
+    "requestData": {
+      "affiliate": "SG",
+      "cin": "C024181998D",
+      "cinSuffix": "00",
+      "instructionId": "EBOFD00714036502"
+    },
+    "expectedResponse": {
+      "returnStatus": "Successful",
+      "returnCode": "UX0000",
+      "requestReference": "EBOFD00714036502",
+      "placementAmount": "5,555.00",
+      "placementCurrency": "SGD",
+      "fundingAccountNo": "009008007",
+      "fundingAccountNoDisplay": "009008007",
+      "fundingAccountCcy": "SGD",
+      "fundingAccountName": "009008007Name",
+      "depositAccountNo": "0018001843",
+      "depositAccountName": "LEONA ALBRECHT",
+      "depositAccountNoDisplay": "Unknow_undefined",
+      "creditAccountNo": "",
+      "creditAccountNoDisplay": "",
+      "requestDate": "1594684800",
+      "placementDate": "1594684800",
+      "tenure": "1M",
+      "interestRate": 1.45,
+      "interestAmount": 0.0,
+      "earmarkAmount": 0,
+      "requestStatus": "Pending Approval",
+      "maturityInstruction": "Renew Principal Plus Interest",
+      "nextApproval": "Group A",
+      "approvalGroups": "Group A",
+      "selectApprovers": "",
+      "verifyGroup": "",
+      "releaseGroup": "Releaser",
+      "activityLog": [
+      {
+        "action": "Create",
+        "updatedDateTime": "1594695179"
+      }
+      ],
+      "bnkRemarks": "",
+      "rejectReason": ""
+    }
+  },
+   "getOrgApproverListLite": {
+    "url": "/idealsso-banking/customer/getOrgApproverListLite",
+    "requestData": {
+      "rqUID": "asd72832sdfa7a6dfasf7s7",
+      "apiName": "getOrgApproverListLite",
+      "channelType": "AOP",
+      "queryStr": "AUTOSG05"
+    },
+    "expectedResponse": {
+      "rqUID": "asd72832sdfa7a6dfasf7s7",
+      "apiName": "getOrgApproverListLite",
+      "returnStatus": "Successful",
+      "returnCode": "UX0000",
+      "affiliateId": "DBSSG",
+      "userDataList": [
+        {
+          "userId": "AUTOSG05S01",
+          "userName": "AUTOSG05S01 Name",
+          "email": "AUTOSG05S01@dbs.com",
+          "mobileNumber": "889-789-89878",
+          "dateOfBirth": "15-Aug-1979"
+        }
+      ]
+    }
+  },
+  "getOrgApproverList": {
+    "url": "/idealsso-banking/customer/getOrgApproverList",
+    "requestData": {
+      "rqUID": "asd72832sdfa7a6dfasf7s7",
+      "apiName": "getOrgApproverList",
+      "channelType": "ERP",
+      "queryStr": "AUTOSG05S01@AUTOSG05",
+      "functionKey": "WCRI"
+    },
+    "expectedResponse": {
+      "rqUID": "asd72832sdfa7a6dfasf7s7",
+      "apiName": "getOrgApproverList",
+      "returnStatus": "Successful",
+      "returnCode": "UX0000",
+      "userDataList": [
+        {
+          "userData": {
+            "userName": "AUTOSG05S01 Name",
+            "email": "AUTOSG05S01@dbs.com",
+            "mobileNumber": "889-789-89878",
+            "dateOfBirth": "15-Aug-1979"
+          }
+        }
+      ]
+    }
+  }
+}

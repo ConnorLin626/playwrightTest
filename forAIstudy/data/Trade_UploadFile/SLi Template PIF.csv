@@ -1,0 +1,34 @@
+Sequence Number,Instrument Type,Instrument Number,Instrument Currency Code,Instrument Amount,Instrument Date,Instrument Due Date,Name of Supplier (Purchase) or Buyer (Sales),Domestic or Cross-border Trade,Transport Document Reference Number,Transport Document Date,Port or Place of Loading,Port or Place of Discharge,Name of Shipper,Name of Shipping Company,Name of Vessel or Flight No.
+Mandatory,Mandatory,Mandatory,Mandatory,Mandatory,Mandatory,Mandatory,Mandatory,Conditional Mandatory,Conditional Mandatory,Conditional Mandatory,Conditional Mandatory,Conditional Mandatory,Conditional Mandatory,Conditional Mandatory,Conditional Mandatory
+Number,2 characters max,35 characters max,3 characters max,,Date,Date,35 characters max,1 character max,32 characters max,Date,70 characters max,70 characters max,70 characters max,70 characters max,70 characters max
+Sequence number,"PI - Proforma Invoice
+PO - Purchase Order
+IN - Invoice
+CN - Credit Note
+DN - Debit Note
+SO - Sales Order","Accepted characters: 
+Alphanumeric, Slash, Hyphen, Question mark, Colon, Open parenthesis, Close parenthesis, Full stop, Comma, Apostrophe, Plus, Space ",ISO Currency Code,"15 digits E.g. 100.88
+","Cannot be Future dated
+YYYY-MM-DD","Cannot be earlier than instrument date.
+YYYY-MM-DD
+","Accepted characters: 
+Alphanumeric, Slash, Hyphen, Question mark, Colon, Open parenthesis, Close parenthesis, Full stop, Comma, Apostrophe, Plus, Space ","D - Domestic
+X - Cross-border
+If Domestic, column J to P is optional
+If Cross-border, column J to P is mandatory unless eligible for upfront declaration
+","Accepted characters: 
+Alphanumeric, Slash, Hyphen, Question mark, Colon, Open parenthesis, Close parenthesis, Full stop, Comma, Apostrophe, Plus, Space ","For sea shipment, please put shipped on board date. Otherwise, indicate document issuance date.
+
+Cannot be Future dated
+YYYY-MM-DD","Accepted characters: 
+Alphanumeric, Slash, Hyphen, Question mark, Colon, Open parenthesis, Close parenthesis, Full stop, Comma, Apostrophe, Plus, Space ","Accepted characters: 
+Alphanumeric, Slash, Hyphen, Question mark, Colon, Open parenthesis, Close parenthesis, Full stop, Comma, Apostrophe, Plus, Space ","Accepted characters: 
+Alphanumeric, Slash, Hyphen, Question mark, Colon, Open parenthesis, Close parenthesis, Full stop, Comma, Apostrophe, Plus, Space ","Accepted characters: 
+Alphanumeric, Slash, Hyphen, Question mark, Colon, Open parenthesis, Close parenthesis, Full stop, Comma, Apostrophe, Plus, Space ","Accepted characters: 
+Alphanumeric, Slash, Hyphen, Question mark, Colon, Open parenthesis, Close parenthesis, Full stop, Comma, Apostrophe, Plus, Space "
+1,PI,PI11221556108,SGD,10,02-10-2023,03-10-2023,Name of Supplier or Buyer 11,X,TR001,02-10-2023,Singapore,Hongkong,Star cruise,ROYAL CARRIBEAN,nm09-01
+2,SO,SO1221556109,SGD,20,03-10-2023,05-10-2023,Name of Supplier or Buyer 11,D,TR002,02-10-2023,Hongkong,Port or Place of Discharge,,Name of Shipping Company,nm09-01
+3,PO,PO1221556110,SGD,30,04-10-2023,04-10-2023,Name of Supplier or Buyer 11,X,TR003,02-10-2023,Singapore,Hongkong,Star cruise,ROYAL CARRIBEAN,nm09-01
+4,IN,IN1221556111,SGD,40,05-10-2023,05-10-2023,Name of Supplier or Buyer 11,D,TR004,02-10-2023,Hongkong,Port or Place of Discharge,,Name of Shipping Company,nm09-01
+5,CN,CN1221556112,SGD,-5,06-10-2023,06-10-2023,Name of Supplier or Buyer 11,X,TR005,02-10-2023,Singapore,Hongkong,Star cruise,ROYAL CARRIBEAN,nm09-01
+6,DN,DN1221556113,SGD,60,07-10-2023,07-10-2023,Name of Supplier or Buyer 11,D,TR006,02-10-2023,Hongkong,Port or Place of Discharge,,Name of Shipping Company,nm09-01

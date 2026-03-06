@@ -1,0 +1,244 @@
+{
+  "status": {
+    "Approved": "Approved",
+    "PendingApproval": "Pending Approval",
+    "PartialApproved": "Partial Approved",
+    "PendingRelease": "Pending Release",
+    "PendingVerification": "Pending Verification",
+    "PartialCompleted": "Partial Completed",
+    "Received": "Received",
+    "Completed": "Completed",
+    "Saved": "Saved",
+    "Submitted": "Submitted",
+    "BankRejected": "Bank Rejected",
+    "Rejected": "Rejected",
+    "Failed": "Failed",
+    "Cancelled": "Cancelled"
+  },
+  "HKBRFPSPayment": {
+    "UAT": {
+      "loginCompanyId": "AUTOHKB0",
+      "loginUserId": "AUTOHKB0S01",
+      "fromAccount": "123456789"
+    },
+    "SIT": {
+      "loginCompanyId": "AUTOHKB0",
+      "loginUserId": "AUTOHKB0S01",
+      "fromAccount": "123456789"
+    },
+    "Country": "Hong Kong",
+    "sendAmount": "200",
+    "newFPSPayeeEmail": "GANGIREDDY@DBS.COM",
+    "newFPSPayeeMobNum": "1111111",
+    "newFPSPayeeFasterID": "1910447",
+    "existingFPSMobNumPayee": "91111111",
+    "existingChatsAndFPSBanks": "FPSPayeeab64654",
+    "existingOnlyFPSBanks": "2323232323",
+    "newPayeeName": "HKBRFPSPayee",
+    "newPayeeNickname": "newPayeeNickname",
+    "newPayeeBankID": "0256",
+    "responseCode": "ivy123123",
+    "PurposeCode": "e-Gift",
+    "PurposeCode1": "e-Lai See",
+    "paymentDetail": "PaymentDetails",
+    "emailIdO": "Email0@dbs.com",
+    "emailId1": "Email1@dbs.com",
+    "emailId2": "Email2@dbs.com",
+    "emailId3": "Email3@dbs.com",
+    "emailId4": "Email4@dbs.com",
+    "message": "message",
+    "Greetingtothepayee": "Greeting to the payee",
+    "payeeLocation":"ALBANIA",
+    "townCity":"Town,City",
+    "newPayeeAdd1": "newPayeeAdd1",
+    "newPayeeAdd2": "newPayeeAdd2"
+  },
+  "FileService": {
+    "UAT": {
+      "loginCompanyId": "AUTOHKB0",
+      "loginUserId": "AUTOHKB0S01",
+      "fileNameForFPSProxy": "HKBR_UploadFile/HKBR_PPPGPP_UFF_UAT.txt",
+      "fileNameCollection": "HKBR_UploadFile/HKBR_COL_UFF_UAT.txt"
+    },
+    "SIT": {
+      "loginCompanyId": "AUTOHKB0",
+      "loginUserId": "AUTOHKB0S01",
+      "fileNameForFPSProxy": "HKBR_UploadFile/HKBR_PPPGPP_UFF_SIT.txt",
+      "fileNameCollection": "HKBR_UploadFile/HKBR_COL_UFF_SIT.txt"
+    },
+    "fileType": "ALL",
+    "fileFormat": "Universal File Format",
+    "approvalOptionTransaction": "By Transaction",
+    "approvalOptionFile": "By File",
+    "approvalCurrency": "HKD",
+    "challengeResponse": "123456",
+    "DateFormat": "DD-MMM-YYYY"
+  },
+  "HKBLimitOrder": {
+    "UAT": {
+      "loginCompanyId": "HKBP2A01",
+      "loginUserId": "HKBP2A01S88",
+      "approveUserId": "HKBP2A01S02",
+      "sellAccountValue": "5356272722",
+      "buyAccountValue": "30010601688"
+    },
+    "SIT": {
+      "loginCompanyId": "HKBP2A01",
+      "loginUserId": "HKBP2A01S88",
+      "approveUserId": "HKBP2A01S02",
+      "sellAccountValue": "5356272722",
+      "buyAccountValue": "30010601688"
+    },
+    "amountA1": "2100",
+    "amountA1View": "2,100",
+    "buyAmount": "269.28",
+    "sellAccountCCY": "HKD",
+    "buyAccountCCY": "CNY",
+    "remarks": "remarks for Limit Order",
+    "responseCode": "123123",
+    "rejectReason": "Reason for rejection"
+  },
+  "InstantFXConversion": {
+    "UAT": {
+      "loginCompanyId": "HKBP2A01",
+      "loginUserId": "HKBP2A01S88",
+      "fromAccountValue": "66899999",
+      "toAccountValue": "12121212"
+    },
+    "SIT": {
+      "loginCompanyId": "HKBP2A01",
+      "loginUserId": "HKBP2A01S88",
+      "fromAccountValue": "5356272722",
+      "toAccountValue": "30010601688"
+    },
+    "fromCCY": "HKD",
+    "toCCY": "CNY",
+    "amount": "50",
+    "amountView": "1,000.00",
+    "responseCode": "123123",
+    "messageToApprover": "messageToApprover"
+  },
+  "FixedDeposit": {
+    "HKBRAccount": {
+      "UAT": {
+        "loginCompanyId": "HKBP2A01",
+        "loginUserId": "HKBP2A01S88",
+        "fundingAccount": "999911111",
+        "fixdDepositAccount": "SUPERCLUBCOLTD-NOTICEACS",
+        "amount": "50,001"
+      },
+      "SIT": {
+        "loginCompanyId": "HKBP2A01",
+        "loginUserId": "HKBP2A01S88",
+        "fundingAccount": "999911121",
+        "fixdDepositAccount": "SUPERCLUBCOLTD-NOTICEACS",
+        "amount": "50,001"
+      }
+    }
+  },
+  "MyApproval": {
+    "UAT": {
+      "loginCompanyId": "AUTOHKB0",
+      "loginUserId": "AUTOHKB0S01",
+      "fileNameByFile": "HKBR_UploadFile/HKBR_ACT_HighRisk_UFF_SIT.txt",
+      "fileNameByTxn": "HKBR_UploadFile/HKBR_ACT_HighRisk_UFF_SIT.txt",
+      "fromAccount": "123456789"
+    },
+    "SIT": {
+      "loginCompanyId": "AUTOHKB0",
+      "loginUserId": "AUTOHKB0S01",
+      "fileNameByFile": "HKBR_UploadFile/HKBR_ACT_HighRisk_UFF_SIT.txt",
+      "fileNameByTxn": "HKBR_UploadFile/HKBR_ACT_HighRisk_UFF_SIT.txt",
+      "fromAccount": "123456789"
+    },
+    "fileType": "ALL",
+    "fileFormat": "Universal File Format",
+    "approvalOptionByTxn": "By Transaction",
+    "approvalOptionByFile": "By File",
+    "approvalCurrency": "HKD",
+    "approverOption": "AUTOHKB0S01",
+    "approverOption1": "SSM AUTO Approverm5d",
+    "challengeResponse": "12341234",
+    "rejectReason": "Reject for AUTO TEST",
+    "labelNoInformationDisplay": "No information to display",
+    "amountA1": "10",
+    "existingPayee": "MoreMaxlengthPayeeNameis140MoreMaxlengthPayeeNameis140MoreMaxlengthPayeeNameis140MoreMaxlengthPayeeNameis140MoreMaxlengthPayeeNameis14014014",
+    "paymentDetail": "PaymentDetails",
+    "transactionNote": "transactionNote",
+    "messageToOrderingBank": "messageToOrderingBank"
+  },
+  "PaymentReport": {
+    "UAT": {
+      "loginCompanyId": "AUTOHKB0",
+      "loginUserId": "AUTOHKB0S01",
+      "account": "123456789Name - 123456789 - HKD",
+      "accountNotInclude": "22345678Name - 22345678 - HKD"
+    },
+    "SIT": {
+      "loginCompanyId": "AUTOHKB0",
+      "loginUserId": "AUTOHKB0S01",
+      "account": "123456789Name - 123456789 - HKD",
+      "accountNotInclude": "22345678Name - 22345678 - HKD"
+    },
+    "usage": "Shared",
+    "daily": "Morning (6AM-9AM)",
+    "deliverySchedule": "Daily",
+    "deliveryOneOff": "One-off / ad-hoc",
+    "password": "123456",
+    "confirmPassword": "123456",
+    "remarks": "remarks",
+    "payeeReference": "payeeReference",
+    "payeeName": "payeeName"
+  },
+  "Beneficiary": {
+    "payeeLocation":"ALBANIA",
+    "townCity":"Town,City",
+    "streetName":"street Name",
+    "newPayeeAdd1": "newPayeeAdd1",
+    "newPayeeAdd2": "newPayeeAdd2",
+    "postalCode":"postalCode123",
+    "editPayeeLocation":"AFGHANISTAN",
+    "editTownCity":"Edit Town City",
+    "buildingNum":"building894",
+    "buildingName":"buildname333",
+    "floor":"floor 33",
+    "room":"room 09",
+    "department":"department123",
+    "subDepartment":"subDepartment123",
+    "countrySubDivsion":"countrySubDivsion123",
+    "townLocationName":"townLocationName234",
+    "districtName":"districtName567"
+  },
+  "TelegraphicTransfer": {
+    "UAT": {
+      "loginCompanyId": "AUTOHKB0",
+      "loginUserId": "AUTOHKB0S01",
+      "fromAccount": "123456789",
+      "pinId":"P@ssword123"
+    },
+    "SIT": {
+      "loginCompanyId": "AUTOHKB0",
+      "loginUserId": "AUTOHKB0S01",
+      "fromAccount": "123456789",
+      "pinId":"P@ssword123"
+    },
+    "existingTemplate":"TT-BHD template",
+    "amountA1": "100.000",
+    "existingPayee": "existing TT payee",
+    "paymentType": "Hong Kong Telegraphic Transfer",
+    "payeeBankName": "ABN AMRO BANK N.V. SINGAPORE BRANCH",
+    "payeeBankLocation": "SINGAPORE",
+    "payeeBankCity": "SINGAPORE",
+    "payeeBankSwiftbic": "FTSBSGS0XXX",
+    "paymentDetail": "Payment details to the payee bank",
+    "emailIdO": "Email0@dbs.com",
+    "emailId1": "Email1@dbs.com",
+    "emailId2": "Email2@dbs.com",
+    "emailId3": "Email3@dbs.com",
+    "emailId4": "Email4@dbs.com",
+    "message": "Greeting to the payee",
+    "bankChargeValue": "You (DEBT/OUR)",
+    "bhdPurposeCode":"DSF - Debt instruments intragroup foreign securities",
+    "messageToOrderingBank":"Special instructions to DBS"
+  }
+}

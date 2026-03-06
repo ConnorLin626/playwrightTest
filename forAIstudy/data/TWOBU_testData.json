@@ -1,0 +1,232 @@
+{
+  "status": {
+    "Approved": "Approved",
+    "PendingApproval": "Pending Approval",
+    "PartialApproved": "Partial Approved",
+    "PendingRelease": "Pending Release",
+    "PendingVerification": "Pending Verification",
+    "PartialCompleted": "Partial Completed",
+    "Received": "Received",
+    "Completed": "Completed",
+    "Saved": "Saved",
+    "Submitted": "Submitted",
+    "BankRejected": "Bank Rejected",
+    "Rejected": "Rejected",
+    "Failed": "Failed",
+    "Cancelled": "Cancelled"
+  },
+  "FICSBulkPmt": {
+    "UAT": {
+      "loginCompanyId": "SPTWOBU0",
+      "loginUserId": "SPTWOBU0V01",
+      "verifyUserId": "SPTWOBU0V02",
+      "fromAccount": "12345678",
+      "payeeBankID": "8221230"
+    },
+    "SIT": {
+      "loginCompanyId": "SPTWOBU0",
+      "loginUserId": "SPTWOBU0V01",
+      "verifyUserId": "SPTWOBU0V02",
+      "fromAccount": "12345678",
+      "payeeBankID": "8221230"
+    },
+    "payeeName": "AUTO-Test-BulkPayment-Payee",
+    "newPayeeNickname": "newPayeeNickname",
+    "accountNumber": "00000000000001",
+    "amountA1": "10",
+    "payeeRef": "payeeRef",
+    "paymentDetails": "Payment details to the payee bank",
+    "emailIdO": "Email0@dbs.com",
+    "emailId1": "Email1@dbs.com",
+    "emailId2": "Email2@dbs.com",
+    "emailId3": "Email3@dbs.com",
+    "emailId4": "Email4@dbs.com",
+    "message": "message",
+    "DebitType": "Consolidated Debit",
+    "TransactionCode": "28 - Consolidated Debit",
+    "paymentType": "Taiwan Bulk Payment",
+    "bankChargeView": "OUR"
+  },
+  "fileServicesForTT": {
+    "UAT": {
+      "loginCompanyId": "SPTWOBU0",
+      "loginUserId": "SPTWOBU0V01",
+      "fileNameAllTT": "TWOBU_UploadFile/TWOBU_TT_AB-9015_UAT.txt"
+    },
+    "SIT": {
+      "loginCompanyId": "SPTWOBU0",
+      "loginUserId": "SPTWOBU0V01",
+      "fileNameAllTT": "TWOBU_UploadFile/TWOBU_TT_AB-9015_SIT.txt"
+    },
+    "approvalOptionByTransaction": "By Transaction",
+    "approvalOptionByFile": "By File",
+    "FSTTValue": {
+      "purposeCode": "695 - Transactions without the flow of funds",
+      "subPurposeCode": "Z - Movement of foreign currency funds of same customer involving overseas transaction receipts and payments",
+      "otherDes": "other description for AB-9015"
+    }
+  },
+  "fileServicesForGS": {
+    "UAT": {
+      "loginCompanyId": "TWOBU001",
+      "loginUserId": "TWOBU001S01",
+      "fileNameAllGS": "TWOBU_UploadFile/TWOBU_GS_AB-9015_UAT.txt"
+    },
+    "SIT": {
+      "loginCompanyId": "TWOBU001",
+      "loginUserId": "TWOBU001S01",
+      "fileNameAllGS": "TWOBU_UploadFile/TWOBU_GS_AB-9015_SIT.txt"
+    },
+    "approvalOptionByTransaction": "By Transaction",
+    "approvalOptionByFile": "By File",
+    "FSTTValue": {
+      "purposeCode": "695 - Transactions without the flow of funds",
+      "subPurposeCode": "Z - Movement of foreign currency funds of same customer involving overseas transaction receipts and payments",
+      "otherDes": "other description for AB-9015"
+    },
+    "fromAccount":"7788990033",
+    "beneName":"PHP Payee name",
+    "purposeCodeValue": "111 - Freight shipping expenses",
+    "addInfor1": "Individual",
+    "addInfor2": "1 - Bonds",
+    "addInfor3": "Contractee - Contractor"
+
+
+
+
+  },
+  "fileServicesForBulkFISC": {
+    "UAT": {
+      "loginCompanyId": "TWOBU05",
+      "loginUserId": "TWOBU05S01",
+      "fileNameForBulkFISC": "TWOBU_UploadFile/TWOBU-Bulk-FISC_UAT.txt"
+    },
+    "SIT": {
+      "loginCompanyId": "TWOBU05",
+      "loginUserId": "TWOBU05S01",
+      "fileNameForBulkFISC": "TWOBU_UploadFile/TWOBU-Bulk-FISC_SIT.txt"
+    },
+    "approvalOptionByTransaction": "By Transaction",
+    "approvalOptionByFile": "By File"
+  },
+  "ICT": {
+    "UAT": {
+      "loginCompanyId": "SPTWOBU0",
+      "loginUserId": "SPTWOBU0V01",
+      "fromAccount": "12345678",
+      "toAccount": "22345678"
+    },
+    "SIT": {
+      "loginCompanyId": "SPTWOBU0",
+      "loginUserId": "SPTWOBU0V01",
+      "fromAccount": "12345678",
+      "toAccount": "22345678"
+    },
+    "amount": "10",
+    "purposeCode": "450 - Natural resource leasing expenses and goods-related tax expenses"
+  },
+  "Resources": {
+    "UAT": {
+      "loginCompanyId": "TWOBU05",
+      "loginUserId": "TWOBU05S01",
+      "verifyUserId": "TWOBU01S02",
+      "Assist": {
+        "UserId": "TWP2A01S01",
+        "Id": "341006",
+        "Affiliate": "DBSTWOBU"
+      },
+      "fromAccount": "TWD",
+      "payeeBankID": "8221230",
+      "reference": "EBLVT81228022984",
+      "existingPayee": "AUTO"
+    },
+    "SIT": {
+      "loginCompanyId": "TWOBU05",
+      "loginUserId": "TWOBU05S01",
+      "verifyUserId": "TWOBU01S02",
+      "Assist": {
+        "UserId": "TWP2A01S01",
+        "Id": "341006",
+        "Affiliate": "DBSTWOBU"
+      },
+      "fromAccount": "TWD",
+      "payeeBankID": "8221230",
+      "reference": "EBLVT81228022984",
+      "existingPayee": "AUTO"
+    },
+    "amountA1": "10",
+    "amountA2": "1,100",
+    "amountA2IX": "1100",
+    "asadm1": "ASADM1",
+    "asadm2": "ASADM2"
+  },
+  "PaymentReport": {
+    "UAT": {
+      "loginCompanyId": "SPTWOBU0",
+      "loginUserId": "SPTWOBU0V01",
+      "account": "12345678Name - 12345678 - TWD",
+      "accountNotInclude": "22345678Name - 22345678 - TWD"
+    },
+    "SIT": {
+      "loginCompanyId": "SPTWOBU0",
+      "loginUserId": "SPTWOBU0V01",
+      "account": "12345678Name - 12345678 - TWD",
+      "accountNotInclude": "22345678Name - 22345678 - TWD"
+    },
+    "usage": "Shared",
+    "daily": "Morning (6AM-9AM)",
+    "deliverySchedule": "Daily",
+    "deliveryOneOff": "One-off / ad-hoc",
+    "password": "123456",
+    "confirmPassword": "123456",
+    "remarks": "remarks",
+    "payeeReference": "payeeReference",
+    "payeeName": "payeeName"
+  },
+  "AccountTransfer": {
+    "UAT": {
+      "loginCompanyId": "TWOBU001",
+      "loginUserId": "TWOBU001S01",
+      "fromAccount": "7788990033"
+    },
+    "SIT": {
+      "loginCompanyId": "TWOBU001",
+      "loginUserId": "TWOBU001S01",
+      "fromAccount": "7788990033"
+    },
+    "audCcy":"AUD",
+    "payeeLocation": "TAIWAN",
+    "accountNumber": "1234567890123456",
+    "sendAmount": "500",
+    "newPayeeAdd1":"newPayeeAdd1",
+    "newPayeeAdd2":"newPayeeAdd2",
+    "newPayeeAdd3":"newPayeeAdd3",
+    "purposeCode": "131 - Business expenses",
+    "remittanceType": "Overseas Outward Remittance",
+    "paymentDetails": "paymentDetails",
+    "adviceContent": "adviceContent",
+    "val": "val@cc.com;"
+  },
+  "TelegraphicTransfer": {
+    "UAT": {
+      "loginCompanyId": "SPTWOBU0",
+      "loginUserId": "SPTWOBU0V01",
+      "fromAccount": "12345678",
+      "pinId":"P@ssword123"
+    },
+    "SIT": {
+      "loginCompanyId": "SPTWOBU0",
+      "loginUserId": "SPTWOBU0V01",
+      "fromAccount": "32345678",
+      "pinId":"P@ssword123"
+      
+    },
+    "amount": "10",
+    "purposeCode": "450 - Natural resource leasing expenses and goods-related tax expenses",
+    "cnexistingPayee":"CNY Payee for TT",
+    "mmexistingPayee":"Myanmar(MM) Payee For TT",
+    "RPPC":"9400 - Purchase and sale of foreign currency between residents and resident banks",
+    "paymentDetail":"paymentDetail"
+  }
+
+}

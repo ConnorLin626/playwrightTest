@@ -1,0 +1,4 @@
+HEADER,15072025,AutoTest,
+PAYMENT,GPP,0012001234,VND,,VND,,12082025,,,NEW NAPAS PAYEE,,,,,34864783647,,,,	168999,,,,,,,,5000,,,,,,,,PaymentDetails123,,,,,,,,,E,,,,,,,,,sbaraiya@euronetworldwide.com,baraiya@euronetworldwide.com,vbhandary@euronetworldwide.com,kdeo@euronetworldwide.com,haribabus@euronetworldwide.com,12345678,111111111,222222222,333333333,4444444444,msgToPayeeValue,,,,,,,,,,,,,,,,,,,,,,,,,,
+PAYMENT,GPP,0012001234,VND,,VND,,05082025,,,NEW NAPAS PAYEE,,,,,2025080400009999,,,,,,,,,,,,5000,,,,,,,,PaymentDetails123,,,,,,,,,E,,,,,,,,,sbaraiya@euronetworldwide.com,baraiya@euronetworldwide.com,vbhandary@euronetworldwide.com,kdeo@euronetworldwide.com,haribabus@euronetworldwide.com,12345678,111111111,222222222,333333333,4444444444,msgToPayeeValue,,,,,,,,,,,,,,,,,,,,,,,,,,
+TRAILER,2,10000

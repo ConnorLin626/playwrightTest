@@ -1,0 +1,19 @@
+Domestic transactions
+	695 - Transactions without the flow of funds
+		A - Foreign exchange transfer between different customers (including repayment, donation, borrowing, and investment)
+		B - Fundings and repayments of short-term foreign exchange loans of domestic banks
+		C - Deposit lodgements or deposit repayments of foreign exchange transactions
+		D - Realized gain or loss on foreign exchange transactions
+		E - Interest payments and receipts from foreign exchange loans
+		F - Fundings and repayments of domestic banks medium and long-term foreign exchange loans
+		G - Unrealized gain or loss on valuation
+		R - Domestic loans receipts between customers
+		S - Foreign currency insurance, funds, bonds, and investment related receipts (including interest accrued)
+		T - Domestic allowances for family or relatives, donations and inheritance expenditures and receipts
+		L - Foreign currency loans receipts between customers
+		P - Domestic service receipts between customers
+		X - SWAP between NTD and foreign currency
+		Y - CCS between NTD and foreign currency
+		N - Domestic transaction receipts other than those described above ( i.e. spot transaction settlements,customer's handling fees, and receipts and expenditures of tax)
+		Z - The same customer's foreign currency funds change engaged in overseas transaction expenditures and receipts
+		Deposit into foreign currency deposit account, Withdrawal from foreign currency deposit account

@@ -1,0 +1,4 @@
+HEADER,30112018,SG2BFE1,Sino
+PAYMENT,CBA,0018001851,SGD,IUFF3.1.1.1.1,EUR,,30112018,OUR,OUR,11511Dom,,123123,,,2245523454,01,,,,BCMAMRMRXXX,Payee Bank Name11,Payee Bank Address11,HR,,,,1,,,,,,,Purpose of Payment111,Payment Details11                  Payment Details12                  ,transactionNote,,,,1,,111,,E,,,,,,,,,caijw10@163.com,caijw10@sina.com,SSSSSSS@163.com,FFFFFFF@163.com,,12345678,,,,,SDF,,,,
+PAYMENT,CBA,0018001851,SGD,IUFF3.1.1.1.1,EUR,,30112018,OUR,OUR,1Bene A3.1.3,,123123,,,11112222,01,,,,XXXXXXXXXXX,Payee Bank Name21,Payee Bank Address21,HR,,,,2,,,,,,,Purpose of Payment222,Payment Details21,transactionNote,,,,2,,619,OtherDesc,E,,,,,,,,,caijw10@163.com,caijw10@sina.com,SSSSSSS@163.com,FFFFFFF@163.com,,12345678,,,,,SDF,,,,
+TRAILER,00000002,3
