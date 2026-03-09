@@ -50,7 +50,7 @@ test.describe('ACT Payment - Create with New Payee', () => {
 
     // 登录
     const loginPage = new LoginPage(page);
-    await page.goto(test.info().project.use.loginURL as string);
+    await page.goto(test.info().project.use.baseURL as string);
     await loginPage.login(
       testData.login.corpId,
       userId,
