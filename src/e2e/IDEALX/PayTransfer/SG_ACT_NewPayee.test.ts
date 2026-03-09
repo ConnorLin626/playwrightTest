@@ -1,5 +1,5 @@
 import { test, expect, Page } from '@playwright/test';
-import { LoginPage } from '../../../pages/Navigate/LoginPage';
+import { NavigatePages } from '../../../pages/Navigate';
 import { AccountTransferPage } from '../../../pages/IDEALX/PayTransfer/AccountTransferPage';
 import { BeneficiaryPage } from '../../../pages/IDEALX/PayTransfer/BeneficiaryPage';
 import * as fs from 'fs';
@@ -35,27 +35,15 @@ test.describe('ACT Payment - Create with New Payee', () => {
     console.log(`[${projectName}] 测试开始: ${test.info().title}`);
     console.log(`[${projectName}] =======================================`);
 
-    // 根据项目名称选择不同的登录账号，避免并行冲突
-    let userId: string;
-
-    if (projectName === 'chromium') {
-      userId = testData.login.userIdChrome1;
-    } else if (projectName === 'chromium2') {
-      userId = testData.login.userIdChrome2;
-    } else {
-      userId = testData.login.userIdFirefox;
-    }
-
-    console.log(`[${projectName}] 使用登录账号: ${testData.login.corpId}/${userId}`);
-
-    // 登录
-    const loginPage = new LoginPage(page);
-    await page.goto(test.info().project.use.baseURL as string);
-    await loginPage.login(
-      testData.login.corpId,
-      userId,
-      testData.login.pin
+    // 使用 NavigatePages 的登录方法
+    // 方式1: 让系统根据项目名称自动选择 userId（chromium -> userIdChrome1, firefox -> userIdFirefox）
+    await new NavigatePages(page, test.info()).loginIdealx(
+      testData.login.corpId,  // 企业ID
+      undefined,              // userId: undefined 表示根据项目名称自动选择
+      testData.login.pin,     // PIN码
+      testData                // 测试数据
     );
+
   });
 
   test.afterEach(async ({ page }) => {
@@ -135,7 +123,9 @@ async function createACTPaymentWithNewPayee(page: Page) {
   await countryInput.fill(testData.AccountTransfer.Country);
   await page.waitForTimeout(1000).catch(() => {});
   // 查找并点击匹配的国家选项
-  const countryOption = page.locator(`//span[contains(text(), '${testData.AccountTransfer.Country}') or contains(text(), '${testData.AccountTransfer.Country.substring(0, 10)}')]`).first();
+  const countryName = testData.AccountTransfer.Country;
+  const countrySubstring = countryName.length > 10 ? countryName.substring(0, 10) : countryName;
+  const countryOption = page.locator(`//span[contains(text(), '${countryName}') or contains(text(), '${countrySubstring}')]`).first();
   if (await countryOption.isVisible({ timeout: 2000 }).catch(() => false)) {
     await countryOption.click();
   }
@@ -187,7 +177,9 @@ async function createACTPaymentWithNewPayee(page: Page) {
   await PayeelocationInput.fill(testData.Beneficiary.payeeLocation);
   await page.waitForTimeout(1000).catch(() => {});
   // 查找并点击匹配的位置选项
-  const locationOption = page.locator(`//span[contains(text(), '${testData.Beneficiary.payeeLocation}') or contains(text(), '${testData.Beneficiary.payeeLocation.substring(0, 10)}')]`).first();
+  const locationName = testData.Beneficiary.payeeLocation;
+  const locationSubstring = locationName.length > 10 ? locationName.substring(0, 10) : locationName;
+  const locationOption = page.locator(`//span[contains(text(), '${locationName}') or contains(text(), '${locationSubstring}')]`).first();
   if (await locationOption.isVisible({ timeout: 2000 }).catch(() => false)) {
     await locationOption.click();
   }
@@ -200,37 +192,37 @@ async function createACTPaymentWithNewPayee(page: Page) {
   await page.waitForTimeout(500).catch(() => {});
 
   // ========================================
-  // 步骤 13: 输入地址1
+  // 步骤 14: 输入地址1
   // ========================================
-  console.log(`[${projectName}] 步骤 13: 输入地址1`);
+  console.log(`[${projectName}] 步骤 14: 输入地址1`);
   await actPage.newPayeeAdd1.fill(testData.AccountTransfer.newPayeeAdd1);
   await page.waitForTimeout(500).catch(() => {});
 
   // ========================================
-  // 步骤 14: 输入地址2
+  // 步骤 15: 输入地址2
   // ========================================
-  console.log(`[${projectName}] 步骤 14: 输入地址2`);
+  console.log(`[${projectName}] 步骤 15: 输入地址2`);
   await actPage.newPayeeAdd2.fill(testData.AccountTransfer.newPayeeAdd2);
   await page.waitForTimeout(500).catch(() => {});
 
   // ========================================
-  // 步骤 15: 输入邮编
+  // 步骤 16: 输入邮编
   // ========================================
-  console.log(`[${projectName}] 步骤 15: 输入邮编 = ${testData.Beneficiary.postalCode}`);
+  console.log(`[${projectName}] 步骤 16: 输入邮编 = ${testData.Beneficiary.postalCode}`);
   await beneficiaryPage.postalCode.fill(testData.Beneficiary.postalCode);
   await page.waitForTimeout(500).catch(() => {});
 
   // ========================================
-  // 步骤 16: 输入付款详情
+  // 步骤 17: 输入付款详情
   // ========================================
-  console.log(`[${projectName}] 步骤 16: 输入付款详情`);
+  console.log(`[${projectName}] 步骤 17: 输入付款详情`);
   await actPage.paymentDetail.fill(testData.AccountTransfer.paymentDetail);
   await page.waitForTimeout(500).catch(() => {});
 
   // ========================================
-  // 步骤 17: 勾选交易备注
+  // 步骤 18: 勾选交易备注
   // ========================================
-  console.log(`[${projectName}] 步骤 17: 勾选交易备注`);
+  console.log(`[${projectName}] 步骤 18: 勾选交易备注`);
   // 点击 checkbox 的父容器或标签（checkbox 本身可能不可见）
   const transactionNoteLabel = page.locator(`//label[@for="isTransactionNote"] or //label[contains(text(), 'Transaction Note')]`).first();
   if (await transactionNoteLabel.isVisible({ timeout: 2000 }).catch(() => false)) {
@@ -242,27 +234,27 @@ async function createACTPaymentWithNewPayee(page: Page) {
   await page.waitForTimeout(500).catch(() => {});
 
   // ========================================
-  // 步骤 18: 输入交易备注
+  // 步骤 19: 输入交易备注
   // ========================================
-  console.log(`[${projectName}] 步骤 18: 输入交易备注`);
+  console.log(`[${projectName}] 步骤 19: 输入交易备注`);
   await actPage.transactionNote.fill(testData.AccountTransfer.transactionNote);
   await page.waitForTimeout(1000).catch(() => {});
 
   await page.screenshot({ path: `screenshots/ACT-NewPayee-step4-filled-${projectName}-${Date.now()}.png`, fullPage: true });
 
   // ========================================
-  // 步骤 19: 点击 Next 按钮
+  // 步骤 20: 点击 Next 按钮
   // ========================================
-  console.log(`[${projectName}] 步骤 19: 点击 Next 按钮`);
+  console.log(`[${projectName}] 步骤 20: 点击 Next 按钮`);
   await actPage.nextButton.click();
   await actPage.waitForPageLoad();
 
   await page.screenshot({ path: `screenshots/ACT-NewPayee-step5-preview-${projectName}-${Date.now()}.png`, fullPage: true });
 
   // ========================================
-  // 步骤 20: 提交付款
+  // 步骤 21: 提交付款
   // ========================================
-  console.log(`[${projectName}] 步骤 20: 提交付款`);
+  console.log(`[${projectName}] 步骤 21: 提交付款`);
   await actPage.submitButton.click();
   await page.waitForTimeout(5000).catch(() => {});
 
@@ -326,9 +318,9 @@ async function createACTPaymentWithNewPayee(page: Page) {
   await page.screenshot({ path: `screenshots/ACT-NewPayee-step6-success-${projectName}-${Date.now()}.png`, fullPage: true });
 
   // ========================================
-  // 步骤 22: 点击 Finish 按钮
+  // 步骤 23: 点击 Finish 按钮
   // ========================================
-  console.log(`[${projectName}] 步骤 22: 点击 Finish 按钮`);
+  console.log(`[${projectName}] 步骤 23: 点击 Finish 按钮`);
   try {
     const finishButtonVisible = await actPage.finishedButton.isVisible({ timeout: 5000 }).catch(() => false);
     if (finishButtonVisible) {
@@ -351,9 +343,9 @@ async function createACTPaymentWithNewPayee(page: Page) {
     expect(referenceNumber.length).toBeGreaterThan(0);
 
     // ========================================
-    // 步骤 23: 导航到查看页面并验证
+    // 步骤 24: 导航到查看页面并验证
     // ========================================
-    console.log(`[${projectName}] 步骤 23: 导航到查看页面并验证`);
+    console.log(`[${projectName}] 步骤 24: 导航到查看页面并验证`);
     await actPage.paymentMenu.click();
     await page.waitForTimeout(2000).catch(() => {});
 
