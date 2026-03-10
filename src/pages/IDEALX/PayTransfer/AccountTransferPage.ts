@@ -40,7 +40,7 @@ export class AccountTransferPage {
 
   // 银行和账号相关 - 对应 forAIstudy 第26-29行
   get payeeBank(): Locator { return this.page.locator('//dbs-radio-group[@formcontrolname="bankType"]'); }
-  get payeeBankRadio(): Locator { return this.page.locator('//*[@id="DBS-bank"]'); }
+  get payeeBankRadio(): Locator { return this.page.locator('//dbs-radio//span[contains(text(),"DBS Bank SINGAPORE")]'); }
   get newPayeeAcctNumber(): Locator { return this.page.locator("//input[@name='new-payee-acct-number']"); }
   get newPayeeCountry(): Locator { return this.page.locator('//p-auto-complete[@formcontrolname="selectedCountry"]'); }
   get newPayeeCountryInput(): Locator { return this.page.locator('//*[@id="new-payee-country"]'); }
@@ -63,7 +63,7 @@ export class AccountTransferPage {
 
   // 消息相关 - 对应 forAIstudy 第43-45行
   get message(): Locator { return this.page.locator("//textarea[@name='adviceContent']"); }
-  get isTransactionNote(): Locator { return this.page.locator("//input[@formcontrolname='isTransactionNote']"); }
+  get isTransactionNote(): Locator { return this.page.locator("label[for='isTransactionNote']"); }
   get transactionNote(): Locator { return this.page.locator("//textarea[@name='transactionNote']"); }
 
   // 按钮相关 - 对应 forAIstudy 第46-55行
@@ -220,7 +220,7 @@ export class AccountTransferPage {
 
   // 成功消息和参考编号 - 保留原有定义
   get successMessage(): Locator { return this.page.locator('//dbs-top-panel/div/div[starts-with(@class, "alert alert-info")]'); }
-  get referenceNumber(): Locator { return this.page.locator('//div[@id="referNoDiv"]/label[2]'); }
+  get referenceNumber(): Locator { return this.page.locator('//*[@id="act-view-custRef"]'); }
 
   /**
    * 选择下拉框选项 - 基于 forAIstudy 的 OptionSelect 组件

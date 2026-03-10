@@ -12,7 +12,7 @@ export {
  * 基于 forAIstudy/src/pages/IDEALX/PayTransfer/index.ts 的 PaymentsPages
  * 统一管理和创建所有 PayTransfer 相关的页面对象
  */
-export class PayTransferPages {
+export class PaymentsPages {
     public AccountTransferPage: AccountTransferPage;
     public BeneficiaryPage: BeneficiaryPage;
 
