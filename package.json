@@ -18,6 +18,10 @@
   },
   "devDependencies": {
     "@playwright/test": "^1.48.0",
-    "@types/node": "^25.3.5"
+    "@types/node": "^25.3.5",
+    "@types/ssh2-sftp-client": "^9.0.6"
+  },
+  "dependencies": {
+    "ssh2-sftp-client": "^12.1.0"
   }
 }

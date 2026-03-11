@@ -1,0 +1,54 @@
+{
+  "_comment": "请将此文件复制为 sftpConfig.json 并填入实际的配置信息",
+  "sftp": {
+    "SIT": {
+      "host": "sftp-sit.your-domain.com",
+      "port": 22,
+      "username": "your-sit-username",
+      "password": "your-sit-password",
+      "privateKey": null,
+      "passphrase": null,
+      "remoteBasePath": "/sftp/sit/",
+      "description": "SIT环境SFTP服务器"
+    },
+    "UAT": {
+      "host": "sftp-uat.your-domain.com",
+      "port": 22,
+      "username": "your-uat-username",
+      "password": "your-uat-password",
+      "privateKey": null,
+      "passphrase": null,
+      "remoteBasePath": "/sftp/uat/",
+      "description": "UAT环境SFTP服务器"
+    },
+    "PROD": {
+      "host": "sftp-prod.your-domain.com",
+      "port": 22,
+      "username": "your-prod-username",
+      "password": null,
+      "privateKey": "/path/to/private/key.pem",
+      "passphrase": "your-key-passphrase",
+      "remoteBasePath": "/sftp/prod/",
+      "description": "生产环境SFTP服务器（推荐使用密钥认证）"
+    }
+  },
+  "directories": {
+    "upload": "upload",
+    "download": "download",
+    "archive": "archive",
+    "error": "error",
+    "reports": "reports",
+    "logs": "logs"
+  },
+  "filePatterns": {
+    "payment": "*.txt",
+    "report": "*.csv",
+    "log": "*.log",
+    "all": "*"
+  },
+  "_notes": {
+    "port": "默认SFTP端口为22，某些服务器可能使用自定义端口",
+    "authentication": "可以使用password或privateKey进行认证，生产环境推荐使用privateKey",
+    "remoteBasePath": "所有文件操作的基础路径，可省略或根据需要设置"
+  }
+}

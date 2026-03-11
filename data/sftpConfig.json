@@ -1,0 +1,45 @@
+{
+  "sftp": {
+    "SIT": {
+      "host": "192.168.0.251",
+      "port": 22,
+      "username": "test",
+      "password": "test",
+      "privateKey": null,
+      "passphrase": null,
+      "remoteBasePath": "/sftp/sit/",
+      "description": "SIT环境SFTP服务器"
+    },
+    "UAT": {
+      "host": "sftp-uat.your-domain.com",
+      "port": 22,
+      "username": "uat-user",
+      "password": "uat-password",
+      "privateKey": null,
+      "passphrase": null,
+      "remoteBasePath": "/sftp/uat/",
+      "description": "UAT环境SFTP服务器"
+    },
+    "PROD": {
+      "host": "sftp-prod.your-domain.com",
+      "port": 22,
+      "username": "prod-user",
+      "password": null,
+      "privateKey": "/path/to/private/key.pem",
+      "passphrase": "key-passphrase",
+      "remoteBasePath": "/sftp/prod/",
+      "description": "生产环境SFTP服务器"
+    }
+  },
+  "directories": {
+    "upload": "upload",
+    "download": "download",
+    "archive": "archive",
+    "error": "error"
+  },
+  "filePatterns": {
+    "payment": "*.txt",
+    "report": "*.csv",
+    "log": "*.log"
+  }
+}
