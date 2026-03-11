@@ -1,10 +1,35 @@
 {
   "login": {
-    "corpId": "AUTOSG01",
+    "SIT":{
+    "corpIdChrome1": "AUTOSG01",
+    "corpIdChrome2": "AUTOSG01",
+    "corpIdFirefox": "AUTOSG01",
     "userIdChrome1": "AUTOSG01A16",
     "userIdChrome2": "AUTOSG01A17",
     "userIdFirefox": "AUTOSG01A18",
     "pin": "123123"
+    },
+    "UAT":{
+    "corpIdChrome1": "AUTOSG01",
+    "corpIdChrome2": "AUTOSG01",
+    "corpIdFirefox": "AUTOSG01",
+    "userIdChrome1": "AUTOSG01A16",
+    "userIdChrome2": "AUTOSG01A17",
+    "userIdFirefox": "AUTOSG01A18",
+    "pin": "123123"
+    }
+  },
+  "CreateAccountReport": {
+    "SIT": {
+      "loginCompanyId": "AUTOSG01",
+      "loginUserId": "AUTOSG01A16",
+      "password": "123123"
+    },
+    "UAT": {
+      "loginCompanyId": "AUTOSG01",
+      "loginUserId": "AUTOSG01A16",
+      "password": "123123"
+    }
   },
   "AccountTransfer": {
     "UAT": {

@@ -45,8 +45,31 @@ function getPages(page: Page): PaymentsPages {
  */
 test.describe('ACT Payment - Create with New Payee', () => {
   test.beforeEach(async ({ page }) => {
-    const projectName = test.info().project.name;
-    await new NavigatePages(page, test.info()).loginIdealx(testData.login.corpId,undefined,testData.login.pin,testData);
+    const testEnv = (process.env.TEST_ENV || 'SIT').toUpperCase();
+    const projectName = test.info().project.name || 'chromium';
+
+    await new NavigatePages(page, test.info()).loginIdealx(
+      // 根据环境 + 项目名称选择不同的 corpId
+      testEnv === 'SIT' ?
+        (projectName === 'chromium' ? testData.login.SIT.corpIdChrome1 :
+         projectName === 'chromium2' ? testData.login.SIT.corpIdChrome2 :
+         projectName === 'firefox' ? testData.login.SIT.corpIdFirefox :
+         testData.login.SIT.corpIdChrome1) :
+        (projectName === 'chromium' ? testData.login.UAT.corpIdChrome1 :
+         projectName === 'chromium2' ? testData.login.UAT.corpIdChrome2 :
+         projectName === 'firefox' ? testData.login.UAT.corpIdFirefox :
+         testData.login.UAT.corpIdChrome1),
+      testEnv === 'SIT' ?
+        (projectName === 'chromium' ? testData.login.SIT.userIdChrome1 :
+         projectName === 'chromium2' ? testData.login.SIT.userIdChrome2 :
+         projectName === 'firefox' ? testData.login.SIT.userIdFirefox :
+         testData.login.SIT.userIdChrome1) :
+        (projectName === 'chromium' ? testData.login.UAT.userIdChrome1 :
+         projectName === 'chromium2' ? testData.login.UAT.userIdChrome2 :
+         projectName === 'firefox' ? testData.login.UAT.userIdFirefox :
+         testData.login.UAT.userIdChrome1),
+      testEnv === 'SIT' ? testData.login.SIT.pin : testData.login.UAT.pin
+    );
   });
 
   test.afterEach(async ({ page }) => {
