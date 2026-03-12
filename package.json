@@ -6,6 +6,7 @@
     "test": "playwright test",
     "test:headed": "node scripts/run-tests.js main",
     "test:headed:paytransfer": "node scripts/run-tests.js paytransfer",
+    "test:main:chrome": "node scripts/run-tests-chrome.js main",
     "test:headed:files": "node scripts/run-tests.js files",
     "test:headed:login": "node scripts/run-tests.js login",
     "test:multi-window": "node scripts/run-multi-window.js",

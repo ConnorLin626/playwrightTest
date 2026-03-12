@@ -12,6 +12,11 @@ export const testSuites = {
     // 示例：取消注释要运行的测试用例
     "src/e2e/IDEALX/PayTransfer/TW_Single_NewPayeeEnhance.test.ts",
     //"src/e2e/IDEALX/PayTransfer/SG_ACT_NewPayeeEnhance.test.ts",
+    // "src/e2e/IDEALX/PayTransfer/SG_ACT_NewPayee.test.ts",
+    // "src/e2e/IDEALX/PayTransfer/HK_AccountTransfer.test.ts",
+    // "src/e2e/IDEALX/PayTransfer/HK_Beneficiary.test.ts",
+    "src/e2e/IDEALX/PayTransfer/SG_Beneficiary.test.ts",
+    // "src/e2e/IDEALX/PayTransfer/GC_AccountTransfer.test.ts",
     // 更多测试用例可以在这里添加，例如：
     // "src/e2e/IDEALX/PayTransfer/SG_AccountTransfer.test.ts",
     // "src/e2e/IDEALX/Files/TW_UploadFile_User1.test.ts",
@@ -24,6 +29,7 @@ export const testSuites = {
   paytransfer: [
     "src/e2e/IDEALX/PayTransfer/TW_Single_NewPayeeEnhance.test.ts",
     //"src/e2e/IDEALX/PayTransfer/SG_ACT_NewPayee.test.ts",
+    // "src/e2e/IDEALX/PayTransfer/SG_ACT_NewPayee.test.ts",
     // "src/e2e/IDEALX/PayTransfer/SG_AccountTransfer.test.ts",
     // "src/e2e/IDEALX/PayTransfer/SG_RecurringPayment.test.ts",
   ],

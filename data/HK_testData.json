@@ -1,0 +1,82 @@
+{
+  "login": {
+    "corpId": "",
+    "pin": ""
+  },
+  "status": {
+    "Approved": "Approved",
+    "PendingApproval": "Pending Approval",
+    "PendingRelease": "Pending Release",
+    "Completed": "Completed"
+  },
+  "Beneficiary": {
+    "UAT": {
+      "loginCompanyId": "HKS01",
+      "loginUserId": "I3SSHKS01USER1",
+      "pinId": "P@ssword1A!"
+    },
+    "SIT": {
+      "loginCompanyId": "SPHK08",
+      "loginUserId": "SPHK08V05",
+      "pinId": "123123"
+    },
+    "Country": "HONG KONG",
+    "sgCountry": "SINGAPORE",
+    "newPayeeName": "BenePayeeName20",
+    "newPayeeNickname": "newPayeeNickname",
+    "PayeeNickname": "PayrollNickname",
+    "Msg": "This nickname already exists. Please try a different one.",
+    "newPayeeBankId": "BSSHKH0XXX",
+    "newPayeeAcctNumber": "123456000001",
+    "newTTPayeeAcctNumber": "123456000002",
+    "payeeLocation": "ALBANIA",
+    "townCity": "Town,City",
+    "newPayeeAdd1": "newPayeeAdd1",
+    "newPayeeAdd2": "newPayeeAdd2",
+    "streetName": "street Name",
+    "postalCode": "postalCode123",
+    "editPayeeLocation": "AFGHANISTAN",
+    "editTownCity": "Edit Town City",
+    "buildingNum": "building894",
+    "buildingName": "buildname333",
+    "floor": "floor 33",
+    "room": "room 09",
+    "department": "department123",
+    "subDepartment": "subDepartment123",
+    "countrySubDivsion": "countrySubDivsion123",
+    "townLocationName": "townLocationName234",
+    "districtName": "districtName567",
+    "newPayeeBankName": "Max length of new Bank name is 140Max length of new Bank name is 140Max length of new Bank name is 140Max length of new Bank name is 140MaxL",
+    "newPayeBankAdd1": "newPayeBankAdd1",
+    "newPayeBankAdd2": "newPayeBankAdd2"
+  },
+  "AccountTransfer": {
+    "UAT": {
+      "loginCompanyId": "HKS01",
+      "loginUserId": "I3SSHKS01USER1",
+      "pinId": "P@ssword123",
+      "fromAccount": "001749027"
+    },
+    "SIT": {
+      "loginCompanyId": "SPHK08",
+      "loginUserId": "SPHK08V07",
+      "pinId": "123123",
+      "fromAccount": "121686218",
+      "retrieveNameValue":"Retrieve N*** R*****",
+      "retrieveNameFailMessage":"We couldn’t find this payee in our records. Please double check the payee account number. If bank or branch code was included, please remove and try again."
+    },
+    "existingPayeeRetrSuccess": "AutoACTExistingPayee02",
+    "existingPayeeRetrFail": "AutoACTExistingPayee",
+    "amountA1": "10",
+    "Country": "Hong Kong",
+    "newPayeeName": "AutoNewPayeeName",
+    "newPayeeNickname": "newPayeeNickname",
+    "newPayeeAcctNumber": "123456000001",
+    "retrieveFailAcctNum": "123456fail",
+    "newPayeeAdd1": "newPayeeAdd1",
+    "newPayeeAdd2": "newPayeeAdd2",
+    "newPayeeAdd3": "newPayeeAdd3",
+    "paymentDetail": "PaymentDetails",
+    "transactionNote": "transactionNote"
+  }
+}

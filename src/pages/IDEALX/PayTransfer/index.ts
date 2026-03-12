@@ -3,12 +3,14 @@ import { AccountTransferPage } from './AccountTransferPage';
 import { BeneficiaryPage } from './BeneficiaryPage';
 import { SinglePaymentPage } from './SinglePaymentPage';
 import { TransferCentersPage } from './TransferCenterPage';
+import { PaymentTemplatesPage } from './PaymentTemplatesPage';
 
 export {
     AccountTransferPage,
     BeneficiaryPage,
     SinglePaymentPage,
-    TransferCentersPage
+    TransferCentersPage,
+    PaymentTemplatesPage
 };
 
 /**
@@ -21,6 +23,7 @@ export class PaymentsPages {
     public BeneficiaryPage: BeneficiaryPage;
     public singlePaymentPage: SinglePaymentPage;
     public TransferCentersPage: TransferCentersPage;
+    public PaymentTemplatesPage: PaymentTemplatesPage;
 
     /**
      * 构造函数 - 接收 Page 实例并创建所有页面对象
@@ -31,5 +34,6 @@ export class PaymentsPages {
         this.BeneficiaryPage = new BeneficiaryPage(page);
         this.singlePaymentPage = new SinglePaymentPage(page);
         this.TransferCentersPage = new TransferCentersPage(page);
+        this.PaymentTemplatesPage = new PaymentTemplatesPage(page);
     }
 }

@@ -56,6 +56,8 @@ export class BeneficiaryPage {
   get payeeBankAdd1(): Locator { return this.page.locator('//input[@id="new-payee-bank-add1-input"]'); }
   get payeeBankAdd2(): Locator { return this.page.locator('//input[@id="new-payee-bank-add2-input"]'); }
   get selectedCountry(): Locator { return this.page.locator('//p-auto-complete[@formcontrolname="selectedCountry"]'); }
+  get payeeCountry(): Locator { return this.page.locator('//*[@id="payee-country"]'); }
+  get payeeCountrySelectFirst(): Locator { return this.page.locator(' //p-auto-complete/div/div[2]/ul/li/div/span'); }
   get newPayeeName(): Locator { return this.page.locator('//*[@name="new-payee-name"]'); }
   get newPayeeNickname(): Locator { return this.page.locator('//input[@name="new-payee-nick-name"]'); }
   get switchFormatButton(): Locator { return this.page.locator('//*[@class="switch-label"]'); }
@@ -78,7 +80,7 @@ export class BeneficiaryPage {
   get townLocationName(): Locator { return this.page.locator('//*[@name="town-location-name"]'); }
   get districtName(): Locator { return this.page.locator('//*[@name="district-ame"]'); }
   get chequeOrDemand(): Locator { return this.page.locator('//input[@name="chequeOrDemand" and @id="chequeOrDemand"]'); }
-  get bankCategory(): Locator { return this.page.locator('//dbs-radio-group[@formcontrolname="bankCategoryType"]'); }
+  get bankCategory(): Locator { return this.page.locator('//*[@for="ux-radio-1"]'); }
   get OtherBankType(): Locator { return this.page.locator('//dbs-radio-group[@formcontrolname="otherBankCategoryType"]'); }
   get newPayeeBankId(): Locator { return this.page.locator('//input[@name="new-payee-bank-id"]'); }
   get newPayeeBankIdButton(): Locator { return this.page.locator('//input[@name="new-payee-bank-id-button"]'); }

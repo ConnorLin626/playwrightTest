@@ -1,0 +1,109 @@
+{
+  "login": {
+    "loginCompanyId": "AUTOTEST",
+    "loginUserId": "AUTOGCS01",
+    "verifyUserId": "AUTOGCS02"
+  },
+  "status": {
+    "Approved": "Approved",
+    "PendingApproval": "Pending Approval",
+    "PartialApproved": "Partial Approved",
+    "PendingRelease": "Pending Release",
+    "PendingVerification": "Pending Verification",
+    "PartialCompleted": "Partial Completed",
+    "Received": "Received",
+    "Completed": "Completed",
+    "Saved": "Saved",
+    "Submitted": "Submitted",
+    "BankRejected": "Bank Rejected",
+    "Rejected": "Rejected",
+    "Failed": "Failed",
+    "Cancelled": "Cancelled"
+  },
+  "AccountTransfer": {
+    "UAT": {
+      "loginCompanyId": "AUTOTEST",
+      "loginUserId": "AUTOGCS01",
+      "ApproveTemplateUserId": "AUTOGCS02",
+      "fromAccount": "EUR20250805001"
+    },
+    "SIT": {
+      "loginCompanyId": "AUTOTEST",
+      "loginUserId": "AUTOGCS01",
+      "ApproveTemplateUserId": "AUTOGCS02",
+      "fromAccount": "EUR20250805001"
+    },
+    "fromGBPAccount": "GBP202508004",
+    "amountA1": "10.00",
+    "PayeeName": "AUTOACTPAYEE",
+    "PayeeAccount": "3498748346",
+    "gbpPaymentCcy": "GBP",
+    "existingACTPayee": "existingACTPayee",
+    "additionNote": "messageToOrderingBank",
+    "paymentType": "Transfer within Own Accounts",
+    "challengeCode": "123",
+    "ErrorMessage": "Payment is allowed to be made in same currency as debit account currency.",
+    "PaymentDetails": "Paymentdetails",
+    "Country": "INDIA",
+    "newPayeeAcctNumber": "123456000001"
+  },
+  "FileService": {
+    "UAT": {
+      "loginCompanyId": "AUTOTEST",
+      "loginUserId": "AUTOGCS01",
+      "fromAccount": "EUR20250805001",
+      "fileNameForACT": "GC_UploadFile/GC_ACT_UFF_SIT.txt",
+      "fileNameForTT": "GC_UploadFile/GC_TT_UFF_SIT.txt"
+    },
+    "SIT": {
+      "loginCompanyId": "AUTOTEST",
+      "loginUserId": "AUTOGCS01",
+      "fromAccount": "EUR20250805001",
+      "fileNameForACT": "GC_UploadFile/GC_ACT_UFF_SIT.txt",
+      "fileNameForTT": "GC_UploadFile/GC_TT_UFF_SIT.txt"
+    },
+    "newTTPayee": "testTTPayee01",
+    "payeeAccountNum": "4827737323",
+    "fileType": "ALL",
+    "fileFormat": "Universal File Format",
+    "approvalOptionTransaction": "By Transaction",
+    "approvalOptionFile": "By File",
+    "errorMessage": "Invalid currency, please change currency and try again"
+  },
+  "Beneficiary": {
+    "UAT": {
+      "loginCompanyId": "AUTOTEST",
+      "loginUserId": "AUTOGCS01"
+    },
+    "SIT": {
+      "loginCompanyId": "AUTOTEST",
+      "loginUserId": "AUTOGCS01"
+    },
+    "Country": "SINGAPORE",
+    "editNewPayeeName": "EditForBenePayeeName20",
+    "newPayeeNickname": "newPayeeNickname",
+    "newPayeeAdd1": "newPayeeAdd1",
+    "editNewPayeeAdd1": "editNewPayeeAdd1",
+    "newPayeeAdd2": "newPayeeAdd2",
+    "editNewPayeeAdd2": "editNewPayeeAdd2",
+    "newPayeeAdd3": "newPayeeAdd3",
+    "editNewPayeeAdd3": "editNewPayeeAdd3",
+    "newPayeeAcctNumber": "123456000001",
+    "newPayeeBankId": "ABNASG20XXX ",
+    "payeeLocation": "ALBANIA",
+    "townCity": "Town,City",
+    "streetName": "street Name",
+    "postalCode": "postalCode123",
+    "editPayeeLocation": "AFGHANISTAN",
+    "editTownCity": "Edit Town City",
+    "buildingNum": "building894",
+    "buildingName": "buildname333",
+    "floor": "floor 33",
+    "room": "room 09",
+    "department": "department123",
+    "subDepartment": "subDepartment123",
+    "countrySubDivsion": "countrySubDivsion123",
+    "townLocationName": "townLocationName234",
+    "districtName": "districtName567"
+  }
+}

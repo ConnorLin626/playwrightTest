@@ -46,7 +46,7 @@ function getPages(page: Page): PaymentsPages {
 test.describe.serial('ACT Payment - Create with New Payee', () => {
   test.beforeEach(async ({ page }) => {
     const projectName = test.info().project.name;
-    await new NavigatePages(page, test.info()).loginIdealx(testData.login.corpId,undefined,testData.login.pin,testData);
+    await new NavigatePages(page, test.info()).loginIdealx(testData.AccountTransfer.SIT.loginCompanyId,testData.AccountTransfer.SIT.loginUserId,testData.AccountTransfer.SIT.pinId,testData);
   });
 
   test.afterEach(async ({ page }) => {
@@ -54,54 +54,46 @@ test.describe.serial('ACT Payment - Create with New Payee', () => {
   });
 
   test('Create an ACT Payment with new Payee', async ({ page }) => {
-    await createACTPaymentWithNewPayee(page);
-  });
+    const pages = getPages(page);
+    let referenceNumber: string = '';
+    await pages.AccountTransferPage.paymentMenu.click();
+    await pages.AccountTransferPage.makePayment.click();
+    await pages.AccountTransferPage.selectOption(pages.AccountTransferPage.fromAccount, testData.AccountTransfer.SIT.fromAccount);
+    await pages.AccountTransferPage.amount.fill('10.00');
+    await pages.AccountTransferPage.newPayeeTab.click();
+    await pages.AccountTransferPage.continueBtn.click();
+    await pages.BeneficiaryPage.selectOption(pages.BeneficiaryPage.selectedCountry,testData.AccountTransfer.Country);
+    await pages.AccountTransferPage.payeeBankRadio.click({force:true});
+    await pages.AccountTransferPage.newPayeeAcctNumber.fill(testData.AccountTransfer.newPayeeAcctNumber);
+    await pages.AccountTransferPage.newPayeeName.fill(testData.AccountTransfer.newPayeeName);
+    await pages.AccountTransferPage.newPayeeNickname.fill(testData.AccountTransfer.newPayeeNickname);
+    await pages.BeneficiaryPage.addAddress.click();
+    await pages.BeneficiaryPage.selectOption(pages.BeneficiaryPage.payeeLocation,testData.Beneficiary.payeeLocation);
+    await pages.BeneficiaryPage.townCity.fill(testData.Beneficiary.townCity);
+    await pages.AccountTransferPage.newPayeeAdd1.fill(testData.AccountTransfer.newPayeeAdd1);
+    await pages.AccountTransferPage.newPayeeAdd2.fill(testData.AccountTransfer.newPayeeAdd2);
+    await pages.BeneficiaryPage.postalCode.fill(testData.Beneficiary.postalCode);
+    await pages.AccountTransferPage.paymentDetail.fill(testData.AccountTransfer.paymentDetail);
+    await pages.AccountTransferPage.isTransactionNote.click();
+    await pages.AccountTransferPage.transactionNote.fill(testData.AccountTransfer.transactionNote);
+    await pages.AccountTransferPage.nextButton.click();
+    await pages.AccountTransferPage.submitButton.click();
+    await page.waitForTimeout(2000).catch(() => {});//需要等待否则获取为空
+    const refText = await pages.AccountTransferPage.referenceNumber.textContent();
+    if (refText) {
+      referenceNumber = refText.trim();
+    }
+    await pages.AccountTransferPage.finishedButton.click();
+    await pages.AccountTransferPage.paymentMenu.click();
+    await pages.AccountTransferPage.tranferCenterFiler.fill(referenceNumber);
+    await page.waitForTimeout(2000).catch(() => {});
+    await pages.AccountTransferPage.refLink.click();
+    await page.waitForTimeout(2000).catch(() => {});
+    await Promise.all([
+        expect(pages.AccountTransferPage.actStatusValue).toContainText('Pending Approval'),
+        expect(pages.AccountTransferPage.amountValue).toContainText('10.00'),
+        expect(pages.AccountTransferPage.toNewPayeeNameValue).toContainText(testData.AccountTransfer.newPayeeName),
+        expect(pages.AccountTransferPage.newPayeeAcctNum).toContainText(testData.AccountTransfer.newPayeeAcctNumber),
+    ]);
+    });
 });
-
-/**
- * 创建 ACT Payment 使用新收款人的主要测试逻辑
- * 对应 Protractor 版本的第28行测试用例
- */
-async function createACTPaymentWithNewPayee(page: Page) {
-  const pages = getPages(page);
-  let referenceNumber: string = '';
-  await pages.AccountTransferPage.paymentMenu.click();
-  await pages.AccountTransferPage.makePayment.click();
-  await pages.AccountTransferPage.selectOption(pages.AccountTransferPage.fromAccount, testData.AccountTransfer.SIT.fromAccount);
-  await pages.AccountTransferPage.amount.fill('10.00');
-  await pages.AccountTransferPage.newPayeeTab.click();
-  await pages.AccountTransferPage.continueBtn.click();
-  await pages.BeneficiaryPage.selectOption(pages.BeneficiaryPage.selectedCountry,testData.AccountTransfer.Country);
-  await pages.AccountTransferPage.payeeBankRadio.click();
-  await pages.AccountTransferPage.newPayeeAcctNumber.fill(testData.AccountTransfer.newPayeeAcctNumber);
-  await pages.AccountTransferPage.newPayeeName.fill(testData.AccountTransfer.newPayeeName);
-  await pages.AccountTransferPage.newPayeeNickname.fill(testData.AccountTransfer.newPayeeNickname);
-  await pages.BeneficiaryPage.addAddress.click();
-  await pages.BeneficiaryPage.selectOption(pages.BeneficiaryPage.payeeLocation,testData.Beneficiary.payeeLocation);
-  await pages.BeneficiaryPage.townCity.fill(testData.Beneficiary.townCity);
-  await pages.AccountTransferPage.newPayeeAdd1.fill(testData.AccountTransfer.newPayeeAdd1);
-  await pages.AccountTransferPage.newPayeeAdd2.fill(testData.AccountTransfer.newPayeeAdd2);
-  await pages.BeneficiaryPage.postalCode.fill(testData.Beneficiary.postalCode);
-  await pages.AccountTransferPage.paymentDetail.fill(testData.AccountTransfer.paymentDetail);
-  await pages.AccountTransferPage.isTransactionNote.click();
-  await pages.AccountTransferPage.transactionNote.fill(testData.AccountTransfer.transactionNote);
-  await pages.AccountTransferPage.nextButton.click();
-  await pages.AccountTransferPage.submitButton.click();
-  await page.waitForTimeout(2000).catch(() => {});//需要等待否则获取为空
-  const refText = await pages.AccountTransferPage.referenceNumber.textContent();
-  if (refText) {
-    referenceNumber = refText.trim();
-  }
-  await pages.AccountTransferPage.finishedButton.click();
-  await pages.AccountTransferPage.paymentMenu.click();
-  await pages.AccountTransferPage.tranferCenterFiler.fill(referenceNumber);
-  await page.waitForTimeout(2000).catch(() => {});
-  await pages.AccountTransferPage.refLink.click();
-  await page.waitForTimeout(2000).catch(() => {});
-  await Promise.all([
-      expect(pages.AccountTransferPage.actStatusValue).toContainText('Pending Approval'),
-      expect(pages.AccountTransferPage.amountValue).toContainText('10.00'),
-      expect(pages.AccountTransferPage.toNewPayeeNameValue).toContainText(testData.AccountTransfer.newPayeeName),
-      expect(pages.AccountTransferPage.newPayeeAcctNum).toContainText(testData.AccountTransfer.newPayeeAcctNumber),
-  ]);
-}

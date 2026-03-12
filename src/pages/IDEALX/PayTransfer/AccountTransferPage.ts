@@ -40,7 +40,7 @@ export class AccountTransferPage {
 
   // 银行和账号相关 - 对应 forAIstudy 第26-29行
   get payeeBank(): Locator { return this.page.locator('//dbs-radio-group[@formcontrolname="bankType"]'); }
-  get payeeBankRadio(): Locator { return this.page.locator('//dbs-radio//span[contains(text(),"DBS Bank SINGAPORE")]'); }
+  get payeeBankRadio(): Locator { return this.page.locator('//*[@for="DBS-bank"]'); }
   get newPayeeAcctNumber(): Locator { return this.page.locator("//input[@name='new-payee-acct-number']"); }
   get newPayeeCountry(): Locator { return this.page.locator('//p-auto-complete[@formcontrolname="selectedCountry"]'); }
   get newPayeeCountryInput(): Locator { return this.page.locator('//*[@id="new-payee-country"]'); }

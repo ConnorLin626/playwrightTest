@@ -1,0 +1,90 @@
+{
+  "status": {
+    "Approved": "Approved",
+    "PendingApproval": "Pending Approval",
+    "PartialApproved": "Partial Approved",
+    "PendingRelease": "Pending Release",
+    "PendingVerification": "Pending Verification",
+    "PartialCompleted": "Partial Completed",
+    "Received": "Received",
+    "Completed": "Completed",
+    "Saved": "Saved",
+    "Submitted": "Submitted",
+    "BankRejected": "Bank Rejected",
+    "Rejected": "Rejected",
+    "Failed": "Failed",
+    "Cancelled": "Cancelled",
+    "ApproverRejected": "Approver rejected"
+  },
+  "paymentType": {
+    "SG_ACT": "SG - Account Transfer",
+    "SG_BLVT": "SG - Bulk GIRO Payment",
+    "SG_COL": "SG - Bulk GIRO Collection",
+    "SG_TT": "SG - Telegraphic Transfer",
+    "SG_ICT": "Intra Company Transfer",
+    "SG_SAL": "SG - Payroll",
+    "SG_CCH": "SG - Corporate Cheques",
+    "SG_BCH": "SG - Cheque Express",
+    "SG_DD": "SG - Demand Draft",
+    "SG_BILL": "SG - Bill Payment"
+  },
+  "AccountTransfer": {
+    "UAT": {
+      "fromAccount": "0019051991"
+    },
+    "SIT": {
+      "fromAccount": "0039007639"
+    },
+    "Country": "SINGAPORE",
+    "amountV": "3,100",
+    "existingPayee": "AUTOSG01-ACT-ExistingPayee",
+    "newPayeeName": "ACT AUTO NewPayeeName01",
+    "newPayeeNickname": "newPayeeNickname",
+    "newPayeeAdd1": "ACT AUTO newPayeeAdd1",
+    "newPayeeAdd2": "ACT AUTO newPayeeAdd2",
+    "newPayeeAdd3": "ACT AUTO newPayeeAdd3",
+    "newPayeeAcctNumber": "38900000001",
+    "paymentDetail": "ACT AUTO PaymentDetails",
+    "emailIdO": "ACT_AUTO_Email0@dbs.com",
+    "emailId1": "ACT_AUTO_Email1@dbs.com",
+    "emailId2": "ACT_AUTO_Email2@dbs.com",
+    "emailId3": "ACT_AUTO_Email3@dbs.com",
+    "emailId4": "ACT_AUTO_Email4@dbs.com",
+    "message": "ACT AUTO TEST message",
+    "transactionNote": "ACT Transaction Note test message"
+  },
+  "Beneficiary": {
+    "UAT": {
+      "loginCompanyId": "SGABCD11",
+      "loginUserId": "SGABCD11V01",
+      "pinID": "P@ssword123"
+    },
+    "SIT": {
+      "loginCompanyId": "AUTOSG01",
+      "loginUserId": "AUTOSG01U04"
+    },
+    "Country": "SINGAPORE",
+    "newPayeeName": "BenePayeeName20",
+    "newPayeeNickname": "newPayeeNickname",
+    "editNewPayeeName": "EditForBenePayeeName20",
+    "newPayeePrintedName": "BenerintedName20",
+    "newPayeeAdd1": "newPayeeAdd1",
+    "editNewPayeeAdd1": "editNewPayeeAdd1",
+    "newPayeeAdd2": "newPayeeAdd2",
+    "newPayeeAdd3": "newPayeeAdd3",
+    "newPayeeBankId": "1",
+    "proxyTypeMobNum": "91111111",
+    "newPayeeAcctNumber": "123456000001",
+    "sgAccountTransfer": "SG-Account Transfer",
+    "chequeDDPrintedName": "(/a-zA-Z0-9 `~!@#$%&()_-+={[}]$/;)",
+    "sgEDP": "SG - Electronic Deferred Payment",
+    "DDpaymentValue": "SG-Demand Draft Payment",
+    "chequPaymentValue": "SG-Cheque Payment",
+    "payeeLocation": "ALBANIA",
+    "townCity": "Town,City",
+    "streetName": "street Name",
+    "postalCode": "postalCode123",
+    "editPayeeLocation": "AFGHANISTAN",
+    "editTownCity": "Edit Town City"
+  }
+}
