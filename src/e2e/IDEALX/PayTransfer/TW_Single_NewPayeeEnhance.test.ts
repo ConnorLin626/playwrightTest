@@ -45,7 +45,7 @@ function getPages(page: Page): PaymentsPages {
  * 测试套件：TW Single Payment - 使用新收款人测试
  * 基于 forAIstudy/src/e2e/IDEALX/Reskin/PayTransfer/TW_SinglePayment.test.ts
  */
-test.describe('TW Single Payment - Create with New Payee', () => {
+test.describe.serial('TW Single Payment - Create with New Payee', () => {
   test.beforeEach(async ({ page }) => {
     const testEnv = (process.env.TEST_ENV || 'SIT').toUpperCase();
     const projectName = test.info().project.name || 'chromium';

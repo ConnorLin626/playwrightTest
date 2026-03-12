@@ -46,9 +46,9 @@ export const testSuites = {
    * 窗口A测试用例 - 适用于 chromium 项目
    */
   windowA: [
-    "src/e2e/IDEALX/PayTransfer/TW_Single_NewPayeeEnhance.test.ts",
-    // "src/e2e/IDEALX/PayTransfer/SG_ACT_NewPayeeEnhance.test.ts",
-    // "src/e2e/IDEALX/PayTransfer/SG_AccountTransfer.test.ts",
+    
+    //"src/e2e/IDEALX/PayTransfer/SG_ACT_NewPayeeEnhance.test.ts",
+    //"src/e2e/IDEALX/PayTransfer/SG_ACT_NewPayeeEnhance.test.ts",
   ],
 
   /**
@@ -56,15 +56,17 @@ export const testSuites = {
    */
   windowB: [
     
-    // "src/e2e/IDEALX/PayTransfer/SG_AccountTransfer.test.ts",
-    // "src/e2e/IDEALX/Files/TW_UploadFile_User1.test.ts",
+    //"src/e2e/IDEALX/PayTransfer/TW_Single_NewPayeeEnhance.test.ts",
+    //"src/e2e/IDEALX/Files/TW_UploadFile_User1.test.ts",
   ],
 
   /**
    * 窗口C测试用例 - 适用于 firefox 项目
    */
   windowC: [
+    "src/e2e/IDEALX/PayTransfer/TW_Single_NewPayeeEnhance.test.ts",
     "src/e2e/IDEALX/PayTransfer/SG_ACT_NewPayeeEnhance.test.ts",
+    //"src/e2e/IDEALX/PayTransfer/SG_ACT_NewPayeeEnhance.test.ts",
     // "src/e2e/IDEALX/PayTransfer/SG_AccountTransfer.test.ts",
     // "src/e2e/IDEALX/PayTransfer/SG_RecurringPayment.test.ts",
   ],

@@ -127,64 +127,85 @@ async function runTests() {
   const { spawn } = require('child_process');
 
   const promises = commands.map((item) => {
-    return new Promise((resolve, reject) => {
+    return new Promise(async (resolve, reject) => {
       console.log(`🔵 [${item.name}] 启动测试...`);
 
-      const startTime = Date.now();
-      const testArgs = item.tests.join(' ');
-      const process = spawn('npx', [
-        'playwright', 'test', '--headed',
-        `--project=${item.project}`,
-        ...testArgs.split(' ')
-      ], {
-        cwd: path.resolve(__dirname, '..'),
-        shell: true,
-        stdio: 'pipe'
-      });
+      const windowStartTime = Date.now();
+      const windowResults = [];
+      let allPassed = true;
 
-      let stdout = '';
-      let stderr = '';
+      // 串行执行该窗口内的所有测试用例
+      for (let i = 0; i < item.tests.length; i++) {
+        const testFile = item.tests[i];
+        console.log(`   [${item.name}] 开始执行测试 ${i + 1}/${item.tests.length}: ${testFile}`);
 
-      process.stdout.on('data', (data) => {
-        const lines = data.toString().split('\n');
-        lines.forEach(line => {
-          if (line.trim()) {
-            console.log(`[${item.name}] ${line}`);
-          }
+        const startTime = Date.now();
+        const process = spawn('npx', [
+          'playwright', 'test', '--headed',
+          `--project=${item.project}`,
+          testFile
+        ], {
+          cwd: path.resolve(__dirname, '..'),
+          shell: true,
+          stdio: 'pipe'
         });
-        stdout += data;
-      });
 
-      process.stderr.on('data', (data) => {
-        const lines = data.toString().split('\n');
-        lines.forEach(line => {
-          if (line.trim()) {
-            console.log(`[${item.name}] ${line}`);
-          }
+        await new Promise((procResolve, procReject) => {
+          process.stdout.on('data', (data) => {
+            const lines = data.toString().split('\n');
+            lines.forEach(line => {
+              if (line.trim()) {
+                console.log(`[${item.name}] ${line}`);
+              }
+            });
+          });
+
+          process.stderr.on('data', (data) => {
+            const lines = data.toString().split('\n');
+            lines.forEach(line => {
+              if (line.trim()) {
+                console.log(`[${item.name}] ${line}`);
+              }
+            });
+          });
+
+          process.on('close', (code) => {
+            const duration = ((Date.now() - startTime) / 1000).toFixed(2);
+            const status = code === 0 ? '✅' : '❌';
+            console.log(`      ${status} [${item.name}] ${testFile} (耗时: ${duration}s)\n`);
+            windowResults.push({
+              testFile,
+              code,
+              duration
+            });
+            if (code !== 0) {
+              allPassed = false;
+            }
+            procResolve();
+          });
+
+          process.on('error', (err) => {
+            console.error(`      ❌ [${item.name}] ${testFile} 启动失败: ${err.message}\n`);
+            allPassed = false;
+            procResolve();
+          });
         });
-        stderr += data;
+      }
+
+      const totalDuration = ((Date.now() - windowStartTime) / 1000).toFixed(2);
+      const status = allPassed ? '✅' : '❌';
+      console.log(`${status} [${item.name}] 所有测试完成 (总耗时: ${totalDuration}s)\n`);
+      results.push({
+        name: item.name,
+        code: allPassed ? 0 : 1,
+        duration: totalDuration
       });
 
-      process.on('close', (code) => {
-        const duration = ((Date.now() - startTime) / 1000).toFixed(2);
-        const status = code === 0 ? '✅' : '❌';
-        console.log(`${status} [${item.name}] 测试完成 (耗时: ${duration}s)\n`);
-        results.push({
-          name: item.name,
-          code,
-          duration
-        });
-        if (code === 0) {
-          resolve();
-        } else {
-          reject(new Error(`${item.name} 测试失败`));
-        }
-      });
-
-      process.on('error', (err) => {
-        console.error(`❌ [${item.name}] 启动失败: ${err.message}\n`);
-        reject(err);
-      });
+      if (allPassed) {
+        resolve();
+      } else {
+        reject(new Error(`${item.name} 测试失败`));
+      }
     });
   });
 

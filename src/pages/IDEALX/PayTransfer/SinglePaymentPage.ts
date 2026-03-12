@@ -46,9 +46,8 @@ export class SinglePaymentPage {
     }
 
     get addNewPayee(): Locator {
-        return this.page.locator('//button[contains(text(), "Add New Payee") or contains(@class, "add-new-payee")]');
+        return this.page.locator('//div[@class="addNewPayee ng-star-inserted"]');
     }
-
     get continueBtn(): Locator {
         return this.page.locator('//button[@name="Review"]');
     }

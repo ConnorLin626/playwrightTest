@@ -43,7 +43,7 @@ function getPages(page: Page): PaymentsPages {
  * 测试套件：ACT Payment - 创建新收款人测试
  * 基于 forAIstudy/src/e2e/IDEALX/PayTransfer/SG_AccountTransfer.test.ts
  */
-test.describe('ACT Payment - Create with New Payee', () => {
+test.describe.serial('ACT Payment - Create with New Payee', () => {
   test.beforeEach(async ({ page }) => {
     const projectName = test.info().project.name;
     await new NavigatePages(page, test.info()).loginIdealx(testData.login.corpId,undefined,testData.login.pin,testData);

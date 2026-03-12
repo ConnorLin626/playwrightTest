@@ -2,7 +2,7 @@ import { defineConfig, devices } from '@playwright/test';
 
 export default defineConfig({
   testDir: './src/e2e',
-  fullyParallel: true,
+  fullyParallel: false,
   forbidOnly: !!process.env.CI,
   retries: process.env.CI ? 2 : 0,
   workers: process.env.CI ? 1 : 3,
@@ -25,6 +25,15 @@ export default defineConfig({
   projects: [
     {
       name: 'chromium',
+      use: {
+        ...devices['Desktop Chrome'],
+        launchOptions: {
+          args: ['--disable-web-security'],
+        },
+      },
+    },
+    {
+      name: 'chromium2',
       use: {
         ...devices['Desktop Chrome'],
         launchOptions: {
