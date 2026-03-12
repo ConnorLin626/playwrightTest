@@ -77,7 +77,7 @@ test.describe('ACT Payment - Create with New Payee', () => {
     await TestHelper.takeScreenshotOnFinish(page, test.info());
 
     // 测试失败时获取服务器日志（自动识别当前用户）
-    await TestHelper.fetchLogsOnFailure(test.info(), testData);
+    // await TestHelper.fetchLogsOnFailure(test.info(), testData);
   });
 
   test('Create an ACT Payment with new Payee', async ({ page }) => {

@@ -10,8 +10,8 @@ export const testSuites = {
    */
   main: [
     // 示例：取消注释要运行的测试用例
-    //"src/e2e/IDEALX/PayTransfer/SG_ACT_NewPayee.test.ts",
-    "src/e2e/IDEALX/PayTransfer/SG_ACT_NewPayeeEnhance.test.ts",
+    "src/e2e/IDEALX/PayTransfer/TW_Single_NewPayeeEnhance.test.ts",
+    //"src/e2e/IDEALX/PayTransfer/SG_ACT_NewPayeeEnhance.test.ts",
     // 更多测试用例可以在这里添加，例如：
     // "src/e2e/IDEALX/PayTransfer/SG_AccountTransfer.test.ts",
     // "src/e2e/IDEALX/Files/TW_UploadFile_User1.test.ts",
@@ -22,7 +22,8 @@ export const testSuites = {
    * IDEALX PayTransfer 模块测试
    */
   paytransfer: [
-    "src/e2e/IDEALX/PayTransfer/SG_ACT_NewPayee.test.ts",
+    "src/e2e/IDEALX/PayTransfer/TW_Single_NewPayeeEnhance.test.ts",
+    //"src/e2e/IDEALX/PayTransfer/SG_ACT_NewPayee.test.ts",
     // "src/e2e/IDEALX/PayTransfer/SG_AccountTransfer.test.ts",
     // "src/e2e/IDEALX/PayTransfer/SG_RecurringPayment.test.ts",
   ],
@@ -39,6 +40,33 @@ export const testSuites = {
    */
   login: [
     "tests/login.spec.ts",
+  ],
+
+  /**
+   * 窗口A测试用例 - 适用于 chromium 项目
+   */
+  windowA: [
+    "src/e2e/IDEALX/PayTransfer/TW_Single_NewPayeeEnhance.test.ts",
+    // "src/e2e/IDEALX/PayTransfer/SG_ACT_NewPayeeEnhance.test.ts",
+    // "src/e2e/IDEALX/PayTransfer/SG_AccountTransfer.test.ts",
+  ],
+
+  /**
+   * 窗口B测试用例 - 适用于 chromium2 项目
+   */
+  windowB: [
+    
+    // "src/e2e/IDEALX/PayTransfer/SG_AccountTransfer.test.ts",
+    // "src/e2e/IDEALX/Files/TW_UploadFile_User1.test.ts",
+  ],
+
+  /**
+   * 窗口C测试用例 - 适用于 firefox 项目
+   */
+  windowC: [
+    "src/e2e/IDEALX/PayTransfer/SG_ACT_NewPayeeEnhance.test.ts",
+    // "src/e2e/IDEALX/PayTransfer/SG_AccountTransfer.test.ts",
+    // "src/e2e/IDEALX/PayTransfer/SG_RecurringPayment.test.ts",
   ],
 };
 

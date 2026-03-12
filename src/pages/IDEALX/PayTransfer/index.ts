@@ -1,10 +1,14 @@
 import { Page } from '@playwright/test';
 import { AccountTransferPage } from './AccountTransferPage';
 import { BeneficiaryPage } from './BeneficiaryPage';
+import { SinglePaymentPage } from './SinglePaymentPage';
+import { TransferCentersPage } from './TransferCenterPage';
 
 export {
     AccountTransferPage,
-    BeneficiaryPage
+    BeneficiaryPage,
+    SinglePaymentPage,
+    TransferCentersPage
 };
 
 /**
@@ -15,6 +19,8 @@ export {
 export class PaymentsPages {
     public AccountTransferPage: AccountTransferPage;
     public BeneficiaryPage: BeneficiaryPage;
+    public singlePaymentPage: SinglePaymentPage;
+    public TransferCentersPage: TransferCentersPage;
 
     /**
      * 构造函数 - 接收 Page 实例并创建所有页面对象
@@ -23,5 +29,7 @@ export class PaymentsPages {
     constructor(page: Page) {
         this.AccountTransferPage = new AccountTransferPage(page);
         this.BeneficiaryPage = new BeneficiaryPage(page);
+        this.singlePaymentPage = new SinglePaymentPage(page);
+        this.TransferCentersPage = new TransferCentersPage(page);
     }
 }

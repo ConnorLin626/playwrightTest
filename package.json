@@ -8,6 +8,7 @@
     "test:headed:paytransfer": "node scripts/run-tests.js paytransfer",
     "test:headed:files": "node scripts/run-tests.js files",
     "test:headed:login": "node scripts/run-tests.js login",
+    "test:multi-window": "node scripts/run-multi-window.js",
     "test:login": "playwright test --headed tests/login.spec.ts --project=chromium --project=firefox",
     "test:act": "playwright test --headed src/e2e/IDEALX/PayTransfer/SG_ACT_NewPayee.test.ts --project=chromium --project=firefox",
     "test:act:chrome": "playwright test --headed src/e2e/IDEALX/PayTransfer/SG_ACT_NewPayee.test.ts --project=chromium",
