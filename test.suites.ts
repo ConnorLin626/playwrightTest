@@ -6,21 +6,27 @@
 
 export const testSuites = {
   /**
-   * 主测试套件 - 修改此处来选择要运行的测试用例
+   * 主测试套件 - 所有测试用例统一管理
+   * 系统会自动按测试数据文件分组，分组间并行执行，分组内串行执行
    */
   main: [
-    // 示例：取消注释要运行的测试用例
+    // TW 测试组 (读取 TW_testData.json)
     "src/e2e/IDEALX/PayTransfer/TW_Single_NewPayeeEnhance.test.ts",
-    //"src/e2e/IDEALX/PayTransfer/SG_ACT_NewPayeeEnhance.test.ts",
-    // "src/e2e/IDEALX/PayTransfer/SG_ACT_NewPayee.test.ts",
-    // "src/e2e/IDEALX/PayTransfer/HK_AccountTransfer.test.ts",
-    // "src/e2e/IDEALX/PayTransfer/HK_Beneficiary.test.ts",
+
+    // SG 测试组 (读取 SG_testData.json)
+    "src/e2e/IDEALX/PayTransfer/SG_ACT_NewPayeeEnhance.test.ts",
+    "src/e2e/IDEALX/PayTransfer/SG_ACT_NewPayee.test.ts",
+    // "src/e2e/IDEALX/PayTransfer/SG_ACT_NewPayeeDemo.test.ts",
+
+    // SG_01 测试组 (读取 SG_testData_01.json)
     "src/e2e/IDEALX/PayTransfer/SG_Beneficiary.test.ts",
-    // "src/e2e/IDEALX/PayTransfer/GC_AccountTransfer.test.ts",
-    // 更多测试用例可以在这里添加，例如：
-    // "src/e2e/IDEALX/PayTransfer/SG_AccountTransfer.test.ts",
-    // "src/e2e/IDEALX/Files/TW_UploadFile_User1.test.ts",
-    // "src/e2e/IDEALX/PayTransfer/CN_CrossBorderACH.test.ts",
+
+    // HK 测试组 (读取 HK_testData.json)
+    "src/e2e/IDEALX/PayTransfer/HK_AccountTransfer.test.ts",
+    "src/e2e/IDEALX/PayTransfer/HK_Beneficiary.test.ts",
+
+    // GC 测试组 (读取 GC_testData.json)
+    "src/e2e/IDEALX/PayTransfer/GC_AccountTransfer.test.ts",
   ],
 
   /**
@@ -28,10 +34,7 @@ export const testSuites = {
    */
   paytransfer: [
     "src/e2e/IDEALX/PayTransfer/TW_Single_NewPayeeEnhance.test.ts",
-    //"src/e2e/IDEALX/PayTransfer/SG_ACT_NewPayee.test.ts",
-    // "src/e2e/IDEALX/PayTransfer/SG_ACT_NewPayee.test.ts",
-    // "src/e2e/IDEALX/PayTransfer/SG_AccountTransfer.test.ts",
-    // "src/e2e/IDEALX/PayTransfer/SG_RecurringPayment.test.ts",
+    "src/e2e/IDEALX/PayTransfer/SG_ACT_NewPayeeEnhance.test.ts",
   ],
 
   /**
@@ -47,35 +50,20 @@ export const testSuites = {
   login: [
     "tests/login.spec.ts",
   ],
+};
 
-  /**
-   * 窗口A测试用例 - 适用于 chromium 项目
-   */
-  windowA: [
-    
-    //"src/e2e/IDEALX/PayTransfer/SG_ACT_NewPayeeEnhance.test.ts",
-    //"src/e2e/IDEALX/PayTransfer/SG_ACT_NewPayeeEnhance.test.ts",
-  ],
-
-  /**
-   * 窗口B测试用例 - 适用于 chromium2 项目
-   */
-  windowB: [
-    
-    //"src/e2e/IDEALX/PayTransfer/TW_Single_NewPayeeEnhance.test.ts",
-    //"src/e2e/IDEALX/Files/TW_UploadFile_User1.test.ts",
-  ],
-
-  /**
-   * 窗口C测试用例 - 适用于 firefox 项目
-   */
-  windowC: [
-    "src/e2e/IDEALX/PayTransfer/TW_Single_NewPayeeEnhance.test.ts",
-    "src/e2e/IDEALX/PayTransfer/SG_ACT_NewPayeeEnhance.test.ts",
-    //"src/e2e/IDEALX/PayTransfer/SG_ACT_NewPayeeEnhance.test.ts",
-    // "src/e2e/IDEALX/PayTransfer/SG_AccountTransfer.test.ts",
-    // "src/e2e/IDEALX/PayTransfer/SG_RecurringPayment.test.ts",
-  ],
+/**
+ * 测试数据文件到分组名称的映射
+ * 用于自动分组并行执行
+ */
+export const testDataGroupMap: Record<string, string> = {
+  'TW_testData.json': 'TW',
+  'SG_testData.json': 'SG',
+  'SG_testData_01.json': 'SG_01',
+  'HK_testData.json': 'HK',
+  'GC_testData.json': 'GC',
+  'CN_testData.json': 'CN',
+  'AU_testData.json': 'AU',
 };
 
 // 默认导出主套件

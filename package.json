@@ -1,11 +1,11 @@
 {
   "name": "playwright-test",
   "version": "1.0.0",
-  "description": "Playwright parallel test for Firefox and Chrome",
+  "description": "Playwright parallel test with grouped execution",
   "scripts": {
     "test": "playwright test",
-    "test:headed": "node scripts/run-tests.js main",
-    "test:headed:paytransfer": "node scripts/run-tests.js paytransfer",
+    "test:headed": "node scripts/run-tests-grouped.js main --project=chromium",
+    "test:headed:paytransfer": "node scripts/run-tests-grouped.js paytransfer",
     "test:main:chrome": "node scripts/run-tests-chrome.js main",
     "test:headed:files": "node scripts/run-tests.js files",
     "test:headed:login": "node scripts/run-tests.js login",
@@ -16,7 +16,8 @@
     "test:act:firefox": "playwright test --headed src/e2e/IDEALX/PayTransfer/SG_ACT_NewPayee.test.ts --project=firefox",
     "test:chrome": "playwright test --headed --project=chromium",
     "test:firefox": "playwright test --headed --project=firefox",
-    "install:browsers": "playwright install chromium firefox"
+    "test:single": "node scripts/run-tests.js",
+    "install:browsers": "playwright install chromium"
   },
   "devDependencies": {
     "@playwright/test": "^1.48.0",
