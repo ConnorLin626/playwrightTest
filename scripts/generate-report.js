@@ -83,6 +83,23 @@ let totalTests = 0;
 let passedTests = 0;
 let failedTests = 0;
 let skippedTests = 0;
+let totalDuration = 0;
+
+// 格式化耗时为时:分:秒
+function formatDuration(ms) {
+  const totalSeconds = Math.floor(ms / 1000);
+  const hours = Math.floor(totalSeconds / 3600);
+  const minutes = Math.floor((totalSeconds % 3600) / 60);
+  const seconds = totalSeconds % 60;
+
+  if (hours > 0) {
+    return `${hours}:${String(minutes).padStart(2, '0')}:${String(seconds).padStart(2, '0')}`;
+  } else if (minutes > 0) {
+    return `${minutes}:${String(seconds).padStart(2, '0')}`;
+  } else {
+    return `${seconds}s`;
+  }
+}
 
 function processSuite(suite, parentTitle = '') {
   let currentTitle = parentTitle ? parentTitle + ' > ' + suite.title : suite.title;
@@ -99,6 +116,9 @@ function processSuite(suite, parentTitle = '') {
             const statusIcon = status === 'passed' ? '✅' : (status === 'failed' ? '❌' : '⏭️');
             const duration = result?.duration || 0;
             const testTitle = test.title || spec.title || '未命名测试';
+
+            // 累加总耗时
+            totalDuration += duration;
 
             if (status === 'passed') passedTests++;
             else if (status === 'failed') failedTests++;
@@ -257,6 +277,7 @@ const html = `<!DOCTYPE html>
     .summary-item.passed { color: #28a745; }
     .summary-item.failed { color: #dc3545; }
     .summary-item.skipped { color: #ffc107; }
+    .summary-item.duration { color: #6c757d; }
 
     .filter-bar {
       display: flex;
@@ -458,6 +479,7 @@ const html = `<!DOCTYPE html>
       <div class="summary-item passed">✅ 通过: ${passedTests}</div>
       <div class="summary-item failed">❌ 失败: ${failedTests}</div>
       <div class="summary-item skipped">⏭️ 跳过: ${skippedTests}</div>
+      <div class="summary-item duration">⏱️ 总耗时: ${formatDuration(totalDuration)}</div>
     </div>
     <div class="filter-bar">
       <div class="filter-group">
